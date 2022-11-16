@@ -2,3 +2,4 @@
 #Team Member
 <br>
 - Akmal Rafi Diara Putra
+- Rasyaad Maulana Khandiyas
