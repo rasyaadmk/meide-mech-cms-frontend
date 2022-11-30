@@ -1,6 +1,16 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background: url('assets/images/batik.svg'); background-color: #e31528;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="home" class="navbar-brand mr-auto" style="background-color: white;">
+            <img src="assets/images/logo-new.png">
+          </a>
+          <div>
+            
+          </div>
+        </div>
+      </nav>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
