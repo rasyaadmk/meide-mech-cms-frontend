@@ -20,13 +20,43 @@
                 Khalifa in Dubai and New World Trade Center in New York.Shanghai Tower, West-East Power Transmission UHV
                 transmission lines, Beijing-Shanghai high-speed rail and municipal, medical, clean workshops, urban
                 housing, etc.</p>
-                <br>
-              <a href="" style="background-color: red; padding: 10px; color: white; text-decoration: none;">Read More</a>
+              <br>
+              <a href="" style="background-color: red; padding: 10px; color: white; text-decoration: none;">Read
+                More</a>
             </div>
           </div>
         </div>
         <div class="col justify-content-center text-center">
-          3 of 3
+          <div style="border: solid;">
+            <br>
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <img src="/assets/figma_assets/fire.svg" alt="">
+              </div>
+              <div class="col-6 text-left" style="margin-top: 5px;">
+                <h5>Fire</h5>
+                <p>Reduce Instalation time and labor costs.</p>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <img src="/assets/figma_assets/irrigation.svg" alt="">
+              </div>
+              <div class="col-6 text-left" style="margin-top: 5px;">
+                <h5>Irrigation</h5>
+                <p>Saving water and power resource, reduce the failure rate and improve the efficiency of the water.</p>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <img src="/assets/figma_assets/water_treatment.svg" alt="">
+              </div>
+              <div class="col-6 text-left" style="margin-top: 5px;">
+                <h5>Water Treatment</h5>
+                <p>Explain to you how all Water treatment.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
