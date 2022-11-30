@@ -1,5 +1,6 @@
 <template>
   <ion-page>
+    <ion-content>
     <div class="container">
       <div class="row" style="margin-top: 50px;">
         <div class="col-8">
@@ -74,17 +75,56 @@
             <p>Don't spend time and money on beautiful landscaping if you have not taken water and irrigation issues.</p>
           </div>
           <div class="row">
-            
+            <div class="col-1">
+              <img src="/assets/figma_assets/Check.svg" alt="">
+            </div>
+            <div class="col">
+              <p>Complete specifications, distributed to more than 130 countries and regions</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img src="/assets/figma_assets/Check.svg" alt="">
+            </div>
+            <div class="col">
+              <p>Excellent quality, the first choice for global customers</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img src="/assets/figma_assets/Check.svg" alt="">
+            </div>
+            <div class="col">
+              <p>The pioneer of double compression technology in China</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img src="/assets/figma_assets/Check.svg" alt="">
+            </div>
+            <div class="col">
+              <p>All in house production. Reliable quality assurance</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img src="/assets/figma_assets/Check.svg" alt="">
+            </div>
+            <div class="col">
+              <p>Intelligent manufacturing of Meide. High quality benefits power grid</p>
+            </div>
+            <br>br
           </div>
         </div>
       </div>
     </div>
+  </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
 import {
-  // IonContent, 
+  IonContent, 
   // IonHeader, 
   IonPage,
   // IonTitle, 
@@ -96,7 +136,7 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'CompanyProfile',
   components: {
-    // IonContent,
+    IonContent,
     // IonHeader,
     IonPage,
     // IonTitle,
@@ -107,6 +147,10 @@ export default defineComponent({
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500&display=swap');
+
+ion-content {
+  background-color: white;
+}
 
 #read-more-btn {
   background-color: rgba(227, 21, 40, 1);
