@@ -3,16 +3,21 @@
     <div class="container">
       <div class="row" style="margin-top: 50px;">
         <div class="col-8">
-          <div class="row" style="margin-bottom: 35px;">
+          <div class="row">
             <h3 id="comp-profile">COMPANY PROFILE</h3>
           </div>
-          <div class="row">
+          <div style="display: flex; margin-left: -15px; margin-top: -5px;">
+            <hr style="border-color: red; width: 10%;">
+            <hr style="width: 90%;">
+          </div>
+          <div class="row" style="margin-top: 35px;">
             <div class="col-5">
               <img src="/assets/images/about.jpg" alt="" style="margin-left: -10px;">
             </div>
             <div class="col">
               <h5 id="comp-detail-title">USER-CENTERED,QUALITY-ORIENTED</h5>
-              <p id="comp-detail">The world's leading manufacturer and solution specialist for fluid transfer products. Founded in 1961,
+              <p id="comp-detail">The world's leading manufacturer and solution specialist for fluid transfer products.
+                Founded in 1961,
                 Meide Group has developed into a modern and diversified multinational enterprise group focusing on fluid
                 transportation products and services. The sales are located in more than 130 countries and regions
                 around the world, and the products and services have been successfully applied in water, fire, gas,
@@ -21,21 +26,20 @@
                 transmission lines, Beijing-Shanghai high-speed rail and municipal, medical, clean workshops, urban
                 housing, etc.</p>
               <br>
-              <a href="" style="background-color: red; padding: 10px; color: white; text-decoration: none;">Read
+              <a href="" id="read-more-btn">Read
                 More</a>
             </div>
           </div>
         </div>
         <div class="col justify-content-center text-center">
           <div id="border-three-icons">
-            
             <div class="row justify-content-center">
               <div class="col-4">
                 <img src="/assets/figma_assets/fire.svg" alt="" style="height: 75%;">
               </div>
               <div class="col-8 text-left" style="margin-top: 5px;">
-                <h5>Fire</h5>
-                <p>Reduce Instalation time and labor costs.</p>
+                <h5 id="title-right">Fire</h5>
+                <p id="text-right">Reduce Instalation time and labor costs.</p>
               </div>
             </div>
             <br>
@@ -44,8 +48,9 @@
                 <img src="/assets/figma_assets/irrigation.svg" alt="" style="height: 75px;">
               </div>
               <div class="col-8 text-left" style="margin-top: 5px;">
-                <h5>Irrigation</h5>
-                <p>Saving water and power resource, reduce the failure rate and improve the efficiency of the water.</p>
+                <h5 id="title-right">Irrigation</h5>
+                <p id="text-right">Saving water and power resource, reduce the failure rate and improve the efficiency
+                  of the water.</p>
               </div>
             </div>
             <br>
@@ -54,11 +59,22 @@
                 <img src="/assets/figma_assets/water_treatment.svg" alt="" style="height: 75%;">
               </div>
               <div class="col-8 text-left" style="margin-top: 5px;">
-                <h5>Water Treatment</h5>
-                <p>Explain to you how all Water treatment.</p>
+                <h5 id="title-right">Water Treatment</h5>
+                <p id="text-right">Explain to you how all Water treatment.</p>
               </div>
             </div>
             <br>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 50px;">
+        <div class="col-6">
+          <div class="row">
+            <h5 id="why-choose">Why Choose Us</h5>
+            <p>Don't spend time and money on beautiful landscaping if you have not taken water and irrigation issues.</p>
+          </div>
+          <div class="row">
+            
           </div>
         </div>
       </div>
@@ -90,16 +106,26 @@ export default defineComponent({
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500&display=swap');
+
+#read-more-btn {
+  background-color: rgba(227, 21, 40, 1);
+  padding: 17px 48px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
 
 #border-three-icons {
-  border: solid; 
-  padding: 40px 20px 20px; 
+  border: solid;
+  padding: 40px 20px 20px;
   border-width: 1px;
   border-color: #e4e4e4;
 }
 
-#comp-profile, #comp-detail-title {
+#comp-profile,
+#comp-detail-title {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -114,6 +140,16 @@ export default defineComponent({
 
 #comp-detail {
   font-family: 'Raleway', sans-serif;
+  color: rgba(132, 132, 132, 1);
+}
+
+#title-right {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#text-right {
+  font-family: 'Raleway', sans-serif;
+  color: rgba(132, 132, 132, 1);
 }
 
 #container {
