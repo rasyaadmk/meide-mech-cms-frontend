@@ -1,0 +1,23 @@
+<svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="45" cy="45" r="45" fill="#E31528"/>
+<circle cx="41.6667" cy="51.6667" r="13.3334" fill="white"/>
+<circle cx="41.6667" cy="51.6667" r="7.77779" fill="#E31528"/>
+<rect x="39.4444" y="35" width="4.44445" height="4.44445" fill="white"/>
+<rect width="4.44445" height="4.44445" transform="matrix(0.707107 0.707107 0.707107 -0.707107 48.524 61.4761)" fill="white"/>
+<rect x="48.524" y="41.6667" width="4.44445" height="4.44445" transform="rotate(-45 48.524 41.6667)" fill="white"/>
+<rect width="4.44445" height="4.44445" transform="matrix(1 0 0 -1 39.4444 68.3334)" fill="white"/>
+<rect width="4.44445" height="4.44445" transform="matrix(1 0 0 -1 53.8889 53.8889)" fill="white"/>
+<rect width="4.44445" height="4.44445" transform="matrix(1 0 0 -1 25 53.8889)" fill="white"/>
+<rect width="4.44445" height="4.44445" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 34.6187 41.476)" fill="white"/>
+<rect x="34.6187" y="61.6667" width="4.44445" height="4.44445" transform="rotate(135 34.6187 61.6667)" fill="white"/>
+<circle cx="56.6666" cy="30" r="6.66668" fill="white"/>
+<circle cx="56.6667" cy="29.9999" r="3.88889" fill="#E31528"/>
+<rect x="55.5555" y="21.6666" width="2.22223" height="2.22223" fill="white"/>
+<rect width="2.22223" height="2.22223" transform="matrix(0.707107 0.707107 0.707107 -0.707107 60.0953 34.9047)" fill="white"/>
+<rect x="60.0953" y="24.9999" width="2.22223" height="2.22223" transform="rotate(-45 60.0953 24.9999)" fill="white"/>
+<rect width="2.22223" height="2.22223" transform="matrix(1 0 0 -1 55.5555 38.3333)" fill="white"/>
+<rect width="2.22223" height="2.22223" transform="matrix(1 0 0 -1 62.7778 31.1111)" fill="white"/>
+<rect width="2.22223" height="2.22223" transform="matrix(1 0 0 -1 48.3333 31.1111)" fill="white"/>
+<rect width="2.22223" height="2.22223" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 53.1427 24.9046)" fill="white"/>
+<rect x="53.1427" y="34.9999" width="2.22223" height="2.22223" transform="rotate(135 53.1427 34.9999)" fill="white"/>
+</svg>
