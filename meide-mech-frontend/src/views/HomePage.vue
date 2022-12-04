@@ -1,16 +1,20 @@
 <template>
   <ion-page>
-    <ion-header :translucent="true">
-      <nav class="navbar navbar-expand-lg navbar-light" style="background: url('assets/images/batik.svg'); background-color: #e31528;">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <a href="home" class="navbar-brand mr-auto" style="background-color: white;">
+    <ion-content>
+      <nav class="navbar navbar-light justify-content-center montserrat" style="background: url('assets/images/batik.svg'); background-color: #e31528;">
+          <a href="home" class="navbar-brand" style="background-color: white; margin-right: 800px;">
             <img src="assets/images/logo-new.png">
           </a>
-          <div>
-            
-          </div>
-        </div>
+          <ul class="navbar-text text-white mr-5">
+            <li class="font-weight-bold" style="font-size: 18px">Certified Company</li>
+            <li>ISO 9001:2005</li>
+          </ul>
+          <ul class="navbar-text text-white">
+            <li class="font-weight-bold" style="font-size: 18px">Best Product</li>
+            <li>Service Provider</li>
+          </ul>
       </nav>
+      
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -21,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -47,40 +51,36 @@
           </form>
         </div>
       </nav>
-    </ion-header>
 
-    <div id="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
-          href="https://ionicframework.com/docs/components">UI Components</a></p>
-    </div>
+
+    </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { 
-  // IonContent, 
-  IonHeader, 
-  IonPage, 
-  // IonTitle, 
-  // IonToolbar 
-} 
+import {
+  IonContent,
+  IonPage
+}
   from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'HomePage',
   components: {
-    // IonContent,
-    IonHeader,
-    IonPage,
-    // IonTitle,
-    // IonToolbar
+    IonContent,
+    IonPage
   }
 });
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+.montserrat {
+  font-family: Montserrat, sans-serif;
+}
+
 #container {
   text-align: center;
 
