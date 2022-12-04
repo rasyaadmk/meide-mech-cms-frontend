@@ -2,9 +2,10 @@
   <ion-page>
     <ion-content>
       <nav class="navbar navbar-light justify-content-center montserrat" style="background: url('assets/images/batik.svg'); background-color: #e31528;">
-          <a href="home" class="navbar-brand" style="background-color: white; margin-right: 800px;">
-            <img src="assets/images/logo-new.png">
-          </a>
+        <a href="home" class="navbar-brand d-md-none d-lg-block" style="background-color: white; margin-right: 800px;">
+          <img src="assets/images/logo-new.png">
+        </a>
+        <div>
           <ul class="navbar-text text-white mr-5">
             <li class="font-weight-bold" style="font-size: 18px">Certified Company</li>
             <li>ISO 9001:2005</li>
@@ -13,10 +14,11 @@
             <li class="font-weight-bold" style="font-size: 18px">Best Product</li>
             <li>Service Provider</li>
           </ul>
+        </div>
       </nav>
       
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand d-md-block d-lg-none" href="#">
+        <a class="navbar-brand d-md-inline d-lg-none" href="#">
           <img src="assets/images/logo-new.png" style="width: 50px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
