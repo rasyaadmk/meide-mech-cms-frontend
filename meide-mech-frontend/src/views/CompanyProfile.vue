@@ -131,6 +131,13 @@
           </div>
         </section>
       </div>
+      <div style="background-color: rgba(157 24 24);">
+        <div class="container">
+          <div class="row">
+            <h1>tes</h1>
+          </div>
+        </div>
+      </div>
     </ion-content>
   </ion-page>
 </template>
