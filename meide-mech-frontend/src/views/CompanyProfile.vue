@@ -125,19 +125,94 @@
                 <br>
               </div>
             </div>
-            <div class="col">
-              <img src="/assets/images/page-title-bg.jpg" alt="">
+            <div class="col" id="darken-thumbnail">
             </div>
           </div>
         </section>
       </div>
-      <div style="background-color: rgba(157 24 24);">
-        <div class="container">
-          <div class="row">
-            <h1>tes</h1>
+      <section class="contact-us-today">
+        <div style="background-color: rgba(157 24 24);">
+          <div class="container" id="contain-comp">
+            <div class="row" style="padding-top: 20px; padding-bottom: 15px;">
+              <div class="col-9">
+                <p id="reduce-onsite">Reduce on-site operations and labor costs, Saving water and power resources.</p>
+              </div>
+              <div class="col-3">
+                <button id="contact-us-btn">Contact Us Today</button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="partnerships">
+        <div class="container">
+          <div style="margin-bottom: 20px;">
+            <p class="text-center" id="we-work">We work with our partners to provide project perfection, <span>join with
+                our partnership.</span></p>
+          </div>
+
+        </div>
+        <div style="margin-inline: 170px; gap: 10px; display: flex; justify-content: center; margin-bottom: 100px;">
+          <div>
+            <a id="partner-logo"><img src="/assets/images/6.png" alt=""></a>
+          </div>
+          <div>
+            <a id="partner-logo"><img src="/assets/images/7.png" alt=""></a>
+          </div>
+          <div>
+            <a id="partner-logo"><img src="/assets/images/8.png" alt=""></a>
+          </div>
+          <div>
+            <a id="partner-logo"><img src="/assets/images/9.png" alt=""></a>
+          </div>
+          <div>
+            <a id="partner-logo"><img src="/assets/images/10.png" alt=""></a>
+          </div>
+        </div>
+      </section>
+      <section class="contact-details">
+        <div class="container">
+          <div class="row">
+            <div class="col-7">
+              <h3 id="comp-profile">Contact Details</h3>
+              <div style="display: flex; margin-top: -5px;">
+                <hr style="border-color: red; width: 10%;">
+                <hr style="width: 90%;">
+              </div>
+              <p id="comp-detail">If you have any questions about what we offer for consumers or for business, you can
+                always email us or call us via the below details. We'll reply within 24 hours.</p>
+              <div class="row">
+                <div class="col-1">
+                  <img src="/assets/figma_assets/location_pin (1).svg" alt="" style="height: 50%;">
+                </div>
+                <div class="col-11">
+                  <h2 id="adress">Adress :</h2>
+                  <p id="comp-detail">244, Meidemect, Indonesia <br> City, Jakarta</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 justify-content-center text-center" style="margin-top: -5px;">
+              <div id="border-request">
+                <h2 id="comp-profile">Request for Quote</h2>
+                <div style="display: flex; margin-top: -5px; margin-bottom: 15px;">
+                  <hr style="width: 35%;">
+                  <hr style="border-color: red; width: 30%;">
+                  <hr style="width: 35%;">
+                </div>
+                <form action="">
+                  <input type="text" class="form-control" id="form" placeholder="Your Name">
+                  <br>
+                  <input type="email" class="form-control" id="form" placeholder="Email Address">
+                  <br>
+                  <textarea type="text" class="form-control" id="form" placeholder="Subject" rows="4"></textarea>
+                </form>
+                <br>
+                <a href="" id="send-btn">Send</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </ion-content>
   </ion-page>
 </template>
@@ -168,6 +243,82 @@ export default defineComponent({
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@400;500&display=swap');
 
+.partnerships {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #efefef;
+}
+
+.contact-details {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+::placeholder {
+  font-family: 'Raleway', sans-serif;
+}
+
+#send-btn {
+  background-color: rgba(227, 21, 40, 1);
+  padding: 15px 171px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+#send-btn:hover {
+  background-color: white;
+  color: rgba(227, 21, 40, 1);
+  border: rgba(227, 21, 40, 1) solid 1px;
+  padding: 15px 170px;
+}
+
+#adress {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(21, 21, 21);
+  font-size: 20px;
+}
+
+#we-work {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+
+#we-work span {
+  color: rgba(227, 21, 40, 1);
+
+}
+
+#partner-logo img {
+  border: rgb(207, 207, 207) 1px solid;
+  height: 120px;
+  padding: 8px 20px;
+  transition: 0.2s;
+}
+
+#partner-logo img:hover {
+  border: rgba(227, 21, 40, 1) 1px solid;
+}
+
+#reduce-onsite {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-top: 9px;
+}
+
+#contact-us-btn {
+  background-color: transparent;
+  padding: 13px 36px;
+  border: solid white 2px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
 #why-choose {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
@@ -196,6 +347,13 @@ export default defineComponent({
   font-weight: 500;
 }
 
+#border-request {
+  border: solid;
+  padding: 20px 30px 40px;
+  border-width: 1px;
+  border-color: #e4e4e4;
+}
+
 #border-three-icons {
   border: solid;
   padding: 40px 20px 20px;
@@ -220,10 +378,18 @@ export default defineComponent({
 #comp-detail {
   font-family: 'Raleway', sans-serif;
   color: rgba(132, 132, 132, 1);
+  font-size: 16px;
 }
 
 #title-right {
   font-family: 'Montserrat', sans-serif;
+}
+
+#darken-thumbnail {
+  filter: brightness(30%);
+  background-image: url("../../public/assets/images/page-title-bg.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 
 #text-right {
