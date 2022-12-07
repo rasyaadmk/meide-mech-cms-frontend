@@ -1,23 +1,28 @@
 <template>
   <ion-page>
     <ion-content>
-      <nav class="navbar navbar-light justify-content-center montserrat" style="background: url('assets/images/batik.svg'); background-color: #e31528;">
-        <a href="home" class="navbar-brand d-md-none d-lg-block" style="background-color: white; margin-right: 800px;">
+      <nav class="navbar navbar-light justify-content-center montserrat"
+        style="background: url('assets/images/batik.svg'); background-color: #e31528;">
+        <a href="home" class="navbar-brand d-none d-xl-block" style="background-color: white; margin-right: 600px;">
           <img src="assets/images/logo-new.png">
         </a>
-        <div>
-          <ul class="navbar-text text-white mr-5">
-            <li class="font-weight-bold" style="font-size: 18px">Certified Company</li>
-            <li>ISO 9001:2005</li>
+        <div class="row mt-2">
+          <img src="assets/figma_assets/certified.svg" alt="" style="width: 26px; margin: 0px 16px 14px;">
+          <ul class="navbar-text text-white mr-4">
+            <li style="font-size: 18px; font-weight: 500;">Certified Company</li>
+            <li style="font-weight: 300;">ISO 9001:2005</li>
           </ul>
+          <div class="vertical-line"></div>
+          <img src="assets/figma_assets/trophy.svg" alt="" style="width: 26px; margin: 0px 16px 14px;">
           <ul class="navbar-text text-white">
-            <li class="font-weight-bold" style="font-size: 18px">Best Product</li>
-            <li>Service Provider</li>
+            <li style="font-size: 18px; font-weight: 500;">Best Product</li>
+            <li style="font-weight: 300;">Service Provider</li>
           </ul>
         </div>
       </nav>
-      
-      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 montserrat" style="font-size: 14px; font-weight: 600;">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 montserrat"
+        style="font-size: 14px; font-weight: 600;">
         <a class="navbar-brand d-md-inline d-lg-none" href="#">
           <img src="assets/images/logo-new.png" style="width: 50px;">
         </a>
@@ -27,22 +32,25 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav" style="margin-right: 900px;">
+          <ul class="navbar-nav" style="margin-right: 800px;">
             <li class="nav-item active">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">HOME</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">HOME 1</a>
-                <a class="dropdown-item" href="#">HOME 2</a>
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown"
+                  aria-expanded="false">HOME</a>
+                <div class="dropdown-menu dropdown-menu-center">
+                  <a class="dropdown-item" href="#">HOME 1</a>
+                  <a class="dropdown-item" href="#">HOME 2</a>
+                </div>
               </div>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">ABOUT US</a>
+              <a class="nav-link text-nowrap" href="#">ABOUT US</a>
             </li>
-            <li class="nav-item dropdown active">
+            <li class="nav-item active">
               <a class="nav-link" href="#">PRODUCT</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="$">CONTACT US</a>
+              <a class="nav-link text-nowrap" href="$">CONTACT US</a>
             </li>
           </ul>
         </div>
@@ -75,6 +83,12 @@ export default defineComponent({
 
 .montserrat {
   font-family: Montserrat, sans-serif;
+}
+
+.vertical-line {
+  border-left: 1px solid white;
+  height: 45px;
+  margin: 14px;
 }
 
 #container {
