@@ -4,6 +4,8 @@ import HomePage from '../views/HomePage.vue'
 import CompanyProfile from '../views/CompanyProfile.vue'
 import CategoriesSection from '../views/Categories.vue'
 import CarouselSection from '../views/Carousel.vue'
+import FooterSection from '../views/Footer.vue'
+
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -29,6 +31,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/carousel',
     name: 'Carousel',
     component: CarouselSection
+  }
+  ,
+  {
+    path: '/footer',
+    name: 'Footer',
+    component: FooterSection
   }
 ]
 
