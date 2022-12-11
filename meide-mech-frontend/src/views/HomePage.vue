@@ -56,30 +56,84 @@
         </div>
       </nav>
 
-
+      <ion-grid>
+                <ion-row>
+                    <swiper>
+                        <swiper-slide>
+                            <div class="container-fluid p-0">
+                                <div class="background1">
+                                    <div class="font-weight-bold text-white">
+                                        <span style="font-size: 48px">GROOVED FITTINGS</span><br>
+                                        <span style="font-size: 18px">Excellent quality, the first choice for global customers.</span>
+                                    </div>
+                                    <a href="#" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="container-fluid p-0">
+                                <div class="background2">
+                                    <div class="font-weight-bold text-white">
+                                        <span style="font-size: 48px">VALVES FOR FIRE PROTECTION</span><br>
+                                        <span style="font-size: 18px">One stop supplier for fire protection valve products.</span>
+                                    </div>
+                                    <a href="#" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="container-fluid p-0">
+                                <div class="background3">
+                                    <div class="font-weight-bold text-white">
+                                        <span style="font-size: 48px">VALVES FOR WATER WORKS</span><br>
+                                        <span style="font-size: 18px">All in house production. Reliable quality assurance.</span>
+                                    </div>
+                                    <a href="#" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                    </swiper>
+                </ion-row>
+            </ion-grid>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import {
-  IonContent,
-  IonPage
-}
-  from '@ionic/vue';
 import { defineComponent } from 'vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { IonContent, IonPage } from '@ionic/vue';
+
+import 'swiper/css';
+import 'swiper/css/bundle';
+import '@ionic/vue/css/ionic-swiper.css';
 
 export default defineComponent({
-  name: 'HomePage',
-  components: {
-    IonContent,
-    IonPage
-  }
+    name: 'CarouselSection',
+    components: { Swiper, SwiperSlide, IonContent, IonPage }
 });
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+.background1 {
+    background-image: url(../../public/assets/images/image-new-1.jpg);
+    background-size: cover;
+    height: 800px;
+}
+
+.background2 {
+    background-image: url(../../public/assets/images/image-new-2.jpg);
+    background-size: cover;
+    height: 800px;
+}
+
+.background3 {
+    background-image: url(../../public/assets/images/image-new-3.jpg);
+    background-size: cover;
+    height: 800px;
+}
 
 .montserrat {
   font-family: Montserrat, sans-serif;
