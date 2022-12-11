@@ -3,7 +3,7 @@ import { RouteRecordRaw } from 'vue-router';
 import HomePage from '../views/HomePage.vue'
 import CompanyProfile from '../views/CompanyProfile.vue'
 import CategoriesSection from '../views/Categories.vue'
-import Carousel from '../views/Carousel.vue'
+import CarouselSection from '../views/Carousel.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -28,7 +28,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/carousel',
     name: 'Carousel',
-    component: Carousel
+    component: CarouselSection
   }
 ]
 

@@ -1,7 +1,15 @@
 <template>
     <ion-page>
         <ion-content>
-            
+            <ion-grid>
+                <ion-row>
+                    <ion-slides>
+                        <ion-slide>
+                            
+                        </ion-slide>
+                    </ion-slides>
+                </ion-row>
+            </ion-grid>
         </ion-content>
     </ion-page>
 </template>
@@ -15,7 +23,7 @@ import {
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-    name: 'Carousel',
+    name: 'CarouselSection',
     components: {
         IonContent,
         IonPage
