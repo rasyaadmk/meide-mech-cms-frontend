@@ -5,13 +5,34 @@
                 <ion-row>
                     <swiper>
                         <swiper-slide>
-                            <img src="assets/images/image-new-1.jpg" alt="">
+                            <div class="container-fluid p-0">
+                                <div class="background1">
+                                    <div class="font-weight-bold text-white">
+                                        <span style="font-size: 48px">GROOVED FITTINGS</span><br>
+                                        <span style="font-size: 18px">Excellent quality, the first choice for global customers.</span>
+                                    </div>
+                                </div>
+                            </div>
                         </swiper-slide>
                         <swiper-slide>
-                            <img src="assets/images/image-new-2.jpg" alt="">
+                            <div class="container-fluid p-0">
+                                <div class="background2">
+                                    <div class="font-weight-bold text-white">
+                                        <span style="font-size: 48px">VALVES FOR FIRE PROTECTION</span><br>
+                                        <span style="font-size: 18px">One stop supplier for fire protection valve products.</span>
+                                    </div>
+                                </div>
+                            </div>
                         </swiper-slide>
                         <swiper-slide>
-                            <img src="assets/images/image-new-3.jpg" alt="">
+                            <div class="container-fluid p-0">
+                                <div class="background3">
+                                    <div class="font-weight-bold text-white">
+                                        <span style="font-size: 48px">VALVES FOR WATER WORKS</span><br>
+                                        <span style="font-size: 18px">All in house production. Reliable quality assurance.</span>
+                                    </div>
+                                </div>
+                            </div>
                         </swiper-slide>
                     </swiper>
                 </ion-row>
@@ -36,6 +57,24 @@ export default defineComponent({
 </script>
   
 <style scoped>
+.background1 {
+    background-image: url(../../public/assets/images/image-new-1.jpg);
+    background-size: cover;
+    height: 800px;
+}
+
+.background2 {
+    background-image: url(../../public/assets/images/image-new-2.jpg);
+    background-size: cover;
+    height: 800px;
+}
+
+.background3 {
+    background-image: url(../../public/assets/images/image-new-3.jpg);
+    background-size: cover;
+    height: 800px;
+}
+
 #container {
     text-align: center;
 
