@@ -3,11 +3,17 @@
         <ion-content>
             <ion-grid>
                 <ion-row>
-                    <ion-slides>
-                        <ion-slide>
-                            
-                        </ion-slide>
-                    </ion-slides>
+                    <swiper>
+                        <swiper-slide>
+                            <img src="assets/images/image-new-1.jpg" alt="">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="assets/images/image-new-2.jpg" alt="">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="assets/images/image-new-3.jpg" alt="">
+                        </swiper-slide>
+                    </swiper>
                 </ion-row>
             </ion-grid>
         </ion-content>
@@ -15,19 +21,17 @@
 </template>
   
 <script lang="ts">
-import {
-    IonContent,
-    IonPage
-}
-    from '@ionic/vue';
 import { defineComponent } from 'vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { IonContent, IonPage } from '@ionic/vue';
+
+import 'swiper/css';
+import 'swiper/css/bundle';
+import '@ionic/vue/css/ionic-swiper.css';
 
 export default defineComponent({
     name: 'CarouselSection',
-    components: {
-        IonContent,
-        IonPage
-    }
+    components: { Swiper, SwiperSlide, IonContent, IonPage }
 });
 </script>
   
