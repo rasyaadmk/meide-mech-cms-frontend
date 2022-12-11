@@ -11,6 +11,7 @@
                                         <span style="font-size: 48px">GROOVED FITTINGS</span><br>
                                         <span style="font-size: 18px">Excellent quality, the first choice for global customers.</span>
                                     </div>
+                                    <a href="#" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
                                 </div>
                             </div>
                         </swiper-slide>
@@ -21,6 +22,7 @@
                                         <span style="font-size: 48px">VALVES FOR FIRE PROTECTION</span><br>
                                         <span style="font-size: 18px">One stop supplier for fire protection valve products.</span>
                                     </div>
+                                    <a href="#" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
                                 </div>
                             </div>
                         </swiper-slide>
@@ -31,6 +33,7 @@
                                         <span style="font-size: 48px">VALVES FOR WATER WORKS</span><br>
                                         <span style="font-size: 18px">All in house production. Reliable quality assurance.</span>
                                     </div>
+                                    <a href="#" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
                                 </div>
                             </div>
                         </swiper-slide>
