@@ -163,7 +163,8 @@
                             required
                           />
                           <button type="submit">
-                            <span class="icon fa fa-search"></span>
+                            <span class="icon fa fa-search" aria-hidden="true">
+                            </span>
                           </button>
                         </div>
                       </form>
@@ -192,10 +193,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-1.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-1.png" alt="" />
                               <div class="tag-outer">
                                 <div class="product-tag">New</div>
                               </div>
@@ -229,10 +227,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-2.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-2.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -266,10 +261,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-3.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-3.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -303,10 +295,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-4.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-4.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -340,10 +329,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-5.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-5.png" alt="" />
                               <div class="tag-outer">
                                 <div class="product-tag">New</div>
                               </div>
@@ -377,10 +363,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-6.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-6.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -414,10 +397,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-7.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-7.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -451,10 +431,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-8.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-8.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -488,10 +465,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-9.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-9.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -524,10 +498,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-10.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-10.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -561,10 +532,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-11.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-11.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -598,10 +566,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-12.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-12.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -676,6 +641,7 @@ export default defineComponent({
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 * {
   margin: 0px;
@@ -810,7 +776,7 @@ li {
 }
 
 .bgbg {
-  background-color: #E31628;
+  background-color: #e31628;
 }
 /*Search Box Widget*/
 
@@ -1088,7 +1054,7 @@ li {
 }
 
 .imgZoom {
-  overflow: hidden; 
+  overflow: hidden;
   -webkit-transform: rotate(0);
   transform: rotate(0);
 }
@@ -1108,8 +1074,6 @@ li {
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
-
-
 
 .accordion {
   background-color: #eee;
@@ -1178,9 +1142,8 @@ li {
 }
 
 .our-product::-webkit-scrollbar-thumb:hover {
-    background: #ababab;
+  background: #ababab;
 }
-
 
 .search-box-product input[type="text"],
 .search-box-product input[type="search"] {
@@ -1210,18 +1173,345 @@ input[name="search-field-product"]:valid {
 }
 
 .search-box .form-group button {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    height: 45px;
-    width: 60px;
-    display: block;
-    font-size: 16px;
-    color: #8c8c8c;
-    line-height: 100%;
-    font-weight: normal;
-    background:
-     none;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 45px;
+  width: 60px;
+  display: block;
+  font-size: 16px;
+  color: #8c8c8c;
+  line-height: 100%;
+  font-weight: normal;
+  background: none;
+}
+
+.product-item {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.product-item .inner-box {
+  position: relative;
+  outline: 15px solid #ffffff;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.product-item .inner-box:before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  top: -15px;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);
+  box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);
+}
+
+.product-item .inner-box:hover::before {
+  opacity: 1;
+}
+
+.product-item .inner-box:hover .image .overlay-box {
+  opacity: 1;
+}
+
+.product-item .inner-box .image {
+  position: relative;
+  z-index: 11;
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-item .inner-box .image .overlay-box {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-align: center;
+  background-color: rgb(227 21 40 / 0.85);
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.product-item .inner-box .image .overlay-box .cart-btn {
+  position: relative;
+  top: 46%;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 37px;
+  display: inline-block;
+  margin-top: -25px;
+  border: 1px solid #ffffff;
+}
+
+.product-item .inner-box .image .tag-outer {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  overflow: hidden;
+}
+
+.product-item .inner-box .image .tag-outer .product-tag {
+  position: relative;
+  width: 96px;
+  color: #ffffff;
+  left: -36px;
+  top: -24px;
+  height: 64px;
+  background-color: #e31528;
+  font-weight: 400;
+  line-height: 98px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: capitalize;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  z-index: 9;
+}
+
+.product-item .inner-box .image img {
+  max-width: 100%;
+  padding: 20px 0px;
+  display: inline-block;
+}
+
+.product-item .inner-box .lower-content {
+  position: relative;
+  z-index: 11;
+  padding: 20px 0px 0px;
+}
+
+.product-item .inner-box .lower-content h5 {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.product-item .inner-box .lower-content h5 a {
+  color: #222222;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.product-item .inner-box .lower-content h5 a:hover {
+  color: #e31528;
+}
+
+.product-item .inner-box:hover .prod-title {
+  color: #e31528;
+}
+
+.product-item .inner-box .lower-content .price {
+  position: relative;
+  color: #e31528;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.product-item .inner-box .lower-content .rating .fa {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  color: #e31528;
+}
+
+.product-details .basic-details {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.product-details .image-column,
+.product-details .info-column {
+  margin-bottom: 20px;
+}
+
+.product-details .image-column .image-box img {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.product-details .basic-details .details-header {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.product-details .basic-details .details-header h4 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: -5px 0px 5px;
+  line-height: 1.4em;
+  color: #222222;
+}
+
+.product-details .basic-details .details-header h4 a {
+  color: #333333;
+}
+
+.product-details .basic-details .details-header .rating {
+  font-size: 14px;
+  color: #e31528;
+  margin-bottom: 10px;
+}
+
+.product-details .basic-details .details-header .rating .fa {
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.product-details .basic-details .details-header .rating .txt {
+  font-size: 14px;
+  padding-left: 10px;
+  color: #777777;
+}
+
+.product-details .basic-details .reviews {
+  display: inline-block;
+  color: #848484;
+  margin-left: 3px;
+  font-size: 16px;
+}
+
+.product-details .basic-details .details-header .item-price {
+  font-size: 24px;
+  font-weight: 400;
+  color: #e31528;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.product-details .basic-details .prod-info {
+  margin-bottom: 15px;
+  line-height: 1.6em;
+  font-size: 13px;
+}
+
+.product-details .basic-details .prod-info strong {
+  font-weight: 700;
+  color: #111111;
+}
+
+.product-details .basic-details .text {
+  margin-bottom: 20px;
+  color: #848484;
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+.product-details .basic-details .item-quantity .field-label {
+  float: left;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 32px;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.product-details .basic-details .quantity-spinner,
+.cart-section input.quantity-spinner {
+  line-height: 24px;
+  padding: 10px 15px !important;
+  height: 46px !important;
+  box-shadow: none !important;
+}
+
+.product-details
+  .basic-details
+  .bootstrap-touchspin
+  .input-group-btn-vertical
+  > .btn,
+.cart-section .bootstrap-touchspin .input-group-btn-vertical > .btn {
+  padding: 11px 10px;
+  background: #f4f5f6;
+}
+
+.product-details .bootstrap-touchspin .input-group-btn-vertical i,
+.cart-section .bootstrap-touchspin .input-group-btn-vertical i {
+  top: 6px;
+}
+
+.product-details .basic-details .item-quantity {
+  position: relative;
+  float: left;
+  width: 85px;
+  margin-bottom: 25px;
+  margin-right: 20px;
+}
+
+.product-details .basic-details .item-quantity .field-label {
+  float: left;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 32px;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.product-details .basic-details .quantity-spinner,
+.cart-table input.quantity-spinner {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 15px !important;
+  height: 54px !important;
+  box-shadow: none !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.product-details
+  .basic-details
+  .bootstrap-touchspin
+  .input-group-btn-vertical
+  > .btn,
+.cart-table .bootstrap-touchspin .input-group-btn-vertical > .btn {
+  padding: 13px 10px;
+  background: #f4f5f6;
+  border-radius: 0px;
+}
+
+.product-details .bootstrap-touchspin .input-group-btn-vertical i,
+.cart-table .bootstrap-touchspin .input-group-btn-vertical i {
+  top: 8px;
+}
+
+.product-details .basic-details .add-to-cart {
+  padding: 13px 37px;
+}
+
+.product-details .basic-details .expired {
+  position: relative;
+  color: #e31528;
+  font-size: 16px;
+  margin-bottom: 25px;
 }
 
 .search-box-product button[type="submit"]:hover span {
