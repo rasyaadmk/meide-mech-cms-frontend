@@ -3,18 +3,12 @@
     <ion-content>
       <section class="product-section-list" id="product-list">
         <div class="row clearfix bgbg" style="margin: 0">
-          <div
-            class="col-sm-12 col-md-12 col-lg-12"
-            style="
+          <div class="col-sm-12 col-md-12 col-lg-12" style="
               padding: 0px;
               background-color: #e31528 !important;
               background: url('assets/images/batik.svg');
-            "
-          >
-            <div
-              class="container"
-              style="background-color: #fff; padding: 10px"
-            >
+            ">
+            <div class="container" style="background-color: #fff; padding: 10px">
               <div class="row clearfix" style="padding: 20px">
                 <!--Sidebar Side-->
                 <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
@@ -56,9 +50,7 @@
                       <div class="accordion-panel">
                         <ul class="blog-cat" style="padding: 10px 0px">
                           <li>
-                            <a href="#"
-                              >Counterweight of internal combustion forklift</a
-                            >
+                            <a href="#">Counterweight of internal combustion forklift</a>
                           </li>
                           <li>
                             <a href="#">Electric forklift counterweight</a>
@@ -76,9 +68,7 @@
                             <a href="#">Counterweight of micro excavator</a>
                           </li>
                           <li>
-                            <a href="#"
-                              >Other construction machinery counterweights</a
-                            >
+                            <a href="#">Other construction machinery counterweights</a>
                           </li>
                         </ul>
                       </div>
@@ -87,9 +77,7 @@
                       <div class="accordion-panel">
                         <ul class="blog-cat" style="padding: 10px 0px">
                           <li>
-                            <a href="#"
-                              >Counterweight of internal combustion forklift</a
-                            >
+                            <a href="#">Counterweight of internal combustion forklift</a>
                           </li>
                           <li>
                             <a href="#">Electric forklift counterweight</a>
@@ -107,9 +95,7 @@
                             <a href="#">Counterweight of micro excavator</a>
                           </li>
                           <li>
-                            <a href="#"
-                              >Other construction machinery counterweights</a
-                            >
+                            <a href="#">Other construction machinery counterweights</a>
                           </li>
                         </ul>
                       </div>
@@ -144,24 +130,12 @@
                 </div>
 
                 <!--Content Side-->
-                <div
-                  class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12"
-                  style="padding: 0"
-                >
+                <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12" style="padding: 0">
                   <div class="search-box">
                     <div class="search-box-product">
-                      <form
-                        method="post"
-                        action="https://danslacuisinededede.com/brixals/email.php"
-                      >
+                      <form method="post" action="https://danslacuisinededede.com/brixals/email.php">
                         <div class="form-group">
-                          <input
-                            type="search"
-                            name="search-field-product"
-                            value=""
-                            placeholder="Search..."
-                            required
-                          />
+                          <input type="search" name="search-field-product" value="" placeholder="Search..." required />
                           <button type="submit">
                             <span class="icon fa fa-search" aria-hidden="true">
                             </span>
@@ -184,14 +158,9 @@
                     <!-- [END] - Backdrop -->
                     <div class="row clearfix our-product-row-item">
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-1.png" alt="" />
                               <div class="tag-outer">
@@ -202,13 +171,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >GROOVED WET ALARM CHECK VALVE, FIG#
-                                      ZSFZ8X9</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">GROOVED WET ALARM CHECK VALVE, FIG#
+                                      ZSFZ8X9</a>
                                   </h5>
                                 </div>
                               </div>
@@ -218,14 +183,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-2.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -236,13 +196,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >AWWA FLANGED RESILIENT OS&Y GATE
-                                      VALVE,FIG# XZ41X</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">AWWA FLANGED RESILIENT OS&Y GATE
+                                      VALVE,FIG# XZ41X</a>
                                   </h5>
                                 </div>
                               </div>
@@ -252,14 +208,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-3.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -270,13 +221,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >AWWA FLANGED RESILIENT NRS GATE
-                                      VALVE,FIG# Z45X</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">AWWA FLANGED RESILIENT NRS GATE
+                                      VALVE,FIG# Z45X</a>
                                   </h5>
                                 </div>
                               </div>
@@ -286,14 +233,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-4.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -304,13 +246,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >ANSI WAFER BUTTERFLY VALVE WITH
-                                      HANDWHEEL, FIG# D71X4</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">ANSI WAFER BUTTERFLY VALVE WITH
+                                      HANDWHEEL, FIG# D71X4</a>
                                   </h5>
                                 </div>
                               </div>
@@ -320,14 +258,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-5.png" alt="" />
                               <div class="tag-outer">
@@ -338,13 +271,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >EN FLANGED WET ALARM CHECK VALVE, FIG#
-                                      ZSFZ4X</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();" class="prod-title">EN
+                                      FLANGED WET ALARM CHECK VALVE, FIG#
+                                      ZSFZ4X</a>
                                   </h5>
                                 </div>
                               </div>
@@ -354,14 +283,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-6.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -372,13 +296,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >ANSI WAFER BUTTERFLY VALVE FOR
-                                      WATERWORKS, FIG# D371X4</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">ANSI WAFER BUTTERFLY VALVE FOR
+                                      WATERWORKS, FIG# D371X4</a>
                                   </h5>
                                 </div>
                               </div>
@@ -388,14 +308,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-7.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -406,13 +321,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >ANSI FLANGED SWING CHECK VALVE, FIG#
-                                      H44X2</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">ANSI FLANGED SWING CHECK VALVE, FIG#
+                                      H44X2</a>
                                   </h5>
                                 </div>
                               </div>
@@ -422,14 +333,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-8.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -440,13 +346,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >BS FLANGED METAL SEATED GLOBE VALVE, FIG#
-                                      J41H</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();" class="prod-title">BS
+                                      FLANGED METAL SEATED GLOBE VALVE, FIG#
+                                      J41H</a>
                                   </h5>
                                 </div>
                               </div>
@@ -456,14 +358,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-9.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -474,12 +371,8 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >UNDERGROUND FIRE HYDRANT, FIG# SA1</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">UNDERGROUND FIRE HYDRANT, FIG# SA1</a>
                                   </h5>
                                 </div>
                               </div>
@@ -489,14 +382,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-10.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -507,13 +395,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >BS FLANGED RESILIENT NRS GATE VALVE,FIG#
-                                      Z45X</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();" class="prod-title">BS
+                                      FLANGED RESILIENT NRS GATE VALVE,FIG#
+                                      Z45X</a>
                                   </h5>
                                 </div>
                               </div>
@@ -523,14 +407,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-11.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -541,13 +420,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >BS FLANGED RESILIENT OS&Y GATE VALVE,FIG#
-                                      XZ41X</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();" class="prod-title">BS
+                                      FLANGED RESILIENT OS&Y GATE VALVE,FIG#
+                                      XZ41X</a>
                                   </h5>
                                 </div>
                               </div>
@@ -557,14 +432,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-12.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -575,13 +445,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >DIN FLANGED RESILIENT NRS GATE VALVE,FIG#
-                                      Z45X</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();" class="prod-title">DIN
+                                      FLANGED RESILIENT NRS GATE VALVE,FIG#
+                                      Z45X</a>
                                   </h5>
                                 </div>
                               </div>
@@ -590,20 +456,11 @@
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="button btn-load-more-product-list"
-                      style="text-align: center"
-                    >
-                      <button
-                        type="button"
-                        class="theme-btn btn-style-load-more-product add-to-cart"
-                      >
+                    <div class="button btn-load-more-product-list" style="text-align: center">
+                      <button type="button" class="theme-btn btn-style-load-more-product add-to-cart">
                         Load More
                       </button>
-                      <div
-                        class="content-loader"
-                        style="text-align: center"
-                      ></div>
+                      <div class="content-loader" style="text-align: center"></div>
                     </div>
                   </div>
                 </div>
@@ -701,8 +558,7 @@ h6 {
 input,
 button,
 select,
-textarea {
-}
+textarea {}
 
 p {
   position: relative;
@@ -778,6 +634,7 @@ li {
 .bgbg {
   background-color: #e31628;
 }
+
 /*Search Box Widget*/
 
 .sidebar .search-box .form-group {
@@ -1445,12 +1302,8 @@ input[name="search-field-product"]:valid {
   box-shadow: none !important;
 }
 
-.product-details
-  .basic-details
-  .bootstrap-touchspin
-  .input-group-btn-vertical
-  > .btn,
-.cart-section .bootstrap-touchspin .input-group-btn-vertical > .btn {
+.product-details .basic-details .bootstrap-touchspin .input-group-btn-vertical>.btn,
+.cart-section .bootstrap-touchspin .input-group-btn-vertical>.btn {
   padding: 11px 10px;
   background: #f4f5f6;
 }
@@ -1487,12 +1340,8 @@ input[name="search-field-product"]:valid {
   font-family: "Montserrat", sans-serif;
 }
 
-.product-details
-  .basic-details
-  .bootstrap-touchspin
-  .input-group-btn-vertical
-  > .btn,
-.cart-table .bootstrap-touchspin .input-group-btn-vertical > .btn {
+.product-details .basic-details .bootstrap-touchspin .input-group-btn-vertical>.btn,
+.cart-table .bootstrap-touchspin .input-group-btn-vertical>.btn {
   padding: 13px 10px;
   background: #f4f5f6;
   border-radius: 0px;
@@ -1580,6 +1429,7 @@ input[name="search-field-product"]:valid {
     -webkit-transform: scale(1);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(3);
     opacity: 0;
@@ -1600,6 +1450,7 @@ input[name="search-field-product"]:valid {
     -webkit-transform: scale(1);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(3);
     opacity: 0;
