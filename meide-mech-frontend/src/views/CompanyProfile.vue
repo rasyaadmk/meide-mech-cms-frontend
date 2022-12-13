@@ -2,14 +2,13 @@
   <ion-page>
     <ion-content>
       <section class="about-section" id="about-us">
-        <div class="auto-container">
+        <div class="auto-container px-3 px-md-5 px-lg-3">
           <div class="row clearfix">
             <!--Column-->
-            <div class="about-column col-md-8 col-sm-12 col-xs-12">
+            <div class="about-column col-lg-8 col-md-12 col-sm-12 col-xs-12">
               <!--Sec Title-->
               <div class="sec-title">
                 <h2>COMPANY PROFILE</h2>
-                <br>
               </div>
               <div class="row clearfix">
                 <div class="inner-image-column col-md-4 col-sm-5 col-xs-12">
@@ -36,7 +35,7 @@
               </div>
             </div>
             <!--Column-->
-            <div class="quote-column col-md-4 col-sm-12 col-xs-12">
+            <div class="quote-column col-lg-4 col-md-12 col-sm-12 col-xs-12">
               <div class="inner-column">
                 <div class="services-block-seven">
                   <div class="inner-box">
@@ -112,12 +111,12 @@
 
       <!--Call To Action-->
       <section class="call-to-action-section" style="background-image:url('/assets/images/batik.svg');">
-        <div class="auto-container">
+        <div class="auto-container px-3 px-md-5 px-lg-3 ">
           <div class="row clearfix">
-            <div class="column col-md-9 col-sm-12 col-xs-12">
+            <div class="column text-center text-md-left col-md-9 col-sm-12 col-xs-12">
               <div class="text">Reduce on-site operations and labor costs, Saving water and power resources. </div>
             </div>
-            <div class="btn-column col-md-3 col-sm-12 col-xs-12">
+            <div class="btn-column text-center mt-4 mt-md-0 col-md-3 col-sm-12 col-xs-12">
               <a href="contact.html" class="theme-btn btn-style-two">Contact us Today</a>
             </div>
           </div>
@@ -127,7 +126,7 @@
 
       <!--Clients Section-->
       <section class="clients-section-two grey-bg">
-        <div class="auto-container">
+        <div class="auto-container px-3 px-md-5 px-lg-3">
           <h2>We work with our partners to provide project perfection,<span class="theme_color"> join with our
               parnership.</span></h2>
           <!--Sponsors Carousel-->
@@ -163,7 +162,7 @@
 
       <!--Contact Section-->
       <section class="contact-section" id="contact-us">
-        <div class="auto-container">
+        <div class="auto-container px-3 px-md-5 px-lg-3">
           <div class="row clearfix">
             <!--Info Column-->
             <div class="info-column col-md-8 col-sm-12 col-xs-12">
@@ -179,7 +178,7 @@
                 <div class="info-block col-md-6 col-sm-6 col-xs-12">
                   <div class="info-inner">
                     <div class="icon-box">
-                      <span class="icon flaticon-travel"></span>
+                      <img src="/assets/figma_assets/location_pin (1).svg" style="height: 30px;" alt="">
                     </div>
                     <h3>Address :</h3>
                     <div class="text">244, Meidemect, Indonesia <br>City, Jakarta </div>
@@ -483,7 +482,7 @@ img {
   margin-bottom: 30px;
 }
 
-   (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .about-section .about-column .inner-image-column {
     width: 37.44444444%;
   }
