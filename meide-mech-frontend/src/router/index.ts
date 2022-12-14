@@ -5,6 +5,7 @@ import CompanyProfile from '../views/CompanyProfile.vue'
 import CategoriesSection from '../views/Categories.vue'
 import CarouselSection from '../views/Carousel.vue'
 import FooterSection from '../views/Footer.vue'
+import ApiTest from '../views/apiTest.vue'
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -37,6 +38,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/footer',
     name: 'Footer',
     component: FooterSection
+  },
+  {
+    path: '/apitest',
+    name: 'Api Test',
+    component: ApiTest
   }
 ]
 
