@@ -1,0 +1,7 @@
+{
+  "name": "meide-mech-frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
