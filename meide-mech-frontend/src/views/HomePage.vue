@@ -58,37 +58,37 @@
 
       <ion-grid>
                 <ion-row>
-                    <swiper>
+                    <swiper style="height: 650px;">
                         <swiper-slide>
                             <div class="container-fluid p-0">
                                 <div class="background1">
-                                    <div class="font-weight-bold text-white">
-                                        <span style="font-size: 48px">GROOVED FITTINGS</span><br>
-                                        <span style="font-size: 18px">Excellent quality, the first choice for global customers.</span>
+                                    <div class="container text-white text-left carousel-text montserrat">
+                                        <span style="font-size: 48px; font-weight: bold;">GROOVED FITTINGS</span><br><br><br>
+                                        <span style="font-size: 18px">Excellent quality, the first choice for global customers.</span><br><br>
+                                        <a href="#" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
                                     </div>
-                                    <a href="#" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
                                 </div>
                             </div>
                         </swiper-slide>
                         <swiper-slide>
                             <div class="container-fluid p-0">
                                 <div class="background2">
-                                    <div class="font-weight-bold text-white">
-                                        <span style="font-size: 48px">VALVES FOR FIRE PROTECTION</span><br>
-                                        <span style="font-size: 18px">One stop supplier for fire protection valve products.</span>
+                                    <div class="container text-white text-left carousel-text montserrat">
+                                        <span style="font-size: 48px; font-weight: bold;">VALVES FOR FIRE PROTECTION</span><br><br><br>
+                                        <span style="font-size: 18px">One stop supplier for fire protection valve products.</span><br><br>
+                                        <a href="#" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
                                     </div>
-                                    <a href="#" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
                                 </div>
                             </div>
                         </swiper-slide>
                         <swiper-slide>
                             <div class="container-fluid p-0">
                                 <div class="background3">
-                                    <div class="font-weight-bold text-white">
-                                        <span style="font-size: 48px">VALVES FOR WATER WORKS</span><br>
-                                        <span style="font-size: 18px">All in house production. Reliable quality assurance.</span>
+                                    <div class="container text-white text-left carousel-text montserrat">
+                                        <span style="font-size: 48px; font-weight: bold;">VALVES FOR WATER WORKS</span><br><br><br>
+                                        <span style="font-size: 18px">All in house production. Reliable quality assurance.</span><br><br>
+                                        <a href="#" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
                                     </div>
-                                    <a href="#" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
                                 </div>
                             </div>
                         </swiper-slide>
@@ -116,6 +116,12 @@ export default defineComponent({
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+.carousel-text {
+  transform: translate(-300px, 250px);
+  padding-right: 0px;
+  width: 550px;
+}
 
 .background1 {
     background-image: url(../../public/assets/images/image-new-1.jpg);
