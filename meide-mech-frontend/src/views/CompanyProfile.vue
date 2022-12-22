@@ -249,7 +249,7 @@
           </div>
 
           <!--Widgets Section-->
-          <div class="widgets-section">
+          <div class="widgets-section px-3 px-md-5 px-lg-3">
             <div class="row clearfix">
               <!--Big Column-->
               <div class="big-column col-md-6 col-sm-12 col-xs-12">
@@ -334,7 +334,7 @@
 
         <!--Footer Bottom-->
         <div class="footer-bottom">
-          <div class="auto-container">
+          <div class="auto-container px-3 px-md-5 px-lg-3">
             <div class="row clearfix">
               <div class="column col-md-6 col-sm-12 col-xs-12">
                 <div class="copyright">
@@ -343,7 +343,7 @@
               </div>
               <!--Social Column-->
               <div class="social-column col-md-6 col-sm-12 col-xs-12">
-                <ul class="social-icon-two">
+                <ul class="social-icon-two mt-3">
                   <li>
                     <a href="#"><span class="fa fa-facebook"></span></a>
                   </li>

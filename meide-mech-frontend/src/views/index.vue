@@ -1,36 +1,21 @@
 <template>
   <ion-page>
     <ion-content>
-      <nav
-        class="navbar navbar-light justify-content-center montserrat"
-        style="
+      <nav class="navbar navbar-light justify-content-center montserrat" style="
           background: url('assets/images/batik.svg');
           background-color: #e31528;
-        "
-      >
-        <a
-          href="home"
-          class="navbar-brand d-none d-xl-block"
-          style="background-color: white; margin-right: 600px"
-        >
+        ">
+        <a href="home" class="navbar-brand d-none d-xl-block" style="background-color: white; margin-right: 600px">
           <img src="assets/images/logo-new.png" />
         </a>
         <div class="row mt-2">
-          <img
-            src="assets/figma_assets/certified.svg"
-            alt=""
-            style="width: 26px; margin: 0px 16px 14px"
-          />
+          <img src="assets/figma_assets/certified.svg" alt="" style="width: 26px; margin: 0px 16px 14px" />
           <ul class="navbar-text text-white mr-4">
             <li style="font-size: 18px; font-weight: 500">Certified Company</li>
             <li style="font-weight: 300">ISO 9001:2005</li>
           </ul>
           <div class="vertical-line"></div>
-          <img
-            src="assets/figma_assets/trophy.svg"
-            alt=""
-            style="width: 26px; margin: 0px 16px 14px"
-          />
+          <img src="assets/figma_assets/trophy.svg" alt="" style="width: 26px; margin: 0px 16px 14px" />
           <ul class="navbar-text text-white">
             <li style="font-size: 18px; font-weight: 500">Best Product</li>
             <li style="font-weight: 300">Service Provider</li>
@@ -38,40 +23,22 @@
         </div>
       </nav>
 
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light py-3 montserrat"
-        style="font-size: 14px; font-weight: 600"
-      >
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 montserrat"
+        style="font-size: 14px; font-weight: 600">
         <a class="navbar-brand d-md-inline d-lg-none" href="#">
           <img src="assets/images/logo-new.png" style="width: 50px" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarSupportedContent"
-        >
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul class="navbar-nav" style="margin-right: 800px">
             <li class="nav-item active">
               <div class="dropdown">
-                <a
-                  class="nav-link dropdown-toggle active"
-                  href="#"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                  >HOME</a
-                >
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown"
+                  aria-expanded="false">HOME</a>
                 <div class="dropdown-menu dropdown-menu-center">
                   <a class="dropdown-item" href="#">HOME 1</a>
                   <a class="dropdown-item" href="#">HOME 2</a>
@@ -93,103 +60,43 @@
 
       <ion-grid>
         <ion-row>
-          <swiper style="height: 650px">
+          <swiper>
             <swiper-slide>
               <div class="container-fluid p-0">
                 <div class="background1">
-                  <div
-                    class="container text-white text-left carousel-text montserrat"
-                  >
-                    <span style="font-size: 48px; font-weight: bold"
-                      >GROOVED FITTINGS</span
-                    ><br /><br /><br />
-                    <span style="font-size: 18px"
-                      >Excellent quality, the first choice for global
-                      customers.</span
-                    ><br /><br />
-                    <a
-                      href="#"
-                      class="theme-btn btn-style-one"
-                      style="
-                        transition: none 0s ease 0s;
-                        text-align: inherit;
-                        line-height: 24px;
-                        border-width: 2px;
-                        margin: 0px;
-                        padding: 13px 48px;
-                        letter-spacing: 0px;
-                        font-weight: 500;
-                        font-size: 16px;
-                      "
-                      >LEARN MORE</a
-                    >
+                  <div class="font-weight-bold text-white">
+                    <span style="font-size: 48px">GROOVED FITTINGS</span><br>
+                    <span style="font-size: 18px">Excellent quality, the first choice for global customers.</span>
                   </div>
+                  <a href="#" class="theme-btn btn-style-one"
+                    style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN
+                    MORE</a>
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="container-fluid p-0">
                 <div class="background2">
-                  <div
-                    class="container text-white text-left carousel-text montserrat"
-                  >
-                    <span style="font-size: 48px; font-weight: bold"
-                      >VALVES FOR FIRE PROTECTION</span
-                    ><br /><br /><br />
-                    <span style="font-size: 18px"
-                      >One stop supplier for fire protection valve
-                      products.</span
-                    ><br /><br />
-                    <a
-                      href="#"
-                      class="theme-btn btn-style-one"
-                      style="
-                        transition: none 0s ease 0s;
-                        text-align: inherit;
-                        line-height: 24px;
-                        border-width: 2px;
-                        margin: 0px;
-                        padding: 13px 48px;
-                        letter-spacing: 0px;
-                        font-weight: 500;
-                        font-size: 16px;
-                      "
-                      >LEARN MORE</a
-                    >
+                  <div class="font-weight-bold text-white">
+                    <span style="font-size: 48px">VALVES FOR FIRE PROTECTION</span><br>
+                    <span style="font-size: 18px">One stop supplier for fire protection valve products.</span>
                   </div>
+                  <a href="#" class="theme-btn btn-style-one"
+                    style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN
+                    MORE</a>
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="container-fluid p-0">
                 <div class="background3">
-                  <div
-                    class="container text-white text-left carousel-text montserrat"
-                  >
-                    <span style="font-size: 48px; font-weight: bold"
-                      >VALVES FOR WATER WORKS</span
-                    ><br /><br /><br />
-                    <span style="font-size: 18px"
-                      >All in house production. Reliable quality
-                      assurance.</span
-                    ><br /><br />
-                    <a
-                      href="#"
-                      class="theme-btn btn-style-one"
-                      style="
-                        transition: none 0s ease 0s;
-                        text-align: inherit;
-                        line-height: 24px;
-                        border-width: 2px;
-                        margin: 0px;
-                        padding: 13px 48px;
-                        letter-spacing: 0px;
-                        font-weight: 500;
-                        font-size: 16px;
-                      "
-                      >LEARN MORE</a
-                    >
+                  <div class="font-weight-bold text-white">
+                    <span style="font-size: 48px">VALVES FOR WATER WORKS</span><br>
+                    <span style="font-size: 18px">All in house production. Reliable quality assurance.</span>
                   </div>
+                  <a href="#" class="theme-btn btn-style-one"
+                    style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN
+                    MORE</a>
                 </div>
               </div>
             </swiper-slide>
@@ -199,18 +106,12 @@
       <!-- Categories -->
       <section class="product-section-list" id="product-list">
         <div class="row clearfix bgbg" style="margin: 0">
-          <div
-            class="col-sm-12 col-md-12 col-lg-12"
-            style="
+          <div class="col-sm-12 col-md-12 col-lg-12" style="
               padding: 0px;
               background-color: #e31528 !important;
               background: url('assets/images/batik.svg');
-            "
-          >
-            <div
-              class="container"
-              style="background-color: #fff; padding: 10px"
-            >
+            ">
+            <div class="container" style="background-color: #fff; padding: 10px">
               <div class="row clearfix" style="padding: 20px">
                 <!--Sidebar Side-->
                 <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
@@ -231,24 +132,12 @@
                 </div>
 
                 <!--Content Side-->
-                <div
-                  class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12"
-                  style="padding: 0"
-                >
+                <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12" style="padding: 0">
                   <div class="search-box">
                     <div class="search-box-product">
-                      <form
-                        method="post"
-                        action="https://danslacuisinededede.com/brixals/email.php"
-                      >
+                      <form method="post" action="https://danslacuisinededede.com/brixals/email.php">
                         <div class="form-group">
-                          <input
-                            type="search"
-                            name="search-field-product"
-                            value=""
-                            placeholder="Search..."
-                            required
-                          />
+                          <input type="search" name="search-field-product" value="" placeholder="Search..." required />
                           <button type="submit">
                             <span class="icon fa fa-search" aria-hidden="true">
                             </span>
@@ -271,14 +160,9 @@
                     <!-- [END] - Backdrop -->
                     <div class="row clearfix our-product-row-item">
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-1.png" alt="" />
                               <div class="tag-outer">
@@ -289,13 +173,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >GROOVED WET ALARM CHECK VALVE, FIG#
-                                      ZSFZ8X9</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">GROOVED WET ALARM CHECK VALVE, FIG#
+                                      ZSFZ8X9</a>
                                   </h5>
                                 </div>
                               </div>
@@ -305,14 +185,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-2.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -323,13 +198,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >AWWA FLANGED RESILIENT OS&Y GATE
-                                      VALVE,FIG# XZ41X</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">AWWA FLANGED RESILIENT OS&Y GATE
+                                      VALVE,FIG# XZ41X</a>
                                   </h5>
                                 </div>
                               </div>
@@ -339,14 +210,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-3.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -357,13 +223,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >AWWA FLANGED RESILIENT NRS GATE
-                                      VALVE,FIG# Z45X</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">AWWA FLANGED RESILIENT NRS GATE
+                                      VALVE,FIG# Z45X</a>
                                   </h5>
                                 </div>
                               </div>
@@ -373,14 +235,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-4.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -391,13 +248,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >ANSI WAFER BUTTERFLY VALVE WITH
-                                      HANDWHEEL, FIG# D71X4</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">ANSI WAFER BUTTERFLY VALVE WITH
+                                      HANDWHEEL, FIG# D71X4</a>
                                   </h5>
                                 </div>
                               </div>
@@ -407,14 +260,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-5.png" alt="" />
                               <div class="tag-outer">
@@ -425,13 +273,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >EN FLANGED WET ALARM CHECK VALVE, FIG#
-                                      ZSFZ4X</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();" class="prod-title">EN
+                                      FLANGED WET ALARM CHECK VALVE, FIG#
+                                      ZSFZ4X</a>
                                   </h5>
                                 </div>
                               </div>
@@ -441,14 +285,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-6.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -459,13 +298,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >ANSI WAFER BUTTERFLY VALVE FOR
-                                      WATERWORKS, FIG# D371X4</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">ANSI WAFER BUTTERFLY VALVE FOR
+                                      WATERWORKS, FIG# D371X4</a>
                                   </h5>
                                 </div>
                               </div>
@@ -475,14 +310,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-7.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -493,13 +323,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >ANSI FLANGED SWING CHECK VALVE, FIG#
-                                      H44X2</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">ANSI FLANGED SWING CHECK VALVE, FIG#
+                                      H44X2</a>
                                   </h5>
                                 </div>
                               </div>
@@ -509,14 +335,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-8.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -527,13 +348,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >BS FLANGED METAL SEATED GLOBE VALVE, FIG#
-                                      J41H</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();" class="prod-title">BS
+                                      FLANGED METAL SEATED GLOBE VALVE, FIG#
+                                      J41H</a>
                                   </h5>
                                 </div>
                               </div>
@@ -543,14 +360,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-9.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -561,12 +373,8 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >UNDERGROUND FIRE HYDRANT, FIG# SA1</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                      class="prod-title">UNDERGROUND FIRE HYDRANT, FIG# SA1</a>
                                   </h5>
                                 </div>
                               </div>
@@ -576,14 +384,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-10.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -594,13 +397,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >BS FLANGED RESILIENT NRS GATE VALVE,FIG#
-                                      Z45X</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();" class="prod-title">BS
+                                      FLANGED RESILIENT NRS GATE VALVE,FIG#
+                                      Z45X</a>
                                   </h5>
                                 </div>
                               </div>
@@ -610,14 +409,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-11.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -628,13 +422,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >BS FLANGED RESILIENT OS&Y GATE VALVE,FIG#
-                                      XZ41X</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();" class="prod-title">BS
+                                      FLANGED RESILIENT OS&Y GATE VALVE,FIG#
+                                      XZ41X</a>
                                   </h5>
                                 </div>
                               </div>
@@ -644,14 +434,9 @@
                       </div>
 
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
+                          <a href="javascript:void(0);" onclick="popupDetailProduct();">
                             <div class="image">
                               <img src="/assets/images/example-12.png" alt="" />
                               <!-- <div class="tag-outer">
@@ -662,13 +447,9 @@
                               <div class="clearfix_">
                                 <div class="pull-left">
                                   <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >DIN FLANGED RESILIENT NRS GATE VALVE,FIG#
-                                      Z45X</a
-                                    >
+                                    <a href="javascript:void(0);" onclick="popupDetailProduct();" class="prod-title">DIN
+                                      FLANGED RESILIENT NRS GATE VALVE,FIG#
+                                      Z45X</a>
                                   </h5>
                                 </div>
                               </div>
@@ -677,20 +458,11 @@
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="button btn-load-more-product-list"
-                      style="text-align: center"
-                    >
-                      <button
-                        type="button"
-                        class="theme-btn btn-style-load-more-product add-to-cart"
-                      >
+                    <div class="button btn-load-more-product-list" style="text-align: center">
+                      <button type="button" class="theme-btn btn-style-load-more-product add-to-cart">
                         Load More
                       </button>
-                      <div
-                        class="content-loader"
-                        style="text-align: center"
-                      ></div>
+                      <div class="content-loader" style="text-align: center"></div>
                     </div>
                   </div>
                 </div>
@@ -736,9 +508,7 @@
                       municipal, medical, clean workshops, urban housing, etc.
                     </p>
                   </div>
-                  <a href="about.html" class="theme-btn btn-style-one"
-                    >Read More</a
-                  >
+                  <a href="about.html" class="theme-btn btn-style-one">Read More</a>
                 </div>
               </div>
             </div>
@@ -748,11 +518,7 @@
                 <div class="services-block-seven">
                   <div class="inner-box">
                     <div class="icon-box">
-                      <img
-                        src="/assets/figma_assets/fire.svg"
-                        alt=""
-                        style="height: 75px"
-                      />
+                      <img src="/assets/figma_assets/fire.svg" alt="" style="height: 75px" />
                     </div>
                     <h3><a href="services-single.html">Fire</a></h3>
                     <div class="text">
@@ -763,11 +529,7 @@
                 <div class="services-block-seven">
                   <div class="inner-box">
                     <div class="icon-box">
-                      <img
-                        src="/assets/figma_assets/irrigation.svg"
-                        alt=""
-                        style="height: 75px"
-                      />
+                      <img src="/assets/figma_assets/irrigation.svg" alt="" style="height: 75px" />
                     </div>
                     <h3><a href="services-single.html">Irrigation</a></h3>
                     <div class="text">
@@ -779,11 +541,7 @@
                 <div class="services-block-seven">
                   <div class="inner-box">
                     <div class="icon-box">
-                      <img
-                        src="/assets/figma_assets/water_treatment.svg"
-                        alt=""
-                        style="height: 75px"
-                      />
+                      <img src="/assets/figma_assets/water_treatment.svg" alt="" style="height: 75px" />
                     </div>
                     <h3><a href="services-single.html">Water Treatment</a></h3>
                     <div class="text">
@@ -835,11 +593,8 @@
                   <figure class="image">
                     <img src="/assets/images/page-title-bg.jpg" alt="" />
                     <div class="overlay-link">
-                      <a
-                        href="http://www.meide-casting.com/en/upload/media/2020/03/03/ff7037b1847846abb78813e724254433.mp4"
-                        class="overlay-link lightbox-image video-fancybox"
-                        ><span class="icon fa fa-play"></span
-                      ></a>
+                      <a href="http://www.meide-casting.com/en/upload/media/2020/03/03/ff7037b1847846abb78813e724254433.mp4"
+                        class="overlay-link lightbox-image video-fancybox"><span class="icon fa fa-play"></span></a>
                     </div>
                   </figure>
                 </div>
@@ -852,26 +607,17 @@
       <!--End About Section-->
 
       <!--Call To Action-->
-      <section
-        class="call-to-action-section"
-        style="background-image: url('/assets/images/batik.svg')"
-      >
+      <section class="call-to-action-section" style="background-image: url('/assets/images/batik.svg')">
         <div class="auto-container px-3 px-md-5 px-lg-3">
           <div class="row clearfix">
-            <div
-              class="column text-center text-md-left col-md-9 col-sm-12 col-xs-12"
-            >
+            <div class="column text-center text-md-left col-md-9 col-sm-12 col-xs-12">
               <div class="text">
                 Reduce on-site operations and labor costs, Saving water and
                 power resources.
               </div>
             </div>
-            <div
-              class="btn-column text-center mt-4 mt-md-0 col-md-3 col-sm-12 col-xs-12"
-            >
-              <a href="contact.html" class="theme-btn btn-style-two"
-                >Contact us Today</a
-              >
+            <div class="btn-column text-center mt-4 mt-md-0 col-md-3 col-sm-12 col-xs-12">
+              <a href="contact.html" class="theme-btn btn-style-two">Contact us Today</a>
             </div>
           </div>
         </div>
@@ -882,13 +628,11 @@
       <section class="clients-section-two grey-bg">
         <div class="auto-container px-3 px-md-5 px-lg-3">
           <h2>
-            We work with our partners to provide project perfection,<span
-              class="theme_color"
-            >
-              join with our parnership.</span
-            >
+            We work with our partners to provide project perfection,<span class="theme_color">
+              join with our parnership.</span>
           </h2>
           <!--Sponsors Carousel-->
+          <div v-for="post in posts" v-bind:key="post.id"></div>
           <ul class="sponsors-carousel owl-carousel owl-theme">
             <li class="slide-item">
               <figure class="image-box">
@@ -956,11 +700,7 @@
                 <div class="info-block col-md-6 col-sm-6 col-xs-12">
                   <div class="info-inner">
                     <div class="icon-box">
-                      <img
-                        src="/assets/figma_assets/location_pin (1).svg"
-                        style="height: 30px"
-                        alt=""
-                      />
+                      <img src="/assets/figma_assets/location_pin (1).svg" style="height: 30px" alt="" />
                     </div>
                     <h3>Address :</h3>
                     <div class="text">
@@ -971,10 +711,7 @@
               </div>
             </div>
             <div class="inner-column col-md-12 col-lg-4 col-sm-12 col-xs-12">
-              <div
-                class="container-form"
-                style="border: 1px solid #eee; padding: 15px"
-              >
+              <div class="container-form" style="border: 1px solid #eee; padding: 15px">
                 <!--Sec Title-->
                 <div class="sec-title centered">
                   <h2>Request for Quote</h2>
@@ -985,35 +722,16 @@
                   <!--Comment Form-->
                   <form method="post" action="#">
                     <div class="form-group">
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        required
-                      />
+                      <input type="text" name="name" placeholder="Your Name" required />
                     </div>
                     <div class="form-group">
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="Email Address"
-                        required
-                      />
+                      <input type="email" name="email" placeholder="Email Address" required />
                     </div>
                     <div class="form-group">
-                      <textarea
-                        name="subject"
-                        rows="4"
-                        placeholder="Subject"
-                      ></textarea>
+                      <textarea name="subject" rows="4" placeholder="Subject"></textarea>
                     </div>
                     <div class="form-group">
-                      <button
-                        class="theme-btn btn-style-one"
-                        type="submit"
-                        name="submit-form"
-                        style="width: 100%"
-                      >
+                      <button class="theme-btn btn-style-one" type="submit" name="submit-form" style="width: 100%">
                         Send
                       </button>
                     </div>
@@ -1025,7 +743,7 @@
         </div>
       </section>
       <footer class="main-footer-two">
-        <div class="auto-container">
+        <div class="auto-container px-3 px-md-5 px-lg-3">
           <!-- info section -->
           <div class="info-section">
             <div class="row">
@@ -1040,7 +758,9 @@
               </div>
               <div class="right-column col-md-8 col-sm-12">
                 <div class="clearfix">
-                  <div class="pull-left"><h4>Newsletter Subscribe</h4></div>
+                  <div class="pull-left">
+                    <h4>Newsletter Subscribe</h4>
+                  </div>
                   <div class="pull-left form-column">
                     <form action="#" class="subscribe-form">
                       <input type="email" placeholder="Email Address ..." />
@@ -1065,9 +785,7 @@
                     <div class="footer-widget-two logo-widget">
                       <div class="footer-logo">
                         <figure>
-                          <a href="index-2.html"
-                            ><img src="assets/images/logo-new.png" alt=""
-                          /></a>
+                          <a href="index-2.html"><img src="assets/images/logo-new.png" alt="" /></a>
                         </figure>
                       </div>
                       <div class="widget-content">
@@ -1180,10 +898,49 @@ import { IonContent, IonPage } from "@ionic/vue";
 import "swiper/css";
 import "swiper/css/bundle";
 import "@ionic/vue/css/ionic-swiper.css";
+import axios from 'axios';
 
 export default defineComponent({
   name: "IndexSection",
-  components: { Swiper, SwiperSlide, IonContent, IonPage },
+  components: {
+    IonContent,
+    // IonHeader,
+    IonPage,
+    // IonTitle,
+    // IonToolbar
+    Swiper,
+    SwiperSlide
+  },
+  mounted() {
+    this.fetchPosts();
+  },
+  data: function () {
+    return {
+      posts: [],
+    };
+  },
+  methods: {
+    fetchPosts() {
+      axios
+        .get("http://localhost:8080/api/getpartners")
+        .then((response) => {
+          this.posts = response.data;
+          console.log(response.data)
+        }).catch(function (error) {
+          console.log(error);
+        })
+    }
+  }
+
+  // data(){
+  // 	return {
+  // 		articles: []
+  // 	}
+  // },
+  // async mounted(){
+  // 	let response = await axios.get('https://api.sampleapis.com/coffee/hot')
+  // 	this.articles = response.data
+  // }
 });
 </script>
 
@@ -1263,6 +1020,7 @@ export default defineComponent({
   font-family: "Raleway", sans-serif;
   color: #808080;
 }
+
 .sidebar .search-box .form-group {
   position: relative;
   margin: 0px;
@@ -1906,12 +1664,7 @@ img {
   font-size: 18px;
 }
 
-.testimonial-block-two
-  .inner-box
-  .lower-box
-  .author-info
-  .author-inner
-  .author-location {
+.testimonial-block-two .inner-box .lower-box .author-info .author-inner .author-location {
   position: relative;
   color: #e31528;
   font-size: 16px;
@@ -2561,11 +2314,7 @@ img {
   -o-transition: all 300ms ease;
 }
 
-.gallery-item-three
-  .inner-box
-  .overlay-box
-  .option-box
-  .image-link.lightbox-image {
+.gallery-item-three .inner-box .overlay-box .option-box .image-link.lightbox-image {
   position: relative;
   left: -5px;
 }
@@ -2682,11 +2431,7 @@ img {
   -o-transition: all 300ms ease;
 }
 
-.gallery-item-four
-  .inner-box
-  .overlay-box
-  .option-box
-  .image-link.lightbox-image {
+.gallery-item-four .inner-box .overlay-box .option-box .image-link.lightbox-image {
   position: relative;
   left: -5px;
 }
@@ -2808,11 +2553,7 @@ img {
   -o-transition: all 300ms ease;
 }
 
-.gallery-item-six
-  .inner-box
-  .overlay-box
-  .option-box
-  .image-link.lightbox-image {
+.gallery-item-six .inner-box .overlay-box .option-box .image-link.lightbox-image {
   position: relative;
   left: -5px;
 }
@@ -3484,8 +3225,7 @@ img {
   color: #e31528;
 }
 
-.single-gallery .project-info-list li .text-holder {
-}
+.single-gallery .project-info-list li .text-holder {}
 
 .single-gallery .project-info-list li .text-holder h5 {
   color: #252525;
@@ -4247,8 +3987,7 @@ img {
 }
 
 @media (min-width: 992px) {
-  .subscribe-form-three {
-  }
+  .subscribe-form-three {}
 }
 
 .subscribe-form-three h4 {
@@ -4745,6 +4484,7 @@ img {
 .clients-section .image-box:hover {
   border-color: #e31528;
 }
+
 .clients-section-two {
   position: relative;
   padding: 75px 0px 80px;
@@ -4859,6 +4599,7 @@ img {
 .clients-section.style-two .image-box:hover {
   border-color: #e31528;
 }
+
 .testimonial-section-three .client-thumb-outer {
   position: relative;
   max-width: 550px;
@@ -4874,11 +4615,7 @@ img {
   opacity: 1;
 }
 
-.testimonial-section-three
-  .client-thumb-outer
-  .owl-item.active
-  .thumb-item
-  .thumb-box {
+.testimonial-section-three .client-thumb-outer .owl-item.active .thumb-item .thumb-box {
   -o-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   -webkit-transform: scale(1, 1);
@@ -4892,10 +4629,7 @@ img {
   text-align: center;
 }
 
-.testimonial-section-three
-  .client-thumb-outer
-  .client-thumbs-carousel
-  .owl-stage-outer {
+.testimonial-section-three .client-thumb-outer .client-thumbs-carousel .owl-stage-outer {
   overflow: visible;
 }
 
@@ -4908,11 +4642,7 @@ img {
   margin-right: -30px;
 }
 
-.testimonial-section-three
-  .client-thumbs-carousel
-  .thumb-item
-  .thumb-content
-  h3 {
+.testimonial-section-three .client-thumbs-carousel .thumb-item .thumb-content h3 {
   font-size: 18px;
   font-weight: 500;
   color: #222222;
@@ -4921,11 +4651,7 @@ img {
   font-family: "Montserrat", sans-serif;
 }
 
-.testimonial-section-three
-  .client-thumbs-carousel
-  .thumb-item
-  .thumb-content
-  .designation {
+.testimonial-section-three .client-thumbs-carousel .thumb-item .thumb-content .designation {
   color: #e31528;
   font-size: 16px;
   font-weight: 400;
@@ -4945,11 +4671,7 @@ img {
   transform: scale(0.7, 0.7);
 }
 
-.testimonial-section-three
-  .client-thumb-outer
-  .client-thumbs-carousel
-  .thumb-item
-  img {
+.testimonial-section-three .client-thumb-outer .client-thumbs-carousel .thumb-item img {
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -6137,8 +5859,7 @@ h6 {
 input,
 button,
 select,
-textarea {
-}
+textarea {}
 
 p {
   position: relative;
@@ -6938,6 +6659,7 @@ li {
 .services-single .inner-box .lower-content .choose-section {
   margin-bottom: 40px;
 }
+
 .main-footer:before {
   position: absolute;
   content: "";
@@ -7558,6 +7280,7 @@ img {
   background-repeat: no-repeat;
   filter: hue-rotate(336deg);
 }
+
 .welcome-section {
   position: relative;
   padding: 70px 0px 50px;
@@ -8049,8 +7772,7 @@ img {
 }
 
 @media (min-width: 992px) {
-  .subscribe-form-three {
-  }
+  .subscribe-form-three {}
 }
 
 .subscribe-form-three h4 {
@@ -8089,6 +7811,7 @@ img {
 .subscribe-form-three p {
   color: #e31528;
 }
+
 .register-section {
   position: relative;
   padding: 80px 0px 40px;
@@ -8480,6 +8203,7 @@ img {
     -webkit-transform: scale(1);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(3);
     opacity: 0;
@@ -8500,6 +8224,7 @@ img {
     -webkit-transform: scale(1);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(3);
     opacity: 0;
@@ -8594,6 +8319,7 @@ img {
   -moz-transition: all 300ms ease;
   transition: all 300ms ease;
 }
+
 /*Social Icon One*/
 
 .social-icon-one {
