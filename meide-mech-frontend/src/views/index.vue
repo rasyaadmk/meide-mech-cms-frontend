@@ -632,49 +632,52 @@
               join with our parnership.</span>
           </h2>
           <!--Sponsors Carousel-->
-          <div v-for="post in posts" v-bind:key="post.id"></div>
-          <ul class="sponsors-carousel owl-carousel owl-theme">
-            <li class="slide-item">
-              <figure class="image-box">
-                <a href="#"><img src="/assets/images/6.png" alt="" /></a>
-              </figure>
-            </li>
-            <li class="slide-item">
-              <figure class="image-box">
-                <a href="#"><img src="/assets/images/7.png" alt="" /></a>
-              </figure>
-            </li>
-            <li class="slide-item">
-              <figure class="image-box">
-                <a href="#"><img src="/assets/images/8.png" alt="" /></a>
-              </figure>
-            </li>
-            <li class="slide-item">
-              <figure class="image-box">
-                <a href="#"><img src="/assets/images/9.png" alt="" /></a>
-              </figure>
-            </li>
-            <li class="slide-item">
-              <figure class="image-box">
-                <a href="#"><img src="/assets/images/10.png" alt="" /></a>
-              </figure>
-            </li>
-            <li class="slide-item">
-              <figure class="image-box">
-                <a href="#"><img src="/assets/images/6.png" alt="" /></a>
-              </figure>
-            </li>
-            <li class="slide-item">
-              <figure class="image-box">
-                <a href="#"><img src="/assets/images/7.png" alt="" /></a>
-              </figure>
-            </li>
-            <li class="slide-item">
-              <figure class="image-box">
-                <a href="#"><img src="/assets/images/8.png" alt="" /></a>
-              </figure>
-            </li>
-          </ul>
+          <div v-for="post in posts" v-bind:key="post.id">
+            <ul class="sponsors-carousel owl-carousel owl-theme">
+              <li class="slide-item">
+                <div v-if="post.link === 'logok'">
+                  <figure class="image-box">
+                    <a href="#"><img v-bind:src="post.images" alt="" /></a>
+                  </figure>
+                </div>
+              </li>
+              <li class="slide-item">
+                <figure class="image-box">
+                  <a href="#"><img src="/assets/images/7.png" alt="" /></a>
+                </figure>
+              </li>
+              <li class="slide-item">
+                <figure class="image-box">
+                  <a href="#"><img src="/assets/images/8.png" alt="" /></a>
+                </figure>
+              </li>
+              <li class="slide-item">
+                <figure class="image-box">
+                  <a href="#"><img src="/assets/images/9.png" alt="" /></a>
+                </figure>
+              </li>
+              <li class="slide-item">
+                <figure class="image-box">
+                  <a href="#"><img src="/assets/images/10.png" alt="" /></a>
+                </figure>
+              </li>
+              <li class="slide-item">
+                <figure class="image-box">
+                  <a href="#"><img src="/assets/images/6.png" alt="" /></a>
+                </figure>
+              </li>
+              <li class="slide-item">
+                <figure class="image-box">
+                  <a href="#"><img src="/assets/images/7.png" alt="" /></a>
+                </figure>
+              </li>
+              <li class="slide-item">
+                <figure class="image-box">
+                  <a href="#"><img src="/assets/images/8.png" alt="" /></a>
+                </figure>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!--End Clients Section-->
@@ -3865,8 +3868,7 @@ img {
 }
 
 @media (min-width: 992px) {
-  .subscribe-form-three {
-  }
+  .subscribe-form-three {}
 }
 
 .subscribe-form-three h4 {
@@ -7576,6 +7578,7 @@ li {
     -webkit-transform: scale(1);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(3);
     opacity: 0;
@@ -7670,6 +7673,7 @@ img {
   -moz-transition: all 300ms ease;
   transition: all 300ms ease;
 }
+
 /*Social Icon One*/
 
 .social-icon-one {
