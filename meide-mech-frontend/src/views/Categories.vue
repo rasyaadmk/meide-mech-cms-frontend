@@ -119,9 +119,6 @@
                           >
                             <div class="image">
                               <img src="/assets/images/example-2.png" alt="" />
-                              <!-- <div class="tag-outer">
-                                                        <div class="product-tag">New</div>
-                                                    </div> -->
                             </div>
                             <div class="lower-content">
                               <div class="clearfix_">

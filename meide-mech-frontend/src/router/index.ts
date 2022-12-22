@@ -6,12 +6,18 @@ import CategoriesSection from '../views/Categories.vue'
 import CarouselSection from '../views/Carousel.vue'
 import FooterSection from '../views/Footer.vue'
 import ApiTest from '../views/apiTest.vue'
+import IndexSection from '../views/index.vue'
 
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/index'
+  },
+  {
+    path: '/index',
+    name: 'Index',
+    component: IndexSection
   },
   {
     path: '/home',
