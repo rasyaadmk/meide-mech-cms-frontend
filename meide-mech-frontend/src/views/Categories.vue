@@ -24,121 +24,52 @@
                       <div class="sidebar-title">
                         <h2>Categories</h2>
                       </div>
-                      <button class="accordion">VALVE</button>
-                      <div class="accordion-panel">
-                        <ul class="blog-cat" style="padding: 10px 0px">
-                          <li><a href="#">Alarm Valve</a></li>
-                          <li><a href="#">Ball Valve</a></li>
-                          <li><a href="#">Copper end water test valve</a></li>
-                          <li><a href="#">Hydrant</a></li>
-                          <li><a href="#">Gate Valve</a></li>
-                          <li><a href="#">Butterfly Valve</a></li>
-                          <li><a href="#">Check Valve</a></li>
-                          <li><a href="#">Strainer</a></li>
-                          <li><a href="#">Air Valve</a></li>
-                          <li><a href="#">Globe Valve</a></li>
-                          <li><a href="#">Balance Valve</a></li>
-                          <li><a href="#">Hydraulic Control Valve</a></li>
-                          <li><a href="#">Flexible Rubber Joint</a></li>
-                        </ul>
-                      </div>
 
-                      <button class="accordion">PRESS FITTINGS</button>
-                      <div class="accordion-panel">
-                        <ul class="blog-cat" style="padding: 10px 0px">
-                          <li><a href="#">Stainless Steel M-Profile</a></li>
-                          <li><a href="#">Carbon Steel M-Profile</a></li>
-                          <li><a href="#">Stainless Steel V-Profile</a></li>
-                        </ul>
-                      </div>
-
-                      <button class="accordion">CASTINGS</button>
-                      <div class="accordion-panel">
-                        <ul class="blog-cat" style="padding: 10px 0px">
-                          <li>
-                            <a href="#"
-                              >Counterweight of internal combustion forklift</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#">Electric forklift counterweight</a>
-                          </li>
-                          <li>
-                            <a href="#">Counterweight of aerial work vehicle</a>
-                          </li>
-                          <li>
-                            <a href="#">Petroleum machinery counterweight</a>
-                          </li>
-                          <li>
-                            <a href="#">Counterweight of large excavator</a>
-                          </li>
-                          <li>
-                            <a href="#">Counterweight of micro excavator</a>
-                          </li>
-                          <li>
-                            <a href="#"
-                              >Other construction machinery counterweights</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-
-                      <button class="accordion">CASTINGS</button>
-                      <div class="accordion-panel">
-                        <ul class="blog-cat" style="padding: 10px 0px">
-                          <li>
-                            <a href="#"
-                              >Counterweight of internal combustion forklift</a
-                            >
-                          </li>
-                          <li>
-                            <a href="#">Electric forklift counterweight</a>
-                          </li>
-                          <li>
-                            <a href="#">Counterweight of aerial work vehicle</a>
-                          </li>
-                          <li>
-                            <a href="#">Petroleum machinery counterweight</a>
-                          </li>
-                          <li>
-                            <a href="#">Counterweight of large excavator</a>
-                          </li>
-                          <li>
-                            <a href="#">Counterweight of micro excavator</a>
-                          </li>
-                          <li>
-                            <a href="#"
-                              >Other construction machinery counterweights</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-
-                      <button class="accordion">CAST PIG IRON</button>
-                      <div class="accordion-panel">
-                        <ul class="blog-cat" style="padding: 10px 0px">
-                          <li><a href="#">Ductile iron</a></li>
-                          <li><a href="#">Wind power pig iron</a></li>
-                          <li><a href="#">High purity pig iron</a></li>
-                          <li><a href="#">Low manganese cast iron</a></li>
-                          <li><a href="#">Medium manganese cast iron</a></li>
-                          <li><a href="#">High manganese cast iron</a></li>
-                        </ul>
-                      </div>
-
-                      <button class="accordion">GROUT SLEEVE</button>
-                      <div class="accordion-panel">
-                        <ul class="blog-cat" style="padding: 10px 0px">
-                          <li>
-                            <a href="#">Ductile iron full grouting sleeve</a>
-                          </li>
-                          <li>
-                            <a href="#">Ductile iron semi grouted sleeve</a>
-                          </li>
-                          <li><a href="#">Machined full grouting sleeve</a></li>
-                          <li><a href="#">Machined semi grouted sleeve</a></li>
-                        </ul>
-                      </div>
+                      <ion-accordion-group
+                        :multiple="true"
+                        :value="['first', 'third']"
+                      >
+                        <ion-accordion value="first">
+                          <ion-item slot="header" color="light">
+                            <ion-label> VALVE</ion-label>
+                          </ion-item>
+                          <div class="ion-padding" slot="content">
+                            Alarm Valve
+                          </div>
+                          <div class="ion-padding" slot="content">
+                            Ball Valve
+                          </div>
+                          <div class="ion-padding" slot="content">
+                            Copper end water test valve
+                          </div>
+                          <div class="ion-padding" slot="content">Hydrant</div>
+                          <div class="ion-padding" slot="content">
+                            Gate Valve
+                          </div>
+                          <div class="ion-padding" slot="content">
+                            Butterfly Valve
+                          </div>
+                          <div class="ion-padding" slot="content">
+                            Check Valve
+                          </div>
+                          <div class="ion-padding" slot="content">Strainer</div>
+                          <div class="ion-padding" slot="content">
+                            Air Valve
+                          </div>
+                          <div class="ion-padding" slot="content">
+                            Globe Valve
+                          </div>
+                          <div class="ion-padding" slot="content">
+                            Balance Valve
+                          </div>
+                          <div class="ion-padding" slot="content">
+                            Hydraulic Control Valve
+                          </div>
+                          <div class="ion-padding" slot="content">
+                            Flexible Rubber Joint
+                          </div>
+                        </ion-accordion>
+                      </ion-accordion-group>
                     </div>
                   </aside>
                 </div>
@@ -163,7 +94,8 @@
                             required
                           />
                           <button type="submit">
-                            <span class="icon fa fa-search"></span>
+                            <span class="icon fa fa-search" aria-hidden="true">
+                            </span>
                           </button>
                         </div>
                       </form>
@@ -192,10 +124,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-1.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-1.png" alt="" />
                               <div class="tag-outer">
                                 <div class="product-tag">New</div>
                               </div>
@@ -229,13 +158,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-2.png"
-                                alt=""
-                              />
-                              <!-- <div class="tag-outer">
-                                                        <div class="product-tag">New</div>
-                                                    </div> -->
+                              <img src="/assets/images/example-2.png" alt="" />
                             </div>
                             <div class="lower-content">
                               <div class="clearfix_">
@@ -266,10 +189,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-3.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-3.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -303,10 +223,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-4.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-4.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -340,10 +257,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-5.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-5.png" alt="" />
                               <div class="tag-outer">
                                 <div class="product-tag">New</div>
                               </div>
@@ -377,10 +291,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-6.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-6.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -414,10 +325,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-7.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-7.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -451,10 +359,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-8.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-8.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -488,10 +393,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-9.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-9.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -524,10 +426,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-10.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-10.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -561,10 +460,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-11.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-11.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -598,10 +494,7 @@
                             onclick="popupDetailProduct();"
                           >
                             <div class="image">
-                              <img
-                                src="/assets/images/example-12.png"
-                                alt=""
-                              />
+                              <img src="/assets/images/example-12.png" alt="" />
                               <!-- <div class="tag-outer">
                                                         <div class="product-tag">New</div>
                                                     </div> -->
@@ -655,10 +548,11 @@
 <script lang="ts">
 import {
   IonContent,
-  // IonHeader,
   IonPage,
-  // IonTitle,
-  // IonToolbar
+  IonAccordion,
+  IonAccordionGroup,
+  IonItem,
+  IonLabel,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
 
@@ -666,16 +560,18 @@ export default defineComponent({
   name: "CategoriesSection",
   components: {
     IonContent,
-    // IonHeader,
     IonPage,
-    // IonTitle,
-    // IonToolbar
+    IonAccordion,
+    IonAccordionGroup,
+    IonItem,
+    IonLabel,
   },
 });
 </script>
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 * {
   margin: 0px;
@@ -810,10 +706,13 @@ li {
 }
 
 .bgbg {
-  background-color: #E31628;
+  background-color: #e31628;
 }
-/*Search Box Widget*/
 
+.form-group {
+  font-family: "Raleway", sans-serif;
+  color: #808080;
+}
 .sidebar .search-box .form-group {
   position: relative;
   margin: 0px;
@@ -878,10 +777,12 @@ li {
   background-color: #e31528;
 }
 
-/*Blog Category*/
-
 .blog-cat {
   position: relative;
+}
+
+.blog-cat li:hover {
+  transform: scale(1.1);
 }
 
 .blog-cat li {
@@ -1088,7 +989,7 @@ li {
 }
 
 .imgZoom {
-  overflow: hidden; 
+  overflow: hidden;
   -webkit-transform: rotate(0);
   transform: rotate(0);
 }
@@ -1107,56 +1008,6 @@ li {
   -o-transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
-}
-
-
-
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 10px 15px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.3s;
-  font-weight: 500;
-}
-
-.accordion-active,
-.accordion:hover {
-  background-color: #e31528;
-  color: #fff;
-}
-
-.accordion:after {
-  content: "\002B";
-  color: #777;
-  font-size: 30px;
-  float: right;
-  margin-left: 5px;
-}
-
-.accordion-active:after {
-  content: "\2212";
-  color: #fff;
-}
-
-.accordion:hover:after {
-  color: #fff;
-}
-
-.accordion-panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  border-bottom: 1px solid #eee;
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
 }
 
 .blog-cat li:hover {
@@ -1178,9 +1029,8 @@ li {
 }
 
 .our-product::-webkit-scrollbar-thumb:hover {
-    background: #ababab;
+  background: #ababab;
 }
-
 
 .search-box-product input[type="text"],
 .search-box-product input[type="search"] {
@@ -1210,18 +1060,173 @@ input[name="search-field-product"]:valid {
 }
 
 .search-box .form-group button {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    height: 45px;
-    width: 60px;
-    display: block;
-    font-size: 16px;
-    color: #8c8c8c;
-    line-height: 100%;
-    font-weight: normal;
-    background:
-     none;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 45px;
+  width: 60px;
+  display: block;
+  font-size: 16px;
+  color: #8c8c8c;
+  line-height: 100%;
+  font-weight: normal;
+  background: none;
+}
+
+.product-item {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.product-item .inner-box {
+  position: relative;
+  outline: 15px solid #ffffff;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.product-item .inner-box:before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  top: -15px;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);
+  box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.6);
+}
+
+.product-item .inner-box:hover::before {
+  opacity: 1;
+}
+
+.product-item .inner-box:hover .image .overlay-box {
+  opacity: 1;
+}
+
+.product-item .inner-box .image {
+  position: relative;
+  z-index: 11;
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-item .inner-box .image .overlay-box {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-align: center;
+  background-color: rgb(227 21 40 / 0.85);
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.product-item .inner-box .image .overlay-box .cart-btn {
+  position: relative;
+  top: 46%;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 37px;
+  display: inline-block;
+  margin-top: -25px;
+  border: 1px solid #ffffff;
+}
+
+.product-item .inner-box .image .tag-outer {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  overflow: hidden;
+}
+
+.product-item .inner-box .image .tag-outer .product-tag {
+  position: relative;
+  width: 96px;
+  color: #ffffff;
+  left: -36px;
+  top: -24px;
+  height: 64px;
+  background-color: #e31528;
+  font-weight: 400;
+  line-height: 98px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: capitalize;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  z-index: 9;
+}
+
+.product-item .inner-box .image img {
+  max-width: 100%;
+  padding: 20px 0px;
+  display: inline-block;
+}
+
+.product-item .inner-box .lower-content {
+  position: relative;
+  z-index: 11;
+  padding: 20px 0px 0px;
+}
+
+.product-item .inner-box .lower-content h5 {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.product-item .inner-box .lower-content h5 a {
+  color: #222222;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.product-item .inner-box .lower-content h5 a:hover {
+  color: #e31528;
+}
+
+.product-item .inner-box:hover .prod-title {
+  color: #e31528;
+}
+
+.product-item .inner-box .lower-content .price {
+  position: relative;
+  color: #e31528;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.product-item .inner-box .lower-content .rating .fa {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  color: #e31528;
 }
 
 .search-box-product button[type="submit"]:hover span {
@@ -1235,6 +1240,8 @@ input[name="search-field-product"]:valid {
 
 .breadcrumb-list-product {
   padding: 0px 10px 5px;
+  font-family: "Raleway", sans-serif;
+  color: #808080;
 }
 
 .content-loader {
@@ -1290,6 +1297,7 @@ input[name="search-field-product"]:valid {
     -webkit-transform: scale(1);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(3);
     opacity: 0;
@@ -1310,6 +1318,7 @@ input[name="search-field-product"]:valid {
     -webkit-transform: scale(1);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(3);
     opacity: 0;
