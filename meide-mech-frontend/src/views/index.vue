@@ -1058,8 +1058,6 @@ export default defineComponent({
   font-weight: normal;
 }
 
-/*Sidebar Title*/
-
 .sidebar-title {
   position: relative;
   margin-bottom: 25px;
@@ -1083,14 +1081,6 @@ export default defineComponent({
   width: 45px;
   height: 1px;
   background-color: #e31528;
-}
-
-.blog-cat {
-  position: relative;
-}
-
-.blog-cat li:hover {
-  transform: scale(1.1);
 }
 
 .blog-cat li {
@@ -1376,8 +1366,6 @@ input[name="search-field-product"]:valid {
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@400;500&display=swap");
 
-/*Btn Style One*/
-
 .btn-style-one {
   position: relative;
   padding: 13px 48px;
@@ -1396,8 +1384,6 @@ input[name="search-field-product"]:valid {
   background: none;
 }
 
-/*Btn Style Two*/
-
 .btn-style-two {
   position: relative;
   padding: 13px 37px;
@@ -1415,8 +1401,6 @@ input[name="search-field-product"]:valid {
   color: #ffffff;
   border-color: #e31528;
 }
-
-/*Btn Style Three*/
 
 .btn-style-three {
   position: relative;
@@ -1450,8 +1434,6 @@ input[name="search-field-product"]:valid {
   text-align: center;
   font-size: 30px;
 }
-
-/*Btn Style Four*/
 
 .btn-style-four {
   position: relative;
@@ -1563,14 +1545,6 @@ img {
 .about-section .quote-column .form-group button {
   width: 100%;
 }
-
-/*** 
-
-====================================================================
-	Testimonail Section Two
-====================================================================
-
-***/
 
 .testimonial-section-two {
   position: relative;
@@ -1728,14 +1702,6 @@ img {
   border-color: #e31528;
 }
 
-/*** 
-
-====================================================================
-	News Section Two
-====================================================================
-
-***/
-
 .news-section-two {
   position: relative;
   padding: 80px 0px 40px;
@@ -1840,8 +1806,6 @@ img {
   margin-top: 10px;
 }
 
-/*News Block Three*/
-
 .news-block-three {
   position: relative;
   margin-bottom: 10px;
@@ -1922,14 +1886,6 @@ img {
   position: relative;
 }
 
-/*** 
-
-====================================================================
-	Client Section Two
-====================================================================
-
-***/
-
 .clients-section-two {
   position: relative;
   padding: 75px 0px 80px;
@@ -1990,14 +1946,6 @@ img {
   border-color: #e31528;
 }
 
-/*** 
-
-====================================================================
-	Call To Action Section
-====================================================================
-
-***/
-
 .call-to-action-section-two {
   position: relative;
 }
@@ -2036,14 +1984,6 @@ img {
   position: relative;
   text-align: right;
 }
-
-/*** 
-
-====================================================================
-	About Section
-====================================================================
-
-***/
 
 .about-section .image-column {
   position: relative;
@@ -2142,14 +2082,6 @@ img {
   font-family: "Montserrat", sans-serif;
 }
 
-/*** 
-
-====================================================================
-	Services Section Two
-====================================================================
-
-***/
-
 .services-section-two {
   position: relative;
   padding: 75px 0px 50px;
@@ -2247,8 +2179,6 @@ img {
 .services-block-four .inner-box:hover {
   background-color: #ffffff;
 }
-
-/*Gallery Item Three*/
 
 .gallery-item-three {
   position: relative;
@@ -2358,8 +2288,6 @@ img {
 .gallery-item-three.mix {
   display: none;
 }
-
-/*Gallery Item Four*/
 
 .project-section.fullwidth-galley.padd-bottom-50 {
   padding-bottom: 50px;
@@ -2484,8 +2412,6 @@ img {
 .gallery-item-four.mix {
   display: none;
 }
-
-/*Gallery Item six*/
 
 .project-section.fullwidth-galley.padd-bottom-50 {
   padding-bottom: 50px;
@@ -2682,8 +2608,6 @@ img {
   z-index: 5;
 }
 
-/*Gallery Item*/
-
 .gallery-item {
   position: relative;
   margin-bottom: 40px;
@@ -2836,8 +2760,6 @@ img {
   font-weight: 400;
 }
 
-/*Default Section*/
-
 .default-section {
   position: relative;
   padding: 75px 0px 35px;
@@ -2917,8 +2839,6 @@ img {
   border: 1px solid #eeeeee;
 }
 
-/*Default Form*/
-
 .default-form .form-group {
   margin-bottom: 20px;
 }
@@ -2962,8 +2882,6 @@ img {
   font-size: 16px;
   line-height: 1.6em;
 }
-
-/*Default Form / Style Two*/
 
 .default-form.style-two .form-group {
   margin-bottom: 30px;
@@ -3010,8 +2928,6 @@ img {
   margin-top: 10px;
 }
 
-/*Testimonial Section*/
-
 .testimonial-section {
   position: relative;
   padding: 0px 0px 80px;
@@ -3051,8 +2967,6 @@ img {
   background: #e31528;
   border-color: #e31528;
 }
-
-/*Testimonial Block*/
 
 .testimonial-block {
   position: relative;
@@ -3148,8 +3062,6 @@ img {
   display: none;
 }
 
-/*============ single gallery ============*/
-
 .single-gallery {
   position: relative;
   padding: 80px 0 50px;
@@ -3239,8 +3151,6 @@ img {
   margin: 0;
 }
 
-/* project description */
-
 .project-description {
   position: relative;
 }
@@ -3294,14 +3204,6 @@ img {
   color: #e31528;
   font-size: 16px;
 }
-
-/*** 
-
-====================================================================
-	Team Section
-====================================================================
-
-***/
 
 .team-section {
   position: relative;
@@ -3513,14 +3415,6 @@ img {
   border-color: #e31528;
 }
 
-/*** 
-
-====================================================================
-	Call To Action Section Three
-====================================================================
-
-***/
-
 .call-to-action-section {
   position: relative;
   padding: 22px 0px;
@@ -3725,14 +3619,6 @@ img {
   margin: 0px 2px;
 }
 
-/*** 
-
-====================================================================
-	Quote Section
-====================================================================
-
-***/
-
 .quote-section {
   position: relative;
   padding: 80px 0px 80px;
@@ -3781,14 +3667,6 @@ img {
   text-align: center;
   margin-bottom: 12px;
 }
-
-/*** 
-
-====================================================================
-	Client Section
-====================================================================
-
-***/
 
 .clients-section-three {
   position: relative;
@@ -3987,7 +3865,8 @@ img {
 }
 
 @media (min-width: 992px) {
-  .subscribe-form-three {}
+  .subscribe-form-three {
+  }
 }
 
 .subscribe-form-three h4 {
@@ -4182,14 +4061,6 @@ img {
   margin-top: 20px;
 }
 
-/*** 
-
-====================================================================
-	Services Section Three
-====================================================================
-
-***/
-
 .services-section-three {
   position: relative;
   padding: 50px 0px 20px;
@@ -4254,14 +4125,6 @@ img {
   color: #848484;
   font-size: 16px;
 }
-
-/*** 
-
-====================================================================
-	Services Section Three
-====================================================================
-
-***/
 
 .services-section-four {
   position: relative;
@@ -4329,8 +4192,6 @@ img {
   font-size: 16px;
 }
 
-/* services block seven */
-
 .services-block-seven {
   position: relative;
   margin-bottom: 45px;
@@ -4392,18 +4253,9 @@ img {
   font-size: 16px;
 }
 
-/*** 
-
-====================================================================
-	Testimonial Section Three
-====================================================================
-
-***/
-
 .testimonial-section-three {
   position: relative;
   padding: 80px 0px 80px;
-  /* background: url(../images/resource/bg-layer.jpg) repeat; */
 }
 
 .testimonial-section-three .testimonial-outer {
@@ -4418,7 +4270,6 @@ img {
   text-align: center;
   margin: 0 auto;
   border: 1px solid #e5e5e5;
-  /* background: url(../images/icons/quote-icon.png) center center no-repeat; */
 }
 
 .testimonial-block-one {
@@ -4544,14 +4395,6 @@ img {
 .clients-section-two .image-box:hover:after {
   border-color: #e31528;
 }
-
-/*** 
-
-====================================================================
-	Call To Action Section
-====================================================================
-
-***/
 
 .call-to-action-section-two {
   position: relative;
@@ -4723,14 +4566,6 @@ img {
   right: 0px;
 }
 
-/*** 
-
-====================================================================
-	Full Width Section
-====================================================================
-
-***/
-
 .full-width-section {
   position: relative;
 }
@@ -4794,14 +4629,6 @@ img {
   float: left;
   padding: 80px 15px 40px 70px;
 }
-
-/*** 
-
-====================================================================
-	Fact Counter style
-====================================================================
-
-***/
 
 .fact-counter {
   position: relative;
@@ -4894,8 +4721,6 @@ img {
   margin-top: 10px;
 }
 
-/*News Block Four*/
-
 .news-block-four {
   position: relative;
 }
@@ -4966,19 +4791,10 @@ img {
   color: #e31528;
 }
 
-/*** 
-
-====================================================================
-	Page Title Style
-====================================================================
-
-***/
-
 .page-title {
   position: relative;
   text-align: center;
   padding: 60px 0px 20px 0px;
-  /* background: url(../images/resource/page-title-bg.jpg) repeat; */
 }
 
 .page-title h1 {
@@ -5063,14 +4879,6 @@ img {
   color: #e31528;
 }
 
-/*** 
-
-====================================================================
-	Who We Are Section
-====================================================================
-
-***/
-
 .who-we-are-section {
   position: relative;
   padding-top: 75px;
@@ -5110,14 +4918,6 @@ img {
   margin-top: 26px;
 }
 
-/*** 
-
-====================================================================
-	Featured Section Two
-====================================================================
-
-***/
-
 .featured-section-two {
   position: relative;
   padding: 80px 0px 50px;
@@ -5137,8 +4937,6 @@ img {
   display: block;
   background-color: rgba(24, 78, 157, 0.95);
 }
-
-/*Featured Block Two*/
 
 .featured-block-two {
   position: relative;
@@ -5186,14 +4984,6 @@ img {
   line-height: 1.8em;
 }
 
-/*** 
-
-====================================================================
-	Error Section
-====================================================================
-
-***/
-
 .error-section {
   position: relative;
   padding: 130px 0px 130px;
@@ -5228,8 +5018,6 @@ img {
   margin-top: 6px;
   margin-bottom: 40px;
 }
-
-/*Search Box Widget*/
 
 .error-search-form .form-group {
   position: relative;
@@ -5275,26 +5063,10 @@ img {
   font-weight: normal;
 }
 
-/*** 
-
-====================================================================
-	Blog Section
-====================================================================
-
-***/
-
 .blog-section {
   position: relative;
   padding: 80px 0px 80px;
 }
-
-/*** 
-
-====================================================================
-	Styled Pagination
-====================================================================
-
-***/
 
 .blog-page .styled-pagination {
   position: relative;
@@ -5354,14 +5126,6 @@ img {
   background-color: #e31528;
 }
 
-/*** 
-
-====================================================================
-	Sidebar Page Container
-====================================================================
-
-***/
-
 .sidebar-page-container {
   position: relative;
   padding: 80px 0px 40px;
@@ -5377,60 +5141,9 @@ img {
   margin-bottom: 50px;
 }
 
-/*Blog Category*/
-
 .blog-cat {
   position: relative;
 }
-
-.blog-cat li {
-  position: relative;
-  margin-bottom: 15px;
-  transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -webkit-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-}
-
-.blog-cat li a {
-  position: relative;
-  font-size: 15px;
-  font-weight: 400;
-  display: block;
-  padding-bottom: 15px;
-  color: #848484;
-  padding-left: 30px;
-  border-bottom: 1px solid #eeeeee;
-  transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -webkit-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  font-family: "Raleway", sans-serif;
-}
-
-.blog-cat li a:before {
-  position: absolute;
-  content: "\f114";
-  left: 0px;
-  top: 0px;
-  font-family: "FontAwesome";
-}
-
-.blog-cat li a:after {
-  position: absolute;
-  content: "\f105";
-  right: 0px;
-  top: 0px;
-  font-family: "FontAwesome";
-}
-
-.blog-cat li a:hover {
-  color: #e31528;
-}
-
-/*Post Widget*/
 
 .sidebar .popular-posts .post {
   position: relative;
@@ -5510,8 +5223,6 @@ img {
   font-family: "FontAwesome";
 }
 
-/*Popular Tags*/
-
 .sidebar .popular-tags a {
   position: relative;
   display: inline-block;
@@ -5534,8 +5245,6 @@ img {
   color: #ffffff;
   background-color: #e31528;
 }
-
-/*facebook like widget*/
 
 .facebook-like-widget .image img {
   width: 100%;
@@ -5637,8 +5346,6 @@ img {
   font-family: "Raleway", sans-serif;
 }
 
-/*Blog Single*/
-
 .blog-single {
   position: relative;
 }
@@ -5731,8 +5438,6 @@ img {
   margin-bottom: 40px;
 }
 
-/*Post Share Options*/
-
 .post-share-options {
   position: relative;
   padding-top: 16px;
@@ -5775,8 +5480,6 @@ img {
 .post-share-options .new-posts a:hover {
   color: #e31528;
 }
-
-/*Author Box*/
 
 .author-box {
   position: relative;
@@ -5885,7 +5588,6 @@ p {
 .auto-container {
   position: static;
   max-width: 1200px;
-  /*padding:0px 15px;*/
   padding: 0px 0px;
   margin: 0 auto;
 }
@@ -6073,8 +5775,6 @@ li {
   margin-bottom: 10px;
 }
 
-/*Comment Form*/
-
 .comment-form .group-title {
   margin-bottom: 20px;
 }
@@ -6180,14 +5880,6 @@ li {
   border-color: #f06529;
 }
 
-/*** 
-
-====================================================================
-	Comments Area
-====================================================================
-
- ***/
-
 .contact-section {
   position: relative;
   padding: 80px 0px 50px;
@@ -6254,8 +5946,6 @@ li {
   font-size: 18px;
   font-weight: 400;
 }
-
-/*Contact Form*/
 
 .contact-form h2 {
   position: relative;
@@ -6326,14 +6016,6 @@ li {
   font-weight: 500;
 }
 
-/*** 
-
-====================================================================
-	Map Section Style
-====================================================================
-
-***/
-
 .map-data {
   text-align: center;
   font-size: 14px;
@@ -6373,8 +6055,6 @@ li {
   float: right;
   color: #848484;
 }
-
-/*List Widget*/
 
 .sidebar .sidebar-category .list {
   position: relative;
@@ -6427,8 +6107,6 @@ li {
   color: #ffffff;
 }
 
-/*Broucher Widget*/
-
 .sidebar-brochure .brochure {
   position: relative;
   color: #222222;
@@ -6474,8 +6152,6 @@ li {
   border-color: #e31528;
 }
 
-/*hour Widget*/
-
 .hour-widget {
   position: relative;
   background: #f7f7f7;
@@ -6495,8 +6171,6 @@ li {
   right: 0;
   top: 0;
 }
-
-/*Locate Widget*/
 
 .locate-widget {
   position: relative;
@@ -6715,8 +6389,6 @@ li {
   background-color: #e31528;
 }
 
-/*Link Widget*/
-
 .links-widget .links {
   position: relative;
 }
@@ -6740,8 +6412,6 @@ li {
 .links-widget .links li a:hover {
   color: #ffffff;
 }
-
-/*List Style One*/
 
 .list-style-one {
   position: relative;
@@ -6772,8 +6442,6 @@ li {
   font-size: 24px;
   line-height: 1em;
 }
-
-/*List Style Two*/
 
 .list-style-two {
   position: relative;
@@ -6813,8 +6481,6 @@ li {
   line-height: 1em;
 }
 
-/*List Style Three*/
-
 .list-style-three {
   position: relative;
 }
@@ -6845,8 +6511,6 @@ li {
   height: 6px;
   background-color: #cdcdcd;
 }
-
-/*List Style Four*/
 
 .list-style-four {
   position: relative;
@@ -6968,131 +6632,8 @@ li {
   background-color: #e31528;
 }
 
-/*Link Widget*/
-
 .links-widget-two .links {
   position: relative;
-}
-
-@media (min-width: 992px) {
-  .links-widget-two {
-    padding-left: 50px;
-  }
-}
-
-.links-widget-two .links li {
-  position: relative;
-  margin-bottom: 7px;
-}
-
-.links-widget-two .links li a {
-  position: relative;
-  color: #848484;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-}
-
-.links-widget-two .links li a:hover {
-  color: #ffffff;
-}
-
-.links-widget-two .links li a:before {
-  position: absolute;
-  content: "";
-}
-
-.contact-widget-two .contact-email {
-  position: relative;
-  color: #e31528;
-  font-size: 16px;
-  line-height: 1.4em;
-  display: inline-block;
-  margin-top: 15px;
-}
-
-/* news widget */
-
-.news-widget-two ul li {
-  position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-}
-
-.news-widget-two ul li:last-child {
-  border-bottom: 0px;
-}
-
-.news-widget-two ul li p {
-  color: #848484;
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.news-widget-two ul li h5 {
-  color: #fff;
-  font-size: 16px;
-}
-
-/* working-hour-widget */
-
-.working-hour-widget {
-  position: relative;
-}
-
-.working-hour-widget ul li {
-  color: #848484;
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.working-hour-widget {
-  position: relative;
-}
-
-.working-hour-widget .discount {
-  position: relative;
-  border: 2px dashed #353e45;
-  padding: 25px 20px 10px;
-  margin-top: 26px;
-  text-align: center;
-}
-
-.working-hour-widget .discount h4 {
-  color: #fff;
-  font-size: 22px;
-}
-
-.working-hour-widget .discount h4 span {
-  font-size: 36px;
-  color: #e31528;
-}
-
-.working-hour-widget .discount p {
-  color: #e31528;
-}
-
-/*footer-bottom*/
-.main-footer-two .footer-bottom {
-  position: relative;
-  padding: 22px 0px;
-  background: #0b151e;
-}
-
-.main-footer-two .footer-bottom .copyright {
-  position: relative;
-  color: #afafb5;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 6px;
-}
-
-.main-footer-two .footer-bottom .social-column {
-  text-align: right;
 }
 
 .info-section {
@@ -7179,93 +6720,6 @@ li {
 
 .info-section .social-icon-three {
   margin-bottom: 36px;
-}
-
-.btn-style-one {
-  position: relative;
-  padding: 13px 48px;
-  line-height: 24px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: #e31528;
-  border: 2px solid #e31528;
-  text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
-}
-
-.btn-style-one:hover {
-  color: #e31528;
-  background: none;
-}
-
-/*Btn Style Two*/
-
-.btn-style-two {
-  position: relative;
-  padding: 13px 37px;
-  line-height: 24px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-}
-
-.btn-style-two:hover {
-  background: #e31528;
-  color: #ffffff;
-  border-color: #e31528;
-}
-
-/*Btn Style Three*/
-
-.btn-style-three {
-  position: relative;
-  padding: 10px 39px;
-  line-height: 24px;
-  color: #222;
-  font-size: 16px;
-  font-weight: 500;
-  border: 2px solid #dddddd;
-  text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
-}
-
-.btn-style-three:hover {
-  background: #e31528;
-  color: #ffffff;
-  border-color: #e31528;
-}
-
-/*Btn Style Four*/
-
-.btn-style-four {
-  position: relative;
-  padding: 10px 39px;
-  line-height: 24px;
-  color: #222222;
-  font-size: 16px;
-  font-weight: 500;
-  border: 1px solid #eeeeee;
-  text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
-}
-
-.btn-style-four:hover {
-  background: #e31528;
-  color: #ffffff;
-  border-color: #e31528;
-}
-
-.theme_color {
-  color: #e31528;
-}
-
-img {
-  display: inline-block;
-  max-width: 100%;
 }
 
 .preloader {
@@ -7385,8 +6839,6 @@ img {
   opacity: 1;
 }
 
-/*Services List Section*/
-
 .services-list-section {
   position: relative;
   margin-top: 30px;
@@ -7461,82 +6913,6 @@ img {
   margin-right: 4px;
 }
 
-.main-footer-two {
-  position: relative;
-  background: #121c25;
-}
-
-.main-footer-two .widgets-section {
-  position: relative;
-  padding: 80px 0px 0px;
-}
-
-.main-footer-two .footer-column {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.main-footer-two .logo-widget .footer-logo {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.main-footer-two .logo-widget .text {
-  position: relative;
-  color: #848484;
-  font-size: 16px;
-  line-height: 1.7em;
-  margin-bottom: 15px;
-}
-
-.main-footer-two .logo-widget ul li {
-  color: #848484;
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.main-footer-two .logo-widget ul li i {
-  color: #e31528;
-  margin-right: 10px;
-}
-
-.main-footer-two .logo-widget ul li {
-  color: #848484;
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.main-footer-two .logo-widget ul li span {
-  color: #e31528;
-  font-weight: 500;
-}
-
-.footer-widget-two h2 {
-  position: relative;
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-widget-two h2:before {
-  position: absolute;
-  content: "";
-  left: 0px;
-  bottom: -1px;
-  width: 70px;
-  height: 1px;
-  background-color: #e31528;
-}
-
-/*Link Widget*/
-
-.links-widget-two .links {
-  position: relative;
-}
-
 @media (min-width: 992px) {
   .links-widget-two {
     padding-left: 50px;
@@ -7577,8 +6953,6 @@ img {
   margin-top: 15px;
 }
 
-/* news widget */
-
 .news-widget-two ul li {
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
@@ -7600,8 +6974,6 @@ img {
   color: #fff;
   font-size: 16px;
 }
-
-/* working-hour-widget */
 
 .working-hour-widget {
   position: relative;
@@ -7639,7 +7011,6 @@ img {
   color: #e31528;
 }
 
-/*footer-bottom*/
 .main-footer-two .footer-bottom {
   position: relative;
   padding: 22px 0px;
@@ -7674,8 +7045,6 @@ img {
   text-align: center;
   margin-bottom: 30px;
 }
-
-/*Subscribe widget*/
 
 .subscribe-form {
   position: relative;
@@ -7715,8 +7084,6 @@ img {
 .subscribe-form button {
   width: 100%;
 }
-
-/*subscribe form style two*/
 
 .subscribe-form-two {
   position: relative;
@@ -7764,8 +7131,6 @@ img {
 .subscribe-form-two p {
   color: #e31528;
 }
-
-/*subscribe form style three*/
 
 .subscribe-form-three {
   position: relative;
@@ -8069,11 +7434,6 @@ img {
   transform: scale(1.1, 1.1);
 }
 
-/*.imgZoom:hover #prod-title {
-	color:#e31528;
-}*/
-
-/* Accordion styles */
 .accordion {
   background-color: #eee;
   color: #444;
@@ -8120,10 +7480,6 @@ img {
   border-bottom: 1px solid #eee;
   border-right: 1px solid #eee;
   border-left: 1px solid #eee;
-}
-
-.blog-cat li:hover {
-  transform: scale(1.1);
 }
 
 .our-product {
@@ -8194,10 +7550,6 @@ img {
   z-index: 100;
 }
 
-#box:hover {
-  /*-webkit-animation: scaleme 1s;*/
-}
-
 @-webkit-keyframes scaleme {
   0% {
     -webkit-transform: scale(1);
@@ -8224,7 +7576,6 @@ img {
     -webkit-transform: scale(1);
     opacity: 1;
   }
-
   100% {
     -webkit-transform: scale(3);
     opacity: 0;
@@ -8319,7 +7670,6 @@ img {
   -moz-transition: all 300ms ease;
   transition: all 300ms ease;
 }
-
 /*Social Icon One*/
 
 .social-icon-one {
@@ -8346,8 +7696,6 @@ img {
 .social-icon-one li a:hover {
   color: #ffffff;
 }
-
-/*Social Icon Two*/
 
 .social-icon-two {
   position: relative;
@@ -8384,8 +7732,6 @@ img {
   background-color: #ffffff;
 }
 
-/*Social Icon Three*/
-
 .social-icon-three {
   position: relative;
 }
@@ -8419,8 +7765,6 @@ img {
   background-color: #e31528;
 }
 
-/*Social Icon Four*/
-
 .social-icon-four {
   position: relative;
 }
@@ -8445,8 +7789,6 @@ img {
 .social-icon-four li a:hover {
   color: #e31528;
 }
-
-/*Custom Select*/
 
 .form-group .ui-selectmenu-button.ui-button {
   width: 100%;
