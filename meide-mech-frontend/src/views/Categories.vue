@@ -628,12 +628,6 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-input,
-button,
-select,
-textarea {
-}
-
 p {
   position: relative;
   line-height: 1.8em;
