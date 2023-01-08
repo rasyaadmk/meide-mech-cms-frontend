@@ -1,20 +1,14 @@
 <template>
   <ion-page>
     <ion-content>
-      <section class="product-section-list" id="product-list">
+      <section class="product-section-list" id="product-list" @click="setOpen(false)">
         <div class="row clearfix bgbg" style="margin: 0">
-          <div
-            class="col-sm-12 col-md-12 col-lg-12"
-            style="
+          <div class="col-sm-12 col-md-12 col-lg-12" style="
               padding: 0px;
               background-color: #e31528 !important;
               background: url('assets/images/batik.svg');
-            "
-          >
-            <div
-              class="container"
-              style="background-color: #fff; padding: 10px"
-            >
+            ">
+            <div class="container" style="background-color: #fff; padding: 10px">
               <div class="row clearfix" style="padding: 20px">
                 <!--Sidebar Side-->
                 <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
@@ -25,10 +19,7 @@
                         <h2>Categories</h2>
                       </div>
 
-                      <ion-accordion-group
-                        :multiple="true"
-                        :value="['first', 'third']"
-                      >
+                      <ion-accordion-group :multiple="true" :value="['first', 'third']">
                         <ion-accordion value="first">
                           <ion-item slot="header" color="light">
                             <ion-label> VALVE</ion-label>
@@ -75,24 +66,12 @@
                 </div>
 
                 <!--Content Side-->
-                <div
-                  class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12"
-                  style="padding: 0"
-                >
+                <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12" style="padding: 0">
                   <div class="search-box">
                     <div class="search-box-product">
-                      <form
-                        method="post"
-                        action="https://danslacuisinededede.com/brixals/email.php"
-                      >
+                      <form method="post" action="https://danslacuisinededede.com/brixals/email.php">
                         <div class="form-group">
-                          <input
-                            type="search"
-                            name="search-field-product"
-                            value=""
-                            placeholder="Search..."
-                            required
-                          />
+                          <input type="search" name="search-field-product" value="" placeholder="Search..." required />
                           <button type="submit">
                             <span class="icon fa fa-search" aria-hidden="true">
                             </span>
@@ -115,423 +94,461 @@
                     <!-- [END] - Backdrop -->
                     <div class="row clearfix our-product-row-item">
                       <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
+                      <div class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
-                            <div class="image">
-                              <img src="/assets/images/example-1.png" alt="" />
-                              <div class="tag-outer">
-                                <div class="product-tag">New</div>
-                              </div>
-                            </div>
-                            <div class="lower-content">
-                              <div class="clearfix_">
-                                <div class="pull-left">
-                                  <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >GROOVED WET ALARM CHECK VALVE, FIG#
-                                      ZSFZ8X9</a
-                                    >
-                                  </h5>
+                          <div class="image">
+                            <img src="/assets/images/example-1.png" alt="" @click="setOpen(true)" />
+                            <ion-modal :is-open="isOpen">
+                              <ion-content>
+                                <div class="modal-content">
+                                  <div class="modal-body">
+                                    <div class="shop-single">
+                                      <div class="product-details">
+                                        <div class="basic-details">
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                            @click="setOpen(false)">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                          <div class="row clearfix">
+                                            <div class="image-column col-md-5 col-sm-6 col-xs-12">
+                                              <!-- <figure class="image-box"><a href="assets/front/images/resource/products/13.jpg" class="lightbox-image" title="Image Caption Here"><img src="assets/front/images/resource/products/13.jpg" alt=""></a></figure> -->
+                                              <section class="product-page">
+                                                <div class="thumbnails">
+                                                  <div class="thumb active">
+                                                    <a href="assets/images/example-1.png">
+                                                      <img src="assets/images/example-1.png"
+                                                        alt="thumb-air-force-right-side">
+                                                    </a>
+                                                  </div>
+                                                  <div class="thumb">
+                                                    <a href="assets/images/example-2.png">
+                                                      <img src="assets/images/example-2.png"
+                                                        alt="thumb-air-force-left-side">
+                                                    </a>
+                                                  </div>
+                                                  <div class="thumb">
+                                                    <a href="assets/images/example-3.png">
+                                                      <img src="assets/images/example-3.png"
+                                                        alt="thumb-air-force-bottom-side">
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                                <div class="img-display-zoom">
+                                                  <span class="zoom">
+                                                    <img src="assets/images/example-1.png" alt="">
+                                                  </span>
+                                                </div>
+                                              </section>
+                                            </div>
+                                            <div class="info-column col-md-7 col-sm-6 col-xs-12">
+                                              <div class="details-header">
+                                                <h4>ZFGP4X Compound High Speed Air Bleeding Valve</h4>
+                                              </div>
+                                              <div class="text">
+                                                <p>
+                                                  The main function of the zone control valve is to control the water
+                                                  supply in a certain
+                                                  area. It has the functions of preventing backflow, pressure detection,
+                                                  and drainage test.
+                                                  It is composed of butterfly valve, check valve, water flow indicator,
+                                                  pressure gauge and
+                                                  connecting pipes.
+                                                </p>
+                                              </div>
+                                              <div class="button" style="text-align: center;margin-top: 45px;">
+                                                <button type="button"
+                                                  class="theme-btn btn-style-one add-to-cart mr-2">Contact</button>
+                                                <button type="button"
+                                                  class="theme-btn btn-style-one add-to-cart">Feedback</button>
+                                              </div>
+                                            </div>
+                                            <div class="info-column col-md-12 col-sm-12 col-xs-12">
+                                              <div class="products-info">
+                                                <!--Product Info Tabs-->
+                                                <div class="product-info-tabs">
+                                                  <!--Product Tabs-->
+                                                  <nav>
+                                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                      <button class="nav-link active" id="nav-home-tab"
+                                                        data-toggle="tab" data-target="#nav-home" type="button"
+                                                        role="tab" aria-controls="nav-home" aria-selected="true"
+                                                        style="color: black;">Description</button>
+                                                      <button class="nav-link" id="nav-profile-tab" data-toggle="tab"
+                                                        data-target="#nav-profile" type="button" role="tab"
+                                                        aria-controls="nav-profile" aria-selected="false"
+                                                        style="color: black;">Specification</button>
+                                                      <button class="nav-link" id="nav-contact-tab" data-toggle="tab"
+                                                        data-target="#nav-contact" type="button" role="tab"
+                                                        aria-controls="nav-contact" aria-selected="false"
+                                                        style="color: black;">Dimension</button>
+
+                                                    </div>
+                                                  </nav>
+                                                  <div class="tab-content" id="nav-tabContent">
+                                                    <div class="tab-pane fade show active mt-3" id="nav-home" role="tabpanel"
+                                                      aria-labelledby="nav-home-tab">
+                                                      <p>The main function of the zone control valve is to control the
+                                                        water supply in
+                                                        a certain area. It has the functions of preventing backflow,
+                                                        pressure
+                                                        detection, and drainage test. It is composed of butterfly valve,
+                                                        check valve,
+                                                        water flow indicator, pressure gauge and connecting pipes.<br>
+                                                        The main function of the zone control valve is to control the
+                                                        water supply in
+                                                        a certain area. It has the functions of preventing backflow,
+                                                        pressure
+                                                        detection, and drainage test. It is composed of butterfly valve,
+                                                        check valve,
+                                                        water flow indicator, pressure gauge and connecting pipes.</p>
+                                                    </div>
+                                                    <div class="tab-pane fade mt-3" id="nav-profile" role="tabpanel"
+                                                      aria-labelledby="nav-profile-tab">
+                                                      <div class="tab" id="prod-specification">
+                                                        <ul>
+                                                          <li>1. Valve Body:ASTM A536,65-45-12</li>
+                                                          <li>2. Floating Ball : AISI 304</li>
+                                                          <li>3. Stem: AISI 304</li>
+                                                          <li>4. Gasket:EPDM</li>
+                                                          <li>5. Guide Sleeve: H62</li>
+                                                          <li>6. Guide Sleeve: H62</li>
+                                                          <li>7. Draft Hood: ASTM A536,65-45-12</li>
+                                                          <li>9. Epoxy Coating Color: Body RAL5005</li>
+                                                          <li>10. Pressure Rating: 300PSI</li>
+                                                          <li>11. Certification:NO</li>
+                                                        </ul>
+                                                      </div>
+                                                    </div>
+                                                    <div class="tab-pane fade mt-3" id="nav-contact" role="tabpanel"
+                                                      aria-labelledby="nav-contact-tab">
+                                                      <div class="table-responsive">
+                                                        <table class="table table-bordered">
+                                                          <thead>
+                                                            <tr>
+                                                              <th scope="col" colspan="2" class="text-center">Size</th>
+                                                              <th scope="col" class="text-center">Unit Weight</th>
+                                                              <th scope="col" class="text-center" rowspan="2">PCS/CTN
+                                                              </th>
+                                                              <th scope="col" class="text-center" rowspan="2">CTN
+                                                                QTY/PLT</th>
+                                                              <th scope="col" class="text-center" rowspan="2">Crate or
+                                                                PLT QTY / 20" Container</th>
+                                                            </tr>
+                                                            <tr>
+                                                              <th scope="col" class="text-center">Inch</th>
+                                                              <th scope="col" class="text-center">MM</th>
+                                                              <th scope="col" class="text-center">KGS</th>
+                                                            </tr>
+                                                          </thead>
+                                                          <tbody>
+                                                            <tr>
+                                                              <td class="text-center">2"</td>
+                                                              <td class="text-center">2"</td>
+                                                              <td class="text-center">14,86</td>
+                                                              <td class="text-center">1</td>
+                                                              <td class="text-center">54</td>
+                                                              <td class="text-center">20</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td class="text-center">21/2"</td>
+                                                              <td class="text-center">65</td>
+                                                              <td class="text-center">16,42</td>
+                                                              <td class="text-center">TBC</td>
+                                                              <td class="text-center">TBC</td>
+                                                              <td class="text-center">TBC</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td class="text-center">3"</td>
+                                                              <td class="text-center">80</td>
+                                                              <td class="text-center">21,76</td>
+                                                              <td class="text-center">TBC</td>
+                                                              <td class="text-center">TBC</td>
+                                                              <td class="text-center">TBC</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td class="text-center">2"</td>
+                                                              <td class="text-center">2"</td>
+                                                              <td class="text-center">14,86</td>
+                                                              <td class="text-center">1</td>
+                                                              <td class="text-center">54</td>
+                                                              <td class="text-center">20</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td class="text-center">21/2"</td>
+                                                              <td class="text-center">65</td>
+                                                              <td class="text-center">16,42</td>
+                                                              <td class="text-center">TBC</td>
+                                                              <td class="text-center">TBC</td>
+                                                              <td class="text-center">TBC</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td class="text-center">3"</td>
+                                                              <td class="text-center">80</td>
+                                                              <td class="text-center">21,76</td>
+                                                              <td class="text-center">TBC</td>
+                                                              <td class="text-center">TBC</td>
+                                                              <td class="text-center">TBC</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td class="text-center">2"</td>
+                                                              <td class="text-center">2"</td>
+                                                              <td class="text-center">14,86</td>
+                                                              <td class="text-center">1</td>
+                                                              <td class="text-center">54</td>
+                                                              <td class="text-center">20</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td class="text-center">21/2"</td>
+                                                              <td class="text-center">65</td>
+                                                              <td class="text-center">16,42</td>
+                                                              <td class="text-center">TBC</td>
+                                                              <td class="text-center">TBC</td>
+                                                              <td class="text-center">TBC</td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td class="text-center">3"</td>
+                                                              <td class="text-center">80</td>
+                                                              <td class="text-center">21,76</td>
+                                                              <td class="text-center">TBC</td>
+                                                              <td class="text-center">TBC</td>
+                                                              <td class="text-center">TBC</td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <!--End Product Info Tabs-->
+                                              </div>
+                                            </div>
+
+                                            <div class="info-column col-md-12 col-sm-12 col-xs-12">
+                                              <!--Related Products-->
+                                              <div class="related-products">
+                                                <div class="sec-title">
+                                                  <h2>Related Products</h2>
+                                                </div>
+                                                <div
+                                                  class="row clearfix related-products-caraousel owl-carousel owl-theme"
+                                                  style="padding-left: 20px;">
+                                                  <!--Shop Item-->
+                                                  <swiper :slides-per-view="5" :space-between="10" @swiper="onSwiper"
+                                                    @slideChange="onSlideChange" :loop="true" :autoplay="{
+                                                      delay: 100,
+                                                      disableOnInteraction: false,
+                                                    }">
+                                                    <swiper-slide>
+                                                      <div class="product-item">
+                                                        <div class="inner-box imgZoom">
+                                                          <a href="#">
+                                                            <div class="image">
+                                                              <img src="assets/images/example-1.png" alt="" />
+                                                              <div class="tag-outer">
+                                                                <div class="product-tag">New</div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="lower-content">
+                                                              <div class="clearfix_">
+                                                                <div class="pull-left">
+                                                                  <h5>
+                                                                    <a href="#" class="prod-title">GROOVED WET ALARM
+                                                                      CHECK VALVE, FIG#
+                                                                      ZSFZ8X9</a>
+                                                                  </h5>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                    </swiper-slide>
+                                                    <swiper-slide>
+                                                      <div class="product-item">
+                                                        <div class="inner-box imgZoom">
+                                                          <a href="#">
+                                                            <div class="image">
+                                                              <img src="assets/images/example-1.png" alt="" />
+                                                              <div class="tag-outer">
+                                                                <div class="product-tag">New</div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="lower-content">
+                                                              <div class="clearfix_">
+                                                                <div class="pull-left">
+                                                                  <h5>
+                                                                    <a href="#" class="prod-title">GROOVED WET ALARM
+                                                                      CHECK VALVE, FIG#
+                                                                      ZSFZ8X9</a>
+                                                                  </h5>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                    </swiper-slide>
+                                                    <swiper-slide>
+                                                      <div class="product-item">
+                                                        <div class="inner-box imgZoom">
+                                                          <a href="#">
+                                                            <div class="image">
+                                                              <img src="assets/images/example-1.png" alt="" />
+                                                              <div class="tag-outer">
+                                                                <div class="product-tag">New</div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="lower-content">
+                                                              <div class="clearfix_">
+                                                                <div class="pull-left">
+                                                                  <h5>
+                                                                    <a href="#" class="prod-title">GROOVED WET ALARM
+                                                                      CHECK VALVE, FIG#
+                                                                      ZSFZ8X9</a>
+                                                                  </h5>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                    </swiper-slide>
+                                                    <swiper-slide>
+                                                      <div class="product-item">
+                                                        <div class="inner-box imgZoom">
+                                                          <a href="#">
+                                                            <div class="image">
+                                                              <img src="assets/images/example-1.png" alt="" />
+                                                              <div class="tag-outer">
+                                                                <div class="product-tag">New</div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="lower-content">
+                                                              <div class="clearfix_">
+                                                                <div class="pull-left">
+                                                                  <h5>
+                                                                    <a href="#" class="prod-title">GROOVED WET ALARM
+                                                                      CHECK VALVE, FIG#
+                                                                      ZSFZ8X9</a>
+                                                                  </h5>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                    </swiper-slide>
+                                                    <swiper-slide>
+                                                      <div class="product-item">
+                                                        <div class="inner-box imgZoom">
+                                                          <a href="#">
+                                                            <div class="image">
+                                                              <img src="assets/images/example-1.png" alt="" />
+                                                              <div class="tag-outer">
+                                                                <div class="product-tag">New</div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="lower-content">
+                                                              <div class="clearfix_">
+                                                                <div class="pull-left">
+                                                                  <h5>
+                                                                    <a href="#" class="prod-title">GROOVED WET ALARM
+                                                                      CHECK VALVE, FIG#
+                                                                      ZSFZ8X9</a>
+                                                                  </h5>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                    </swiper-slide>
+                                                    <swiper-slide>
+                                                      <div class="product-item">
+                                                        <div class="inner-box imgZoom">
+                                                          <a href="#">
+                                                            <div class="image">
+                                                              <img src="assets/images/example-1.png" alt="" />
+                                                              <div class="tag-outer">
+                                                                <div class="product-tag">New</div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="lower-content">
+                                                              <div class="clearfix_">
+                                                                <div class="pull-left">
+                                                                  <h5>
+                                                                    <a href="#" class="prod-title">GROOVED WET ALARM
+                                                                      CHECK VALVE, FIG#
+                                                                      ZSFZ8X9</a>
+                                                                  </h5>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                    </swiper-slide>
+                                                    <swiper-slide>
+                                                      <div class="product-item">
+                                                        <div class="inner-box imgZoom">
+                                                          <a href="#">
+                                                            <div class="image">
+                                                              <img src="assets/images/example-1.png" alt="" />
+                                                              <div class="tag-outer">
+                                                                <div class="product-tag">New</div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="lower-content">
+                                                              <div class="clearfix_">
+                                                                <div class="pull-left">
+                                                                  <h5>
+                                                                    <a href="#" class="prod-title">GROOVED WET ALARM
+                                                                      CHECK VALVE, FIG#
+                                                                      ZSFZ8X9</a>
+                                                                  </h5>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                    </swiper-slide>
+                                                  </swiper>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
+                              </ion-content>
+                            </ion-modal>
+                            <div class="tag-outer">
+                              <div class="product-tag">New</div>
+                            </div>
+                          </div>
+                          <div class="lower-content">
+                            <div class="clearfix_">
+                              <div class="pull-left">
+                                <h5>
+                                  <a href="javascript:void(0);" onclick="popupDetailProduct();"
+                                    class="prod-title">GROOVED WET ALARM CHECK VALVE, FIG#
+                                    ZSFZ8X9</a>
+                                </h5>
                               </div>
                             </div>
-                          </a>
+                          </div>
                         </div>
                       </div>
 
-                      <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
-                        <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
-                            <div class="image">
-                              <img src="/assets/images/example-2.png" alt="" />
-                            </div>
-                            <div class="lower-content">
-                              <div class="clearfix_">
-                                <div class="pull-left">
-                                  <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >AWWA FLANGED RESILIENT OS&Y GATE
-                                      VALVE,FIG# XZ41X</a
-                                    >
-                                  </h5>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
-                        <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
-                            <div class="image">
-                              <img src="/assets/images/example-3.png" alt="" />
-                              <!-- <div class="tag-outer">
-                                                        <div class="product-tag">New</div>
-                                                    </div> -->
-                            </div>
-                            <div class="lower-content">
-                              <div class="clearfix_">
-                                <div class="pull-left">
-                                  <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >AWWA FLANGED RESILIENT NRS GATE
-                                      VALVE,FIG# Z45X</a
-                                    >
-                                  </h5>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
-                        <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
-                            <div class="image">
-                              <img src="/assets/images/example-4.png" alt="" />
-                              <!-- <div class="tag-outer">
-                                                        <div class="product-tag">New</div>
-                                                    </div> -->
-                            </div>
-                            <div class="lower-content">
-                              <div class="clearfix_">
-                                <div class="pull-left">
-                                  <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >ANSI WAFER BUTTERFLY VALVE WITH
-                                      HANDWHEEL, FIG# D71X4</a
-                                    >
-                                  </h5>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
-                        <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
-                            <div class="image">
-                              <img src="/assets/images/example-5.png" alt="" />
-                              <div class="tag-outer">
-                                <div class="product-tag">New</div>
-                              </div>
-                            </div>
-                            <div class="lower-content">
-                              <div class="clearfix_">
-                                <div class="pull-left">
-                                  <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >EN FLANGED WET ALARM CHECK VALVE, FIG#
-                                      ZSFZ4X</a
-                                    >
-                                  </h5>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
-                        <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
-                            <div class="image">
-                              <img src="/assets/images/example-6.png" alt="" />
-                              <!-- <div class="tag-outer">
-                                                        <div class="product-tag">New</div>
-                                                    </div> -->
-                            </div>
-                            <div class="lower-content">
-                              <div class="clearfix_">
-                                <div class="pull-left">
-                                  <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >ANSI WAFER BUTTERFLY VALVE FOR
-                                      WATERWORKS, FIG# D371X4</a
-                                    >
-                                  </h5>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
-                        <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
-                            <div class="image">
-                              <img src="/assets/images/example-7.png" alt="" />
-                              <!-- <div class="tag-outer">
-                                                        <div class="product-tag">New</div>
-                                                    </div> -->
-                            </div>
-                            <div class="lower-content">
-                              <div class="clearfix_">
-                                <div class="pull-left">
-                                  <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >ANSI FLANGED SWING CHECK VALVE, FIG#
-                                      H44X2</a
-                                    >
-                                  </h5>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
-                        <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
-                            <div class="image">
-                              <img src="/assets/images/example-8.png" alt="" />
-                              <!-- <div class="tag-outer">
-                                                        <div class="product-tag">New</div>
-                                                    </div> -->
-                            </div>
-                            <div class="lower-content">
-                              <div class="clearfix_">
-                                <div class="pull-left">
-                                  <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >BS FLANGED METAL SEATED GLOBE VALVE, FIG#
-                                      J41H</a
-                                    >
-                                  </h5>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
-                        <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
-                            <div class="image">
-                              <img src="/assets/images/example-9.png" alt="" />
-                              <!-- <div class="tag-outer">
-                                                        <div class="product-tag">New</div>
-                                                    </div> -->
-                            </div>
-                            <div class="lower-content">
-                              <div class="clearfix_">
-                                <div class="pull-left">
-                                  <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >UNDERGROUND FIRE HYDRANT, FIG# SA1</a
-                                    >
-                                  </h5>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
-                        <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
-                            <div class="image">
-                              <img src="/assets/images/example-10.png" alt="" />
-                              <!-- <div class="tag-outer">
-                                                        <div class="product-tag">New</div>
-                                                    </div> -->
-                            </div>
-                            <div class="lower-content">
-                              <div class="clearfix_">
-                                <div class="pull-left">
-                                  <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >BS FLANGED RESILIENT NRS GATE VALVE,FIG#
-                                      Z45X</a
-                                    >
-                                  </h5>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
-                        <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
-                            <div class="image">
-                              <img src="/assets/images/example-11.png" alt="" />
-                              <!-- <div class="tag-outer">
-                                                        <div class="product-tag">New</div>
-                                                    </div> -->
-                            </div>
-                            <div class="lower-content">
-                              <div class="clearfix_">
-                                <div class="pull-left">
-                                  <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >BS FLANGED RESILIENT OS&Y GATE VALVE,FIG#
-                                      XZ41X</a
-                                    >
-                                  </h5>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <!--Shop Item-->
-                      <div
-                        class="product-item col-lg-4 col-md-6 col-sm-6 col-xs-12"
-                      >
-                        <div class="inner-box imgZoom">
-                          <a
-                            href="javascript:void(0);"
-                            onclick="popupDetailProduct();"
-                          >
-                            <div class="image">
-                              <img src="/assets/images/example-12.png" alt="" />
-                              <!-- <div class="tag-outer">
-                                                        <div class="product-tag">New</div>
-                                                    </div> -->
-                            </div>
-                            <div class="lower-content">
-                              <div class="clearfix_">
-                                <div class="pull-left">
-                                  <h5>
-                                    <a
-                                      href="javascript:void(0);"
-                                      onclick="popupDetailProduct();"
-                                      class="prod-title"
-                                      >DIN FLANGED RESILIENT NRS GATE VALVE,FIG#
-                                      Z45X</a
-                                    >
-                                  </h5>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
                     </div>
-                    <div
-                      class="button btn-load-more-product-list"
-                      style="text-align: center"
-                    >
-                      <button
-                        type="button"
-                        class="theme-btn btn-style-load-more-product add-to-cart"
-                      >
+                    <div class="button btn-load-more-product-list" style="text-align: center">
+                      <button type="button" class="theme-btn btn-style-load-more-product add-to-cart">
                         Load More
                       </button>
-                      <div
-                        class="content-loader"
-                        style="text-align: center"
-                      ></div>
+                      <div class="content-loader" style="text-align: center"></div>
                     </div>
                   </div>
                 </div>
@@ -549,22 +566,55 @@
 import {
   IonContent,
   IonPage,
+  IonModal,
   IonAccordion,
   IonAccordionGroup,
   IonItem,
   IonLabel,
 } from "@ionic/vue";
 import { defineComponent } from "vue";
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay } from "swiper";
+
+import 'swiper/css';
+import 'swiper/css/bundle';
+import '@ionic/vue/css/ionic-swiper.css';
 
 export default defineComponent({
   name: "CategoriesSection",
   components: {
+    Swiper,
+    SwiperSlide,
     IonContent,
     IonPage,
     IonAccordion,
     IonAccordionGroup,
     IonItem,
     IonLabel,
+    IonModal
+  },
+
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
+  setup() {
+    const onSwiper = () => {
+      console.log();
+    };
+    const onSlideChange = () => {
+      console.log('slide change');
+    };
+    return {
+      onSwiper,
+      onSlideChange,
+    };
+  },
+  methods: {
+    setOpen(isOpen: boolean) {
+      this.isOpen = isOpen;
+    },
   },
 });
 </script>
@@ -595,6 +645,31 @@ body {
   background-position: center top;
   -webkit-font-smoothing: antialiased;
   font-family: "Raleway", sans-serif;
+}
+
+.nav-link {
+  position: relative;
+  top: 1px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+  font-size: 16px;
+  background: #f4f4f4;
+  color: #222222;
+  border: 1px solid #f4f4f4;
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  padding: 12px 18px 10px;
+  transition: all 500ms ease;
+  border-radius: 5px 5px 0px 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link:active {
+  color: #e31528;
+  background: #ffffff;
 }
 
 a {
@@ -707,6 +782,7 @@ li {
   font-family: "Raleway", sans-serif;
   color: #808080;
 }
+
 .sidebar .search-box .form-group {
   position: relative;
   margin: 0px;
