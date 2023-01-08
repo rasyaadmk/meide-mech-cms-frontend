@@ -60,46 +60,18 @@
 
       <ion-grid>
         <ion-row>
-          <swiper>
-            <swiper-slide>
-              <div class="container-fluid p-0">
-                <div class="background1">
-                  <div class="font-weight-bold text-white">
-                    <span style="font-size: 48px">GROOVED FITTINGS</span><br>
-                    <span style="font-size: 18px">Excellent quality, the first choice for global customers.</span>
+          <swiper :slides-per-view="1" :space-between="10" :autoplay="{ delay: 500, disableOnInteraction: false, }" :pagination="{ clickable: true, }" :navigation="true" :modules="modules" class="mySwiper" style="height: 650px;">
+              <swiper-slide v-for="post in posts" v-bind:key="post.id">
+                <div class="container-fluid p-0">
+                  <div class="background1 img-fluid" v-bind:style="{ backgroundImage: 'url(' + post.images + ')' }">
+                    <div class="container text-white text-left carousel-text montserrat">
+                      <span style="font-size: 48px; font-weight: bold;">{{ post.title }}</span><br><br><br>
+                      <span style="font-size: 18px">{{ post.description }}</span><br><br>
+                      <a v-bind:href="post.link" class="theme-btn btn-style-one" style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN MORE</a>
+                    </div>
                   </div>
-                  <a href="#" class="theme-btn btn-style-one"
-                    style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN
-                    MORE</a>
                 </div>
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="container-fluid p-0">
-                <div class="background2">
-                  <div class="font-weight-bold text-white">
-                    <span style="font-size: 48px">VALVES FOR FIRE PROTECTION</span><br>
-                    <span style="font-size: 18px">One stop supplier for fire protection valve products.</span>
-                  </div>
-                  <a href="#" class="theme-btn btn-style-one"
-                    style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN
-                    MORE</a>
-                </div>
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="container-fluid p-0">
-                <div class="background3">
-                  <div class="font-weight-bold text-white">
-                    <span style="font-size: 48px">VALVES FOR WATER WORKS</span><br>
-                    <span style="font-size: 18px">All in house production. Reliable quality assurance.</span>
-                  </div>
-                  <a href="#" class="theme-btn btn-style-one"
-                    style="transition: none 0s ease 0s; text-align: inherit; line-height: 24px; border-width: 2px; margin: 0px; padding: 13px 48px; letter-spacing: 0px; font-weight: 500; font-size: 16px;">LEARN
-                    MORE</a>
-                </div>
-              </div>
-            </swiper-slide>
+              </swiper-slide>
           </swiper>
         </ion-row>
       </ion-grid>
@@ -903,6 +875,8 @@ import "swiper/css/bundle";
 import "@ionic/vue/css/ionic-swiper.css";
 import axios from 'axios';
 
+import { Autoplay, Pagination, Navigation } from "swiper";
+
 export default defineComponent({
   name: "IndexSection",
   components: {
@@ -925,7 +899,7 @@ export default defineComponent({
   methods: {
     fetchPosts() {
       axios
-        .get("http://localhost:8080/api/getpartners")
+        .get("http://localhost:8080/api/getCarousel")
         .then((response) => {
           this.posts = response.data;
           console.log(response.data)
@@ -933,6 +907,11 @@ export default defineComponent({
           console.log(error);
         })
     }
+  },
+  setup() {
+    return {
+      modules: [Autoplay, Pagination, Navigation],
+    };
   }
 
   // data(){
