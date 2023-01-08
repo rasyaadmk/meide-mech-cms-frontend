@@ -8,6 +8,7 @@ import FooterSection from '../views/Footer.vue'
 import ApiTest from '../views/apiTest.vue'
 import IndexSection from '../views/index.vue'
 import CategoriesSectionApi from '../views/categoryapi.vue'
+import ModalSection from '../views/modal.vue'
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -55,6 +56,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/apicategory',
     name: 'Api Category',
     component: CategoriesSectionApi
+  },
+  {
+    path: '/modal',
+    name: 'Modal',
+    component: ModalSection
   }
 ]
 
