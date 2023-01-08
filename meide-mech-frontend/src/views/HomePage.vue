@@ -61,7 +61,7 @@
                     <swiper style="height: 650px;">
                         <swiper-slide>
                             <div class="container-fluid p-0">
-                                <div class="background1">
+                                <div class="background1 img-fluid">
                                     <div class="container text-white text-left carousel-text montserrat">
                                         <span style="font-size: 48px; font-weight: bold;">GROOVED FITTINGS</span><br><br><br>
                                         <span style="font-size: 18px">Excellent quality, the first choice for global customers.</span><br><br>
