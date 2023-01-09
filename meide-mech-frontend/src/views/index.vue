@@ -1,6 +1,7 @@
 <template>
   <ion-page>
     <ion-content>
+      <section name="header-carousel">
       <nav class="navbar navbar-light justify-content-center montserrat" style="
           background: url('assets/images/batik.svg');
           background-color: #e31528;
@@ -75,6 +76,7 @@
           </swiper>
         </ion-row>
       </ion-grid>
+    </section>
       <!-- Categories -->
       <section class="product-section-list" id="product-list">
         <div class="row clearfix bgbg" style="margin: 0">
