@@ -1087,6 +1087,7 @@ export default defineComponent({
   data: function () {
     return {
       posts: [],
+      isOpen: false,
     };
   },
   methods: {
@@ -1099,7 +1100,10 @@ export default defineComponent({
         }).catch(function (error) {
           console.log(error);
         })
-    }
+    },
+    setOpen(isOpen: boolean) {
+      this.isOpen = isOpen;
+    },
   },
   setup() {
     const onSwiper = () => {
