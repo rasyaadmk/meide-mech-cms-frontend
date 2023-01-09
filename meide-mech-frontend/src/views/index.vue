@@ -2,66 +2,63 @@
   <ion-page>
     <ion-content>
       <section name="header-carousel">
-      <nav class="navbar navbar-light justify-content-center montserrat" style="
+        <nav class="navbar navbar-light justify-content-center montserrat" style="
           background: url('assets/images/batik.svg');
           background-color: #e31528;
         ">
-        <a href="home" class="navbar-brand d-none d-xl-block" style="background-color: white; margin-right: 600px">
-          <img src="assets/images/logo-new.png" />
-        </a>
-        <div class="row mt-2">
-          <img src="assets/figma_assets/certified.svg" alt="" style="width: 26px; margin: 0px 16px 14px" />
-          <ul class="navbar-text text-white mr-4">
-            <li style="font-size: 18px; font-weight: 500">Certified Company</li>
-            <li style="font-weight: 300">ISO 9001:2005</li>
-          </ul>
-          <div class="vertical-line"></div>
-          <img src="assets/figma_assets/trophy.svg" alt="" style="width: 26px; margin: 0px 16px 14px" />
-          <ul class="navbar-text text-white">
-            <li style="font-size: 18px; font-weight: 500">Best Product</li>
-            <li style="font-weight: 300">Service Provider</li>
-          </ul>
-        </div>
-      </nav>
+          <a href="home" class="navbar-brand d-none d-xl-block" style="background-color: white; margin-right: 600px">
+            <img src="assets/images/logo-new.png" />
+          </a>
+          <div class="row mt-2">
+            <img src="assets/figma_assets/certified.svg" alt="" style="width: 26px; margin: 0px 16px 14px" />
+            <ul class="navbar-text text-white mr-4">
+              <li style="font-size: 18px; font-weight: 500">Certified Company</li>
+              <li style="font-weight: 300">ISO 9001:2005</li>
+            </ul>
+            <div class="vertical-line"></div>
+            <img src="assets/figma_assets/trophy.svg" alt="" style="width: 26px; margin: 0px 16px 14px" />
+            <ul class="navbar-text text-white">
+              <li style="font-size: 18px; font-weight: 500">Best Product</li>
+              <li style="font-weight: 300">Service Provider</li>
+            </ul>
+          </div>
+        </nav>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 montserrat"
-        style="font-size: 14px; font-weight: 600">
-        <a class="navbar-brand d-md-inline d-lg-none" href="#">
-          <img src="assets/images/logo-new.png" style="width: 50px" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 montserrat" style="font-size: 14px; font-weight: 600">
+          <a class="navbar-brand d-md-inline d-lg-none" href="#">
+            <img src="assets/images/logo-new.png" style="width: 50px" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav" style="margin-right: 800px">
-            <li class="nav-item active">
-              <div class="dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown"
-                  aria-expanded="false">HOME</a>
-                <div class="dropdown-menu dropdown-menu-center">
-                  <a class="dropdown-item" href="#">HOME 1</a>
-                  <a class="dropdown-item" href="#">HOME 2</a>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav" style="margin-right: 800px">
+              <li class="nav-item active">
+                <div class="dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown" aria-expanded="false">HOME</a>
+                  <div class="dropdown-menu dropdown-menu-center">
+                    <a class="dropdown-item" href="#">HOME 1</a>
+                    <a class="dropdown-item" href="#">HOME 2</a>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link text-nowrap" href="#">ABOUT US</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">PRODUCT</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link text-nowrap" href="$">CONTACT US</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-nowrap" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">PRODUCT</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-nowrap" href="$">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-      <ion-grid>
-        <ion-row>
-          <swiper :slides-per-view="1" :space-between="10" :autoplay="{ delay: 500, disableOnInteraction: false, }" :pagination="{ clickable: true, }" :navigation="true" :modules="modules" class="mySwiper" style="height: 650px;">
+        <ion-grid>
+          <ion-row>
+            <swiper :slides-per-view="1" :space-between="10" :autoplay="{ delay: 500, disableOnInteraction: false, }" :pagination="{ clickable: true, }" :navigation="true" :modules="modules" class="mySwiper" style="height: 650px;">
               <swiper-slide v-for="post in posts" v-bind:key="post.id">
                 <div class="container-fluid p-0">
                   <div class="background1 img-fluid" v-bind:style="{ backgroundImage: 'url(' + post.images + ')' }">
@@ -73,12 +70,13 @@
                   </div>
                 </div>
               </swiper-slide>
-          </swiper>
-        </ion-row>
-      </ion-grid>
-    </section>
+            </swiper>
+          </ion-row>
+        </ion-grid>
+      </section>
+
       <!-- Categories -->
-      <section class="product-section-list" id="product-list" @click="setOpen(false)">
+      <section class="product-section-list" id="product-list" @click="setOpen(false)" name="categories">
         <div class="row clearfix bgbg" style="margin: 0">
           <div class="col-sm-12 col-md-12 col-lg-12" style="
               padding: 0px;
@@ -182,8 +180,7 @@
                                     <div class="shop-single">
                                       <div class="product-details">
                                         <div class="basic-details">
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-                                            @click="setOpen(false)">
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="setOpen(false)">
                                             <span aria-hidden="true">&times;</span>
                                           </button>
                                           <div class="row clearfix">
@@ -193,20 +190,17 @@
                                                 <div class="thumbnails">
                                                   <div class="thumb active">
                                                     <a href="assets/images/example-1.png">
-                                                      <img src="assets/images/example-1.png"
-                                                        alt="thumb-air-force-right-side">
+                                                      <img src="assets/images/example-1.png" alt="thumb-air-force-right-side">
                                                     </a>
                                                   </div>
                                                   <div class="thumb">
                                                     <a href="assets/images/example-2.png">
-                                                      <img src="assets/images/example-2.png"
-                                                        alt="thumb-air-force-left-side">
+                                                      <img src="assets/images/example-2.png" alt="thumb-air-force-left-side">
                                                     </a>
                                                   </div>
                                                   <div class="thumb">
                                                     <a href="assets/images/example-3.png">
-                                                      <img src="assets/images/example-3.png"
-                                                        alt="thumb-air-force-bottom-side">
+                                                      <img src="assets/images/example-3.png" alt="thumb-air-force-bottom-side">
                                                     </a>
                                                   </div>
                                                 </div>
@@ -233,10 +227,8 @@
                                                 </p>
                                               </div>
                                               <div class="button" style="text-align: center;margin-top: 45px;">
-                                                <button type="button"
-                                                  class="theme-btn btn-style-one add-to-cart mr-2">Contact</button>
-                                                <button type="button"
-                                                  class="theme-btn btn-style-one add-to-cart">Feedback</button>
+                                                <button type="button" class="theme-btn btn-style-one add-to-cart mr-2">Contact</button>
+                                                <button type="button" class="theme-btn btn-style-one add-to-cart">Feedback</button>
                                               </div>
                                             </div>
                                             <div class="info-column col-md-12 col-sm-12 col-xs-12">
@@ -246,24 +238,14 @@
                                                   <!--Product Tabs-->
                                                   <nav>
                                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                      <button class="nav-link active" id="nav-home-tab"
-                                                        data-toggle="tab" data-target="#nav-home" type="button"
-                                                        role="tab" aria-controls="nav-home" aria-selected="true"
-                                                        style="color: black;">Description</button>
-                                                      <button class="nav-link" id="nav-profile-tab" data-toggle="tab"
-                                                        data-target="#nav-profile" type="button" role="tab"
-                                                        aria-controls="nav-profile" aria-selected="false"
-                                                        style="color: black;">Specification</button>
-                                                      <button class="nav-link" id="nav-contact-tab" data-toggle="tab"
-                                                        data-target="#nav-contact" type="button" role="tab"
-                                                        aria-controls="nav-contact" aria-selected="false"
-                                                        style="color: black;">Dimension</button>
+                                                      <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style="color: black;">Description</button>
+                                                      <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style="color: black;">Specification</button>
+                                                      <button class="nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" style="color: black;">Dimension</button>
 
                                                     </div>
                                                   </nav>
                                                   <div class="tab-content" id="nav-tabContent">
-                                                    <div class="tab-pane fade show active mt-3" id="nav-home" role="tabpanel"
-                                                      aria-labelledby="nav-home-tab">
+                                                    <div class="tab-pane fade show active mt-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                                                       <p>The main function of the zone control valve is to control the
                                                         water supply in
                                                         a certain area. It has the functions of preventing backflow,
@@ -279,8 +261,7 @@
                                                         check valve,
                                                         water flow indicator, pressure gauge and connecting pipes.</p>
                                                     </div>
-                                                    <div class="tab-pane fade mt-3" id="nav-profile" role="tabpanel"
-                                                      aria-labelledby="nav-profile-tab">
+                                                    <div class="tab-pane fade mt-3" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                                       <div class="tab" id="prod-specification">
                                                         <ul>
                                                           <li>1. Valve Body:ASTM A536,65-45-12</li>
@@ -296,8 +277,7 @@
                                                         </ul>
                                                       </div>
                                                     </div>
-                                                    <div class="tab-pane fade mt-3" id="nav-contact" role="tabpanel"
-                                                      aria-labelledby="nav-contact-tab">
+                                                    <div class="tab-pane fade mt-3" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                                                       <div class="table-responsive">
                                                         <table class="table table-bordered">
                                                           <thead>
@@ -406,15 +386,12 @@
                                                 <div class="sec-title">
                                                   <h2>Related Products</h2>
                                                 </div>
-                                                <div
-                                                  class="row clearfix related-products-caraousel owl-carousel owl-theme"
-                                                  style="padding-left: 20px;">
+                                                <div class="row clearfix related-products-caraousel owl-carousel owl-theme" style="padding-left: 20px;">
                                                   <!--Shop Item-->
-                                                  <swiper :slides-per-view="5" :space-between="10" @swiper="onSwiper"
-                                                    @slideChange="onSlideChange" :loop="true" :autoplay="{
-                                                      delay: 100,
-                                                      disableOnInteraction: false,
-                                                    }">
+                                                  <swiper :slides-per-view="5" :space-between="10" @swiper="onSwiper" @slideChange="onSlideChange" :loop="true" :autoplay="{
+                                                    delay: 100,
+                                                    disableOnInteraction: false,
+                                                  }">
                                                     <swiper-slide>
                                                       <div class="product-item">
                                                         <div class="inner-box imgZoom">
@@ -610,8 +587,7 @@
                             <div class="clearfix_">
                               <div class="pull-left">
                                 <h5>
-                                  <a href="javascript:void(0);" onclick="popupDetailProduct();"
-                                    class="prod-title">GROOVED WET ALARM CHECK VALVE, FIG#
+                                  <a href="javascript:void(0);" onclick="popupDetailProduct();" class="prod-title">GROOVED WET ALARM CHECK VALVE, FIG#
                                     ZSFZ8X9</a>
                                 </h5>
                               </div>
@@ -656,19 +632,14 @@
                   <div class="text">
                     <h3>USER-CENTERED,QUALITY-ORIENTED</h3>
                     <p>
-                      The world's leading manufacturer and solution specialist
-                      for fluid transfer products. Founded in 1961, Meide Group
-                      has developed into a modern and diversified multinational
-                      enterprise group focusing on fluid transportation products
-                      and services. The sales are located in more than 130
-                      countries and regions around the world, and the products
-                      and services have been successfully applied in water,
-                      fire, gas, HVAC, irrigation and other fields as well as in
-                      major landmark projects around the world, such as Burj
-                      Khalifa in Dubai and New World Trade Center in New
-                      York.Shanghai Tower, West-East Power Transmission UHV
-                      transmission lines, Beijing-Shanghai high-speed rail and
-                      municipal, medical, clean workshops, urban housing, etc.
+                      The world's leading manufacturer and solution specialist for fluid transfer products.
+                      Founded in 1961, Meide Group has developed into a modern and diversified multinational enterprise
+                      group focusing on fluid transportation products and services. The sales are located in more than
+                      130 countries and regions around the world, and the products and services have been successfully
+                      applied in water, fire, gas, HVAC, irrigation and other fields as well as in major landmark
+                      projects around the world, such as Burj Khalifa in Dubai and New World Trade Center in New
+                      York.Shanghai Tower, West-East Power Transmission UHV transmission lines, Beijing-Shanghai
+                      high-speed rail and municipal, medical, clean workshops, urban housing, etc.
                     </p>
                   </div>
                   <a href="about.html" class="theme-btn btn-style-one">Read More</a>
@@ -681,70 +652,50 @@
                 <div class="services-block-seven">
                   <div class="inner-box">
                     <div class="icon-box">
-                      <img src="/assets/figma_assets/fire.svg" alt="" style="height: 75px" />
+                      <img src="/assets/figma_assets/fire.svg" alt="" style="height: 75px;">
                     </div>
                     <h3><a href="services-single.html">Fire</a></h3>
-                    <div class="text">
-                      Reduce Instalation time and labor costs.
-                    </div>
+                    <div class="text">Reduce Instalation time and labor costs.</div>
                   </div>
                 </div>
                 <div class="services-block-seven">
                   <div class="inner-box">
                     <div class="icon-box">
-                      <img src="/assets/figma_assets/irrigation.svg" alt="" style="height: 75px" />
+                      <img src="/assets/figma_assets/irrigation.svg" alt="" style="height: 75px;">
                     </div>
                     <h3><a href="services-single.html">Irrigation</a></h3>
-                    <div class="text">
-                      Saving water and power resource, reduce the failure rate
-                      and improve the efficiency of the.
-                    </div>
+                    <div class="text">Saving water and power resource, reduce the failure rate and improve the
+                      efficiency of the.</div>
                   </div>
                 </div>
                 <div class="services-block-seven">
                   <div class="inner-box">
                     <div class="icon-box">
-                      <img src="/assets/figma_assets/water_treatment.svg" alt="" style="height: 75px" />
+                      <img src="/assets/figma_assets/water_treatment.svg" alt="" style="height: 75px;">
                     </div>
                     <h3><a href="services-single.html">Water Treatment</a></h3>
-                    <div class="text">
-                      Explain to you how all Water treatment.
-                    </div>
+                    <div class="text">Explain to you how all Water treatment.</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!--Choose Section-->
-          <div class="choose-section" style="margin-top: 35px">
+          <div class="choose-section" style="margin-top: 35px;">
             <div class="row clearfix">
               <!--Image Column-->
               <div class="image-column col-md-6 col-sm-6 col-xs-12">
                 <h2>Why Choose Us</h2>
-                <div class="text">
-                  Don't spend time and money on beautiful landscaping if you
-                  have not taken water and irrigation issues.
-                </div>
+                <div class="text">Don't spend time and money on beautiful landscaping if you have not taken water and
+                  irrigation issues.</div>
                 <div class="row clearfix">
                   <div class="list-column col-md-12">
                     <ul class="list-style-four">
-                      <li>
-                        Complete specifications, distributed to more than 130
-                        countries and regions
-                      </li>
-                      <li>
-                        Excellent quality, the first choice for global customers
-                      </li>
-                      <li>
-                        The pioneer of double compression technology in China
-                      </li>
-                      <li>
-                        All in house production. Reliable quality assurance
-                      </li>
-                      <li>
-                        Intelligent manufacturing of Meide. High quality
-                        benefits power grid
-                      </li>
+                      <li>Complete specifications, distributed to more than 130 countries and regions </li>
+                      <li>Excellent quality, the first choice for global customers </li>
+                      <li>The pioneer of double compression technology in China</li>
+                      <li>All in house production. Reliable quality assurance</li>
+                      <li>Intelligent manufacturing of Meide. High quality benefits power grid</li>
                     </ul>
                   </div>
                 </div>
@@ -755,9 +706,7 @@
                 <div class="video-image-box">
                   <figure class="image">
                     <img src="/assets/images/page-title-bg.jpg" alt="" />
-                    <div class="overlay-link">
-                      <a href="http://www.meide-casting.com/en/upload/media/2020/03/03/ff7037b1847846abb78813e724254433.mp4"
-                        class="overlay-link lightbox-image video-fancybox"><span class="icon fa fa-play"></span></a>
+                    <div class="overlay-link"><a href="http://www.meide-casting.com/en/upload/media/2020/03/03/ff7037b1847846abb78813e724254433.mp4" class="overlay-link lightbox-image video-fancybox"><span class="icon fa fa-play"></span></a>
                     </div>
                   </figure>
                 </div>
@@ -769,15 +718,13 @@
       </section>
       <!--End About Section-->
 
+
       <!--Call To Action-->
-      <section class="call-to-action-section" style="background-image: url('/assets/images/batik.svg')">
-        <div class="auto-container px-3 px-md-5 px-lg-3">
+      <section class="call-to-action-section" style="background-image:url('/assets/images/batik.svg');">
+        <div class="auto-container px-3 px-md-5 px-lg-3 ">
           <div class="row clearfix">
             <div class="column text-center text-md-left col-md-9 col-sm-12 col-xs-12">
-              <div class="text">
-                Reduce on-site operations and labor costs, Saving water and
-                power resources.
-              </div>
+              <div class="text">Reduce on-site operations and labor costs, Saving water and power resources. </div>
             </div>
             <div class="btn-column text-center mt-4 mt-md-0 col-md-3 col-sm-12 col-xs-12">
               <a href="contact.html" class="theme-btn btn-style-two">Contact us Today</a>
@@ -790,57 +737,53 @@
       <!--Clients Section-->
       <section class="clients-section-two grey-bg">
         <div class="auto-container px-3 px-md-5 px-lg-3">
-          <h2>
-            We work with our partners to provide project perfection,<span class="theme_color">
-              join with our parnership.</span>
-          </h2>
+          <h2>We work with our partners to provide project perfection,<span class="theme_color"> join with our
+              parnership.</span></h2>
           <!--Sponsors Carousel-->
-          <div v-for="post in posts" v-bind:key="post.id">
-            <ul class="sponsors-carousel owl-carousel owl-theme">
-              <li class="slide-item">
-                <div v-if="post.link === 'logok'">
-                  <figure class="image-box">
-                    <a href="#"><img v-bind:src="post.images" alt="" /></a>
-                  </figure>
-                </div>
-              </li>
-              <li class="slide-item">
-                <figure class="image-box">
-                  <a href="#"><img src="/assets/images/7.png" alt="" /></a>
-                </figure>
-              </li>
-              <li class="slide-item">
-                <figure class="image-box">
-                  <a href="#"><img src="/assets/images/8.png" alt="" /></a>
-                </figure>
-              </li>
-              <li class="slide-item">
-                <figure class="image-box">
-                  <a href="#"><img src="/assets/images/9.png" alt="" /></a>
-                </figure>
-              </li>
-              <li class="slide-item">
-                <figure class="image-box">
-                  <a href="#"><img src="/assets/images/10.png" alt="" /></a>
-                </figure>
-              </li>
-              <li class="slide-item">
-                <figure class="image-box">
-                  <a href="#"><img src="/assets/images/6.png" alt="" /></a>
-                </figure>
-              </li>
-              <li class="slide-item">
-                <figure class="image-box">
-                  <a href="#"><img src="/assets/images/7.png" alt="" /></a>
-                </figure>
-              </li>
-              <li class="slide-item">
-                <figure class="image-box">
-                  <a href="#"><img src="/assets/images/8.png" alt="" /></a>
-                </figure>
-              </li>
-            </ul>
-          </div>
+          <ul class="sponsors-carousel owl-carousel owl-theme">
+            <swiper :slides-per-view="5" :space-between="20" @swiper="onSwiper" @slideChange="onSlideChange" :loop="true">
+              <swiper-slide>
+                <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="/assets/images/6.png" alt=""></a></figure>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="/assets/images/7.png" alt=""></a></figure>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="/assets/images/8.png" alt=""></a></figure>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="/assets/images/9.png" alt=""></a></figure>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="/assets/images/10.png" alt=""></a></figure>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="/assets/images/6.png" alt=""></a></figure>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="/assets/images/7.png" alt=""></a></figure>
+                </li>
+              </swiper-slide>
+              <swiper-slide>
+                <li class="slide-item">
+                  <figure class="image-box"><a href="#"><img src="/assets/images/8.png" alt=""></a></figure>
+                </li>
+              </swiper-slide>
+            </swiper>
+          </ul>
         </div>
       </section>
       <!--End Clients Section-->
@@ -854,11 +797,8 @@
               <!--Sec Title-->
               <div class="sec-title">
                 <h2>Contact Details</h2>
-                <div class="text">
-                  If you have any questions about what we offer for consumers or
-                  for business, you can always email us or call us via the below
-                  details. We'll reply within 24 hours.
-                </div>
+                <div class="text">If you have any questions about what we offer for consumers or for business, you can
+                  always email us or call us via the below details. We'll reply within 24 hours.</div>
               </div>
 
               <div class="row clearfix">
@@ -866,18 +806,16 @@
                 <div class="info-block col-md-6 col-sm-6 col-xs-12">
                   <div class="info-inner">
                     <div class="icon-box">
-                      <img src="/assets/figma_assets/location_pin (1).svg" style="height: 30px" alt="" />
+                      <img src="/assets/figma_assets/location_pin (1).svg" style="height: 30px;" alt="">
                     </div>
                     <h3>Address :</h3>
-                    <div class="text">
-                      244, Meidemect, Indonesia <br />City, Jakarta
-                    </div>
+                    <div class="text">244, Meidemect, Indonesia <br>City, Jakarta </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="inner-column col-md-12 col-lg-4 col-sm-12 col-xs-12">
-              <div class="container-form" style="border: 1px solid #eee; padding: 15px">
+              <div class="container-form" style="border: 1px solid #eee;padding: 15px;">
                 <!--Sec Title-->
                 <div class="sec-title centered">
                   <h2>Request for Quote</h2>
@@ -888,18 +826,16 @@
                   <!--Comment Form-->
                   <form method="post" action="#">
                     <div class="form-group">
-                      <input type="text" name="name" placeholder="Your Name" required />
+                      <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                      <input type="email" name="email" placeholder="Email Address" required />
+                      <input type="email" name="email" placeholder="Email Address" required>
                     </div>
                     <div class="form-group">
                       <textarea name="subject" rows="4" placeholder="Subject"></textarea>
                     </div>
                     <div class="form-group">
-                      <button class="theme-btn btn-style-one" type="submit" name="submit-form" style="width: 100%">
-                        Send
-                      </button>
+                      <button class="theme-btn btn-style-one" type="submit" name="submit-form" style="width: 100%;">Send</button>
                     </div>
                   </form>
                 </div>
@@ -909,7 +845,7 @@
         </div>
       </section>
       <footer class="main-footer-two">
-        <div class="auto-container px-3 px-md-5 px-lg-3">
+        <div class="auto-container">
           <!-- info section -->
           <div class="info-section">
             <div class="row">
@@ -941,7 +877,7 @@
           </div>
 
           <!--Widgets Section-->
-          <div class="widgets-section">
+          <div class="widgets-section px-3 px-md-5 px-lg-3">
             <div class="row clearfix">
               <!--Big Column-->
               <div class="big-column col-md-6 col-sm-12 col-xs-12">
@@ -1024,7 +960,7 @@
 
         <!--Footer Bottom-->
         <div class="footer-bottom">
-          <div class="auto-container">
+          <div class="auto-container px-3 px-md-5 px-lg-3">
             <div class="row clearfix">
               <div class="column col-md-6 col-sm-12 col-xs-12">
                 <div class="copyright">
@@ -1033,7 +969,7 @@
               </div>
               <!--Social Column-->
               <div class="social-column col-md-6 col-sm-12 col-xs-12">
-                <ul class="social-icon-two">
+                <ul class="social-icon-two mt-3">
                   <li>
                     <a href="#"><span class="fa fa-facebook"></span></a>
                   </li>
@@ -1551,7 +1487,118 @@ input[name="search-field-product"]:valid {
   transform: scale(1.1);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@400;500&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 15px;
+  color: #777777;
+  line-height: 1.8em;
+  font-weight: 400;
+  background: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Raleway", sans-serif;
+}
+
+.text {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #e31528;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  font-weight: normal;
+  margin: 0px;
+  background: none;
+  line-height: 1.6em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  position: relative;
+  line-height: 1.8em;
+}
+
+.mar-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.mar-top-80 {
+  margin-top: 80px !important;
+}
+
+.mar-top-50 {
+  margin-top: 50px !important;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.auto-container {
+  position: static;
+  max-width: 1200px;
+  /*padding:0px 15px;*/
+  padding: 0px 0px;
+  margin: 0 auto;
+}
+
+.page-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.theme-btn {
+  display: inline-block;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.grey-bg {
+  background-color: #f7f7f7 !important;
+}
+
+/*Btn Style One*/
 
 .btn-style-one {
   position: relative;
@@ -1563,13 +1610,15 @@ input[name="search-field-product"]:valid {
   background-color: #e31528;
   border: 2px solid #e31528;
   text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .btn-style-one:hover {
   color: #e31528;
   background: none;
 }
+
+/*Btn Style Two*/
 
 .btn-style-two {
   position: relative;
@@ -1579,8 +1628,8 @@ input[name="search-field-product"]:valid {
   font-size: 16px;
   font-weight: 500;
   text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  font-family: 'Raleway', sans-serif;
+  border: 2px solid rgba(255, 255, 255, 0.50);
 }
 
 .btn-style-two:hover {
@@ -1588,6 +1637,8 @@ input[name="search-field-product"]:valid {
   color: #ffffff;
   border-color: #e31528;
 }
+
+/*Btn Style Three*/
 
 .btn-style-three {
   position: relative;
@@ -1598,7 +1649,7 @@ input[name="search-field-product"]:valid {
   font-weight: 500;
   border: 2px solid #dddddd;
   text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .btn-style-three:hover {
@@ -1622,6 +1673,8 @@ input[name="search-field-product"]:valid {
   font-size: 30px;
 }
 
+/*Btn Style Four*/
+
 .btn-style-four {
   position: relative;
   padding: 10px 39px;
@@ -1631,7 +1684,7 @@ input[name="search-field-product"]:valid {
   font-weight: 500;
   border: 1px solid #eeeeee;
   text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .btn-style-four:hover {
@@ -1732,6 +1785,14 @@ img {
 .about-section .quote-column .form-group button {
   width: 100%;
 }
+
+/*** 
+
+====================================================================
+	Testimonail Section Two
+====================================================================
+
+***/
 
 .testimonial-section-two {
   position: relative;
@@ -1846,7 +1907,7 @@ img {
 
 .testimonial-block-two .inner-box:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 30px;
   bottom: -25px;
   border-top: 25px solid #ffffff;
@@ -1888,6 +1949,14 @@ img {
   background: #e31528;
   border-color: #e31528;
 }
+
+/*** 
+
+====================================================================
+	News Section Two
+====================================================================
+
+***/
 
 .news-section-two {
   position: relative;
@@ -1993,6 +2062,8 @@ img {
   margin-top: 10px;
 }
 
+/*News Block Three*/
+
 .news-block-three {
   position: relative;
   margin-bottom: 10px;
@@ -2073,6 +2144,14 @@ img {
   position: relative;
 }
 
+/*** 
+
+====================================================================
+	Client Section Two
+====================================================================
+
+***/
+
 .clients-section-two {
   position: relative;
   padding: 75px 0px 80px;
@@ -2103,7 +2182,7 @@ img {
 
 .clients-section-two .image-box:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 4px;
   right: 4px;
   top: 4px;
@@ -2114,6 +2193,7 @@ img {
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
 }
+
 
 .clients-section-two .image-box img {
   position: relative;
@@ -2133,6 +2213,14 @@ img {
   border-color: #e31528;
 }
 
+/*** 
+
+====================================================================
+	Call To Action Section
+====================================================================
+
+***/
+
 .call-to-action-section-two {
   position: relative;
 }
@@ -2150,7 +2238,7 @@ img {
 
 .call-to-action-section-two .inner-box:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   top: 0px;
   width: 100%;
@@ -2171,6 +2259,14 @@ img {
   position: relative;
   text-align: right;
 }
+
+/*** 
+
+====================================================================
+	About Section
+====================================================================
+
+***/
 
 .about-section .image-column {
   position: relative;
@@ -2266,8 +2362,16 @@ img {
   display: block;
   font-size: 20px;
   color: #222222;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
+
+/*** 
+
+====================================================================
+	Services Section Two
+====================================================================
+
+***/
 
 .services-section-two {
   position: relative;
@@ -2276,7 +2380,7 @@ img {
 
 .services-section-two:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   top: -20px;
   width: 100%;
@@ -2367,6 +2471,8 @@ img {
   background-color: #ffffff;
 }
 
+/*Gallery Item Three*/
+
 .gallery-item-three {
   position: relative;
 }
@@ -2393,7 +2499,7 @@ img {
   width: 100%;
   display: block;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.80);
   -webkit-transition: all 700ms ease;
   -ms-transition: all 700ms ease;
   -o-transition: all 700ms ease;
@@ -2476,6 +2582,8 @@ img {
   display: none;
 }
 
+/*Gallery Item Four*/
+
 .project-section.fullwidth-galley.padd-bottom-50 {
   padding-bottom: 50px;
 }
@@ -2511,7 +2619,7 @@ img {
   width: 100%;
   display: block;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.80);
   -webkit-transition: all 700ms ease;
   -ms-transition: all 700ms ease;
   -o-transition: all 700ms ease;
@@ -2579,7 +2687,7 @@ img {
 
 .gallery-item-four .inner-box .overlay-box:before {
   position: absolute;
-  content: "";
+  content: '';
   border: 1px solid #747474;
   left: 10px;
   top: 10px;
@@ -2599,6 +2707,8 @@ img {
 .gallery-item-four.mix {
   display: none;
 }
+
+/*Gallery Item six*/
 
 .project-section.fullwidth-galley.padd-bottom-50 {
   padding-bottom: 50px;
@@ -2631,7 +2741,7 @@ img {
   width: 100%;
   display: block;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.80);
   -webkit-transition: all 700ms ease;
   -ms-transition: all 700ms ease;
   -o-transition: all 700ms ease;
@@ -2795,6 +2905,8 @@ img {
   z-index: 5;
 }
 
+/*Gallery Item*/
+
 .gallery-item {
   position: relative;
   margin-bottom: 40px;
@@ -2847,7 +2959,7 @@ img {
   opacity: 0;
   color: #ffffff;
   text-align: center;
-  background: rgba(42, 42, 51, 0.7);
+  background: rgba(42, 42, 51, 0.70);
   -webkit-transition: all 700ms ease;
   -ms-transition: all 700ms ease;
   -o-transition: all 700ms ease;
@@ -2947,6 +3059,8 @@ img {
   font-weight: 400;
 }
 
+/*Default Section*/
+
 .default-section {
   position: relative;
   padding: 75px 0px 35px;
@@ -3026,6 +3140,8 @@ img {
   border: 1px solid #eeeeee;
 }
 
+/*Default Form*/
+
 .default-form .form-group {
   margin-bottom: 20px;
 }
@@ -3070,6 +3186,8 @@ img {
   line-height: 1.6em;
 }
 
+/*Default Form / Style Two*/
+
 .default-form.style-two .form-group {
   margin-bottom: 30px;
 }
@@ -3080,7 +3198,7 @@ img {
 .default-form.style-two select,
 .default-form.style-two textarea {
   background: none;
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.10);
   color: #ffffff;
 }
 
@@ -3090,7 +3208,7 @@ img {
 }
 
 .default-form.style-two .form-group .ui-selectmenu-button.ui-button {
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.10);
   color: #ffffff;
 }
 
@@ -3114,6 +3232,8 @@ img {
 .default-form.style-three .form-group button {
   margin-top: 10px;
 }
+
+/*Testimonial Section*/
 
 .testimonial-section {
   position: relative;
@@ -3154,6 +3274,8 @@ img {
   background: #e31528;
   border-color: #e31528;
 }
+
+/*Testimonial Block*/
 
 .testimonial-block {
   position: relative;
@@ -3198,7 +3320,7 @@ img {
   color: #222222;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .testimonial-block .inner-box .content .designation {
@@ -3228,7 +3350,7 @@ img {
 
 .gallery-item-six .inner-box .overlay-box:before {
   position: absolute;
-  content: "";
+  content: '';
   border: 1px solid #747474;
   left: 10px;
   top: 10px;
@@ -3249,6 +3371,9 @@ img {
   display: none;
 }
 
+/*============ single gallery ============*/
+
+
 .single-gallery {
   position: relative;
   padding: 80px 0 50px;
@@ -3258,6 +3383,7 @@ img {
   position: relative;
   padding-bottom: 30px;
 }
+
 
 .single-gallery .share-project {
   padding-left: 140px;
@@ -3294,7 +3420,7 @@ img {
 
 .single-gallery .share-project .social-share ul li a:hover {
   color: #ff5722;
-  transition: 0.5s ease;
+  transition: .5s ease;
 }
 
 .single-gallery .project-info-list {
@@ -3338,6 +3464,8 @@ img {
   margin: 0;
 }
 
+/* project description */
+
 .project-description {
   position: relative;
 }
@@ -3359,7 +3487,7 @@ img {
 
 .project-quote:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 120px;
   width: 1px;
   background: #e31528;
@@ -3392,6 +3520,14 @@ img {
   font-size: 16px;
 }
 
+/*** 
+
+====================================================================
+	Team Section
+====================================================================
+
+***/
+
 .team-section {
   position: relative;
   padding: 80px 0px 40px;
@@ -3415,7 +3551,7 @@ img {
 
 .team-member .inner-box .social-icon-one:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 40px;
   height: 40px;
   top: -3px;
@@ -3427,7 +3563,7 @@ img {
 
 .team-member .inner-box .social-icon-one:after {
   position: absolute;
-  content: "";
+  content: '';
   width: 40px;
   height: 40px;
   top: -3px;
@@ -3454,7 +3590,7 @@ img {
 
 .team-member .inner-box .social-icon-one li a:before {
   position: absolute;
-  content: "";
+  content: '';
   background: #e0edf4;
   height: 10px;
   width: 1px;
@@ -3551,7 +3687,7 @@ img {
 
 .team-member .inner-box .lower-content .mail:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 70px;
   height: 1px;
   background: #f4f4f4;
@@ -3602,6 +3738,14 @@ img {
   border-color: #e31528;
 }
 
+/*** 
+
+====================================================================
+	Call To Action Section Three
+====================================================================
+
+***/
+
 .call-to-action-section {
   position: relative;
   padding: 22px 0px;
@@ -3613,7 +3757,7 @@ img {
 
 .call-to-action-section:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   top: 0px;
   width: 100%;
@@ -3657,7 +3801,7 @@ img {
 
 .call-to-action-section-three:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   top: 0px;
   width: 100%;
@@ -3669,7 +3813,7 @@ img {
   position: relative;
   padding: 35px 0px;
   text-align: center;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.10);
 }
 
 .call-to-action-section-three .inner-box .text {
@@ -3678,7 +3822,7 @@ img {
   font-weight: 400;
   color: #ffffff;
   line-height: 1.4em;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .testimonial-block-three {
@@ -3714,7 +3858,7 @@ img {
 
 .testimonial-block-three .inner-box .upper-box .image:before {
   position: absolute;
-  content: "";
+  content: '';
   left: -5px;
   top: -5px;
   right: -5px;
@@ -3735,6 +3879,7 @@ img {
   z-index: -9;
   color: #dedede;
   font-size: 30px;
+
 }
 
 .testimonial-block-three .inner-box .upper-box h3 {
@@ -3763,7 +3908,7 @@ img {
 
 .testimonial-block-three .inner-box .upper-box .text:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 25px;
   width: 25px;
   background: #fff;
@@ -3806,6 +3951,14 @@ img {
   margin: 0px 2px;
 }
 
+/*** 
+
+====================================================================
+	Quote Section
+====================================================================
+
+***/
+
 .quote-section {
   position: relative;
   padding: 80px 0px 80px;
@@ -3817,7 +3970,7 @@ img {
 
 .quote-section:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   top: 0px;
   width: 100%;
@@ -3829,7 +3982,7 @@ img {
 .quote-section .quote-inner {
   position: relative;
   padding: 40px 40px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.10);
 }
 
 .quote-section .quote-inner .form-column {
@@ -3843,7 +3996,7 @@ img {
 .quote-section .quote-inner .contact-column .column-inner {
   position: relative;
   padding: 30px 30px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.10);
 }
 
 .quote-section .quote-inner .contact-column .column-inner h2 {
@@ -3854,6 +4007,14 @@ img {
   text-align: center;
   margin-bottom: 12px;
 }
+
+/*** 
+
+====================================================================
+	Client Section
+====================================================================
+
+***/
 
 .clients-section-three {
   position: relative;
@@ -4015,7 +4176,7 @@ img {
 
 .sec-title h2:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   bottom: -1px;
   width: 60px;
@@ -4025,11 +4186,11 @@ img {
 
 .sec-title.light h2 {
   color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.10);
 }
 
 .sec-title.grey-border h2 {
-  border-color: rgba(229, 229, 229, 0.6);
+  border-color: rgba(229, 229, 229, 0.60);
 }
 
 .sec-title.centered {
@@ -4044,6 +4205,7 @@ img {
 .sec-title.small h2 {
   font-size: 24px;
 }
+
 
 /*subscribe form style three*/
 
@@ -4092,6 +4254,8 @@ img {
   color: #e31528;
 }
 
+
+
 /*** 
 
 ====================================================================
@@ -4131,14 +4295,14 @@ img {
 
 .featured-block .inner-box .image:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
   display: block;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.80);
   transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -4197,14 +4361,16 @@ img {
 .featured-block .inner-box .lower-content .outer-box {
   position: relative;
   top: 39px;
-  transition: 0.5s ease;
+  transition: .5s ease;
 }
 
 .featured-block .inner-box:hover .lower-content .outer-box {
   position: relative;
   top: 0;
-  transition: 0.5s ease;
+  transition: .5s ease;
 }
+
+
 
 .featured-block .inner-box .lower-content h3 {
   position: relative;
@@ -4246,6 +4412,14 @@ img {
   display: inline-block;
   margin-top: 20px;
 }
+
+/*** 
+
+====================================================================
+	Services Section Three
+====================================================================
+
+***/
 
 .services-section-three {
   position: relative;
@@ -4311,6 +4485,14 @@ img {
   color: #848484;
   font-size: 16px;
 }
+
+/*** 
+
+====================================================================
+	Services Section Three
+====================================================================
+
+***/
 
 .services-section-four {
   position: relative;
@@ -4378,6 +4560,8 @@ img {
   font-size: 16px;
 }
 
+/* services block seven */
+
 .services-block-seven {
   position: relative;
   margin-bottom: 45px;
@@ -4439,9 +4623,21 @@ img {
   font-size: 16px;
 }
 
+
+
+
+/*** 
+
+====================================================================
+	Testimonial Section Three
+====================================================================
+
+***/
+
 .testimonial-section-three {
   position: relative;
   padding: 80px 0px 80px;
+  /* background: url(../images/resource/bg-layer.jpg) repeat; */
 }
 
 .testimonial-section-three .testimonial-outer {
@@ -4456,6 +4652,7 @@ img {
   text-align: center;
   margin: 0 auto;
   border: 1px solid #e5e5e5;
+  /* background: url(../images/icons/quote-icon.png) center center no-repeat; */
 }
 
 .testimonial-block-one {
@@ -4499,7 +4696,7 @@ img {
 
 .clients-section .image-box {
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.10);
   transition: all 300ms ease;
   -webkit-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
@@ -4552,7 +4749,7 @@ img {
 
 .clients-section-two .image-box:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 4px;
   right: 4px;
   top: 4px;
@@ -4582,6 +4779,14 @@ img {
   border-color: #e31528;
 }
 
+/*** 
+
+====================================================================
+	Call To Action Section
+====================================================================
+
+***/
+
 .call-to-action-section-two {
   position: relative;
 }
@@ -4599,7 +4804,7 @@ img {
 
 .call-to-action-section-two .inner-box:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   top: 0px;
   width: 100%;
@@ -4645,10 +4850,10 @@ img {
 }
 
 .testimonial-section-three .client-thumb-outer .owl-item.active .thumb-item .thumb-box {
-  -o-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
+  -o-transform: scale(1.0, 1.0);
+  -ms-transform: scale(1.0, 1.0);
+  -webkit-transform: scale(1.0, 1.0);
+  transform: scale(1.0, 1.0);
 }
 
 .testimonial-section-three .client-thumb-outer .client-thumbs-carousel {
@@ -4677,7 +4882,7 @@ img {
   color: #222222;
   letter-spacing: 1px;
   text-transform: capitalize;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .testimonial-section-three .client-thumbs-carousel .thumb-item .thumb-content .designation {
@@ -4752,6 +4957,14 @@ img {
   right: 0px;
 }
 
+/*** 
+
+====================================================================
+	Full Width Section
+====================================================================
+
+***/
+
 .full-width-section {
   position: relative;
 }
@@ -4771,13 +4984,13 @@ img {
 
 .full-width-section .outer-box .content-column:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
   display: block;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.90);
 }
 
 .full-width-section .outer-box .content-column .content {
@@ -4816,28 +5029,36 @@ img {
   padding: 80px 15px 40px 70px;
 }
 
+/*** 
+
+====================================================================
+	Fact Counter style
+====================================================================
+
+***/
+
 .fact-counter {
   position: relative;
 }
 
 .fact-counter:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 45%;
   top: 0px;
   height: 100%;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.20);
 }
 
 .fact-counter:after {
   position: absolute;
-  content: "";
+  content: '';
   top: 50%;
   left: 0px;
   height: 1px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.20);
 }
 
 .fact-counter .column {
@@ -4888,7 +5109,7 @@ img {
   color: #ffffff;
   font-size: 36px;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .fact-counter .count-outer .count-text {
@@ -4896,7 +5117,7 @@ img {
   color: #ffffff;
   font-size: 36px;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .fact-counter .column .counter-title {
@@ -4906,6 +5127,8 @@ img {
   color: #ffffff;
   margin-top: 10px;
 }
+
+/*News Block Four*/
 
 .news-block-four {
   position: relative;
@@ -4939,7 +5162,7 @@ img {
   position: relative;
   font-size: 18px;
   line-height: 1.6em;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .news-block-four .inner-box h3 a {
@@ -4971,16 +5194,25 @@ img {
 
 .news-block-four .inner-box .post-meta li .icon {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   top: 0px;
   color: #e31528;
 }
 
+/*** 
+
+====================================================================
+	Page Title Style
+====================================================================
+
+***/
+
 .page-title {
   position: relative;
   text-align: center;
   padding: 60px 0px 20px 0px;
+  /* background: url(../images/resource/page-title-bg.jpg) repeat; */
 }
 
 .page-title h1 {
@@ -5030,7 +5262,7 @@ img {
   font-weight: 400;
   line-height: 24px;
   text-transform: capitalize;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .page-info .bread-crumb li:last-child {
@@ -5038,8 +5270,8 @@ img {
 }
 
 .page-info .bread-crumb li:after {
-  content: "\f0da";
-  font-family: "FontAwesome";
+  content: '\f0da';
+  font-family: 'FontAwesome';
   position: absolute;
   right: -21px;
   width: 10px;
@@ -5064,6 +5296,14 @@ img {
 .page-info .bread-crumb li a:hover {
   color: #e31528;
 }
+
+/*** 
+
+====================================================================
+	Who We Are Section
+====================================================================
+
+***/
 
 .who-we-are-section {
   position: relative;
@@ -5104,6 +5344,14 @@ img {
   margin-top: 26px;
 }
 
+/*** 
+
+====================================================================
+	Featured Section Two
+====================================================================
+
+***/
+
 .featured-section-two {
   position: relative;
   padding: 80px 0px 50px;
@@ -5115,7 +5363,7 @@ img {
 
 .featured-section-two:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   top: 0px;
   width: 100%;
@@ -5123,6 +5371,8 @@ img {
   display: block;
   background-color: rgba(24, 78, 157, 0.95);
 }
+
+/*Featured Block Two*/
 
 .featured-block-two {
   position: relative;
@@ -5141,7 +5391,7 @@ img {
   font-size: 60px;
   line-height: 1em;
   margin-bottom: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.10);
 }
 
 .featured-block-two .inner-box h3 {
@@ -5170,6 +5420,14 @@ img {
   line-height: 1.8em;
 }
 
+/*** 
+
+====================================================================
+	Error Section
+====================================================================
+
+***/
+
 .error-section {
   position: relative;
   padding: 130px 0px 130px;
@@ -5194,7 +5452,7 @@ img {
   color: #ffffff;
   font-weight: 500;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .error-section .inner-section .text {
@@ -5204,6 +5462,8 @@ img {
   margin-top: 6px;
   margin-bottom: 40px;
 }
+
+/*Search Box Widget*/
 
 .error-search-form .form-group {
   position: relative;
@@ -5249,10 +5509,26 @@ img {
   font-weight: normal;
 }
 
+/*** 
+
+====================================================================
+	Blog Section
+====================================================================
+
+***/
+
 .blog-section {
   position: relative;
   padding: 80px 0px 80px;
 }
+
+/*** 
+
+====================================================================
+	Styled Pagination
+====================================================================
+
+***/
 
 .blog-page .styled-pagination {
   position: relative;
@@ -5302,7 +5578,7 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   border: 2px solid #eeeeee;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .styled-pagination li a:hover,
@@ -5311,6 +5587,14 @@ img {
   border-color: #e31528;
   background-color: #e31528;
 }
+
+/*** 
+
+====================================================================
+	Sidebar Page Container
+====================================================================
+
+***/
 
 .sidebar-page-container {
   position: relative;
@@ -5327,9 +5611,130 @@ img {
   margin-bottom: 50px;
 }
 
+/*Search Box Widget*/
+
+.sidebar .search-box .form-group {
+  position: relative;
+  margin: 0px;
+}
+
+.sidebar .search-box .form-group input[type="text"],
+.sidebar .search-box .form-group input[type="search"] {
+  position: relative;
+  line-height: 28px;
+  padding: 10px 50px 10px 20px;
+  border: 1px solid #eeeeee;
+  background: none;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+
+.sidebar .search-box .form-group button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  font-size: 16px;
+  color: #222222;
+  line-height: 100%;
+  background: #f4f4f4;
+  font-weight: normal;
+}
+
+/*Sidebar Title*/
+
+.sidebar-title {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.sidebar-title h2 {
+  font-size: 22px;
+  color: #222222;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.50)
+}
+
+.sidebar-title h2:after {
+  position: absolute;
+  content: '';
+  left: 0px;
+  bottom: -1px;
+  width: 45px;
+  height: 1px;
+  background-color: #e31528;
+}
+
+
+
+/*Blog Category*/
+
 .blog-cat {
   position: relative;
 }
+
+.blog-cat li {
+  position: relative;
+  margin-bottom: 15px;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+
+.blog-cat li a {
+  position: relative;
+  font-size: 15px;
+  font-weight: 400;
+  display: block;
+  padding-bottom: 15px;
+  color: #848484;
+  padding-left: 30px;
+  border-bottom: 1px solid #eeeeee;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  font-family: 'Raleway', sans-serif;
+}
+
+.blog-cat li a:before {
+  position: absolute;
+  content: '\f114';
+  left: 0px;
+  top: 0px;
+  font-family: 'FontAwesome';
+}
+
+.blog-cat li a:after {
+  position: absolute;
+  content: '\f105';
+  right: 0px;
+  top: 0px;
+  font-family: 'FontAwesome';
+}
+
+.blog-cat li a:hover {
+  color: #e31528;
+}
+
+
+
+/*Post Widget*/
 
 .sidebar .popular-posts .post {
   position: relative;
@@ -5353,7 +5758,7 @@ img {
 }
 
 .sidebar .popular-posts .post:hover .post-thumb img {
-  opacity: 0.7;
+  opacity: 0.70;
 }
 
 .sidebar .popular-posts .post .post-thumb img {
@@ -5375,7 +5780,7 @@ img {
   color: #222222;
   line-height: 1.4em;
   text-transform: capitalize;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar .popular-posts .post .text a {
@@ -5397,17 +5802,19 @@ img {
   font-size: 16px;
   color: #999999;
   padding-left: 22px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .sidebar .popular-posts .post-info:before {
   position: absolute;
-  content: "\f073";
+  content: '\f073';
   left: 0px;
   top: 0px;
   color: #e31528;
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
 }
+
+/*Popular Tags*/
 
 .sidebar .popular-tags a {
   position: relative;
@@ -5431,6 +5838,8 @@ img {
   color: #ffffff;
   background-color: #e31528;
 }
+
+/*facebook like widget*/
 
 .facebook-like-widget .image img {
   width: 100%;
@@ -5491,7 +5900,7 @@ img {
 
 .news-block-five .inner-box .lower-content .post-meta:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   bottom: -1px;
   width: 70px;
@@ -5510,7 +5919,7 @@ img {
 
 .news-block-five .inner-box .lower-content .post-meta li .icon {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   top: 0px;
   color: #e31528;
@@ -5529,8 +5938,10 @@ img {
   color: #e31528;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
+
+/*Blog Single*/
 
 .blog-single {
   position: relative;
@@ -5573,7 +5984,7 @@ img {
 
 .blog-single .inner-box .lower-content .post-meta:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   bottom: -1px;
   width: 70px;
@@ -5592,7 +6003,7 @@ img {
 
 .blog-single .inner-box .lower-content .post-meta li .icon {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   top: 0px;
   color: #e31528;
@@ -5624,6 +6035,8 @@ img {
   margin-bottom: 40px;
 }
 
+/*Post Share Options*/
+
 .post-share-options {
   position: relative;
   padding-top: 16px;
@@ -5640,7 +6053,7 @@ img {
   color: #222222;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -5655,7 +6068,7 @@ img {
 
 .post-share-options .new-posts a.prev:after {
   position: absolute;
-  content: "";
+  content: '';
   right: 0px;
   top: 0px;
   width: 1px;
@@ -5666,6 +6079,8 @@ img {
 .post-share-options .new-posts a:hover {
   color: #e31528;
 }
+
+/*Author Box*/
 
 .author-box {
   position: relative;
@@ -5774,6 +6189,7 @@ p {
 .auto-container {
   position: static;
   max-width: 1200px;
+  /*padding:0px 15px;*/
   padding: 0px 0px;
   margin: 0 auto;
 }
@@ -5792,6 +6208,7 @@ li {
   margin: 0px;
 }
 
+
 .author-box h2 {
   position: relative;
   color: #222222;
@@ -5799,12 +6216,12 @@ li {
   font-weight: 600;
   margin-bottom: 40px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+  border-bottom: 1px solid rgba(238, 238, 238, 0.50);
 }
 
 .author-box h2:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   bottom: -1px;
   width: 70px;
@@ -5847,6 +6264,14 @@ li {
   margin-bottom: 12px;
 }
 
+/*** 
+
+====================================================================
+	Comments Area
+====================================================================
+
+ ***/
+
 .sidebar-page-container .comments-area {
   position: relative;
   margin-top: 0px;
@@ -5865,12 +6290,12 @@ li {
   font-weight: 600;
   padding-bottom: 12px;
   text-transform: capitalize;
-  border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+  border-bottom: 1px solid rgba(238, 238, 238, 0.50)
 }
 
 .sidebar-page-container .group-title h2:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   bottom: -1px;
   width: 70px;
@@ -5949,7 +6374,7 @@ li {
   font-size: 18px;
   font-weight: 400;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar-page-container .comments-area .comment-box .text {
@@ -5960,6 +6385,8 @@ li {
   line-height: 1.6em;
   margin-bottom: 10px;
 }
+
+/*Comment Form*/
 
 .comment-form .group-title {
   margin-bottom: 20px;
@@ -6066,6 +6493,14 @@ li {
   border-color: #f06529;
 }
 
+/*** 
+
+====================================================================
+	Comments Area
+====================================================================
+
+ ***/
+
 .contact-section {
   position: relative;
   padding: 80px 0px 50px;
@@ -6132,6 +6567,8 @@ li {
   font-size: 18px;
   font-weight: 400;
 }
+
+/*Contact Form*/
 
 .contact-form h2 {
   position: relative;
@@ -6202,6 +6639,14 @@ li {
   font-weight: 500;
 }
 
+/*** 
+
+====================================================================
+	Map Section Style
+====================================================================
+
+***/
+
 .map-data {
   text-align: center;
   font-size: 14px;
@@ -6234,13 +6679,15 @@ li {
   display: block;
   margin-bottom: 9px;
   background-color: #f7f7f7;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar .view-all .icon {
   float: right;
   color: #848484;
 }
+
+/*List Widget*/
 
 .sidebar .sidebar-category .list {
   position: relative;
@@ -6269,12 +6716,12 @@ li {
   -ms-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar .sidebar-category .list li a:before {
   content: "\f0da";
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   font-size: 14px;
   right: 18px;
   color: #f7f7f7;
@@ -6293,6 +6740,8 @@ li {
   color: #ffffff;
 }
 
+/*Broucher Widget*/
+
 .sidebar-brochure .brochure {
   position: relative;
   color: #222222;
@@ -6308,7 +6757,7 @@ li {
   -ms-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar-brochure .brochure .icon {
@@ -6338,6 +6787,8 @@ li {
   border-color: #e31528;
 }
 
+/*hour Widget*/
+
 .hour-widget {
   position: relative;
   background: #f7f7f7;
@@ -6358,6 +6809,8 @@ li {
   top: 0;
 }
 
+/*Locate Widget*/
+
 .locate-widget {
   position: relative;
 }
@@ -6377,7 +6830,7 @@ li {
   font-weight: 400;
   margin-bottom: 15px;
   padding-bottom: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -6486,12 +6939,12 @@ li {
   line-height: 1.2em;
   padding-bottom: 15px;
   margin-bottom: 32px;
-  border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+  border-bottom: 1px solid rgba(238, 238, 238, 0.50);
 }
 
 .services-single .inner-box .lower-content h2:before {
   position: absolute;
-  content: "";
+  content: '';
   left: 0px;
   bottom: -1px;
   width: 70px;
@@ -6575,6 +7028,8 @@ li {
   background-color: #e31528;
 }
 
+/*Link Widget*/
+
 .links-widget .links {
   position: relative;
 }
@@ -6598,6 +7053,8 @@ li {
 .links-widget .links li a:hover {
   color: #ffffff;
 }
+
+/*List Style One*/
 
 .list-style-one {
   position: relative;
@@ -6628,6 +7085,8 @@ li {
   font-size: 24px;
   line-height: 1em;
 }
+
+/*List Style Two*/
 
 .list-style-two {
   position: relative;
@@ -6667,6 +7126,8 @@ li {
   line-height: 1em;
 }
 
+/*List Style Three*/
+
 .list-style-three {
   position: relative;
 }
@@ -6697,6 +7158,8 @@ li {
   height: 6px;
   background-color: #cdcdcd;
 }
+
+/*List Style Four*/
 
 .list-style-four {
   position: relative;
@@ -6818,8 +7281,131 @@ li {
   background-color: #e31528;
 }
 
+/*Link Widget*/
+
 .links-widget-two .links {
   position: relative;
+}
+
+@media (min-width: 992px) {
+  .links-widget-two {
+    padding-left: 50px;
+  }
+}
+
+.links-widget-two .links li {
+  position: relative;
+  margin-bottom: 7px;
+}
+
+.links-widget-two .links li a {
+  position: relative;
+  color: #848484;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.links-widget-two .links li a:hover {
+  color: #ffffff;
+}
+
+.links-widget-two .links li a:before {
+  position: absolute;
+  content: "";
+}
+
+.contact-widget-two .contact-email {
+  position: relative;
+  color: #e31528;
+  font-size: 16px;
+  line-height: 1.4em;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* news widget */
+
+.news-widget-two ul li {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.news-widget-two ul li:last-child {
+  border-bottom: 0px;
+}
+
+.news-widget-two ul li p {
+  color: #848484;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.news-widget-two ul li h5 {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* working-hour-widget */
+
+.working-hour-widget {
+  position: relative;
+}
+
+.working-hour-widget ul li {
+  color: #848484;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.working-hour-widget {
+  position: relative;
+}
+
+.working-hour-widget .discount {
+  position: relative;
+  border: 2px dashed #353e45;
+  padding: 25px 20px 10px;
+  margin-top: 26px;
+  text-align: center;
+}
+
+.working-hour-widget .discount h4 {
+  color: #fff;
+  font-size: 22px;
+}
+
+.working-hour-widget .discount h4 span {
+  font-size: 36px;
+  color: #e31528;
+}
+
+.working-hour-widget .discount p {
+  color: #e31528;
+}
+
+/*footer-bottom*/
+.main-footer-two .footer-bottom {
+  position: relative;
+  padding: 22px 0px;
+  background: #0b151e;
+}
+
+.main-footer-two .footer-bottom .copyright {
+  position: relative;
+  color: #afafb5;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.main-footer-two .footer-bottom .social-column {
+  text-align: right;
 }
 
 .info-section {
@@ -6906,6 +7492,93 @@ li {
 
 .info-section .social-icon-three {
   margin-bottom: 36px;
+}
+
+.btn-style-one {
+  position: relative;
+  padding: 13px 48px;
+  line-height: 24px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #e31528;
+  border: 2px solid #e31528;
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn-style-one:hover {
+  color: #e31528;
+  background: none;
+}
+
+/*Btn Style Two*/
+
+.btn-style-two {
+  position: relative;
+  padding: 13px 37px;
+  line-height: 24px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-style-two:hover {
+  background: #e31528;
+  color: #ffffff;
+  border-color: #e31528;
+}
+
+/*Btn Style Three*/
+
+.btn-style-three {
+  position: relative;
+  padding: 10px 39px;
+  line-height: 24px;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #dddddd;
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn-style-three:hover {
+  background: #e31528;
+  color: #ffffff;
+  border-color: #e31528;
+}
+
+/*Btn Style Four*/
+
+.btn-style-four {
+  position: relative;
+  padding: 10px 39px;
+  line-height: 24px;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #eeeeee;
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn-style-four:hover {
+  background: #e31528;
+  color: #ffffff;
+  border-color: #e31528;
+}
+
+.theme_color {
+  color: #e31528;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
 }
 
 .preloader {
@@ -7025,6 +7698,8 @@ li {
   opacity: 1;
 }
 
+/*Services List Section*/
+
 .services-list-section {
   position: relative;
   margin-top: 30px;
@@ -7099,6 +7774,82 @@ li {
   margin-right: 4px;
 }
 
+.main-footer-two {
+  position: relative;
+  background: #121c25;
+}
+
+.main-footer-two .widgets-section {
+  position: relative;
+  padding: 80px 0px 0px;
+}
+
+.main-footer-two .footer-column {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.main-footer-two .logo-widget .footer-logo {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.main-footer-two .logo-widget .text {
+  position: relative;
+  color: #848484;
+  font-size: 16px;
+  line-height: 1.7em;
+  margin-bottom: 15px;
+}
+
+.main-footer-two .logo-widget ul li {
+  color: #848484;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.main-footer-two .logo-widget ul li i {
+  color: #e31528;
+  margin-right: 10px;
+}
+
+.main-footer-two .logo-widget ul li {
+  color: #848484;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.main-footer-two .logo-widget ul li span {
+  color: #e31528;
+  font-weight: 500;
+}
+
+.footer-widget-two h2 {
+  position: relative;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-widget-two h2:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: -1px;
+  width: 70px;
+  height: 1px;
+  background-color: #e31528;
+}
+
+/*Link Widget*/
+
+.links-widget-two .links {
+  position: relative;
+}
+
 @media (min-width: 992px) {
   .links-widget-two {
     padding-left: 50px;
@@ -7139,6 +7890,8 @@ li {
   margin-top: 15px;
 }
 
+/* news widget */
+
 .news-widget-two ul li {
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
@@ -7160,6 +7913,8 @@ li {
   color: #fff;
   font-size: 16px;
 }
+
+/* working-hour-widget */
 
 .working-hour-widget {
   position: relative;
@@ -7197,6 +7952,7 @@ li {
   color: #e31528;
 }
 
+/*footer-bottom*/
 .main-footer-two .footer-bottom {
   position: relative;
   padding: 22px 0px;
@@ -7231,6 +7987,8 @@ li {
   text-align: center;
   margin-bottom: 30px;
 }
+
+/*Subscribe widget*/
 
 .subscribe-form {
   position: relative;
@@ -7270,6 +8028,8 @@ li {
 .subscribe-form button {
   width: 100%;
 }
+
+/*subscribe form style two*/
 
 .subscribe-form-two {
   position: relative;
@@ -7317,6 +8077,8 @@ li {
 .subscribe-form-two p {
   color: #e31528;
 }
+
+/*subscribe form style three*/
 
 .subscribe-form-three {
   position: relative;
@@ -7620,6 +8382,11 @@ li {
   transform: scale(1.1, 1.1);
 }
 
+/*.imgZoom:hover #prod-title {
+	color:#e31528;
+}*/
+
+/* Accordion styles */
 .accordion {
   background-color: #eee;
   color: #444;
@@ -7668,6 +8435,10 @@ li {
   border-left: 1px solid #eee;
 }
 
+.blog-cat li:hover {
+  transform: scale(1.1);
+}
+
 .our-product {
   height: 1570px;
   overflow-x: hidden;
@@ -7690,6 +8461,46 @@ li {
 
 .our-product::-webkit-scrollbar-thumb:hover {
   background: #ababab;
+}
+
+.search-box-product input[type="text"],
+.search-box-product input[type="search"] {
+  position: relative;
+  line-height: 23px;
+  padding: 10px 50px 10px 20px;
+  border: 1px solid #eeeeee;
+  background: none;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  height: 45px;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+
+input[name="search-field-product"]:valid {
+  border-radius: 15px;
+}
+
+.search-box-product button[type="submit"] {
+  background-color: #e31528;
+  color: #fff;
+}
+
+.search-box-product button[type="submit"]:hover span {
+  transform: scale(1.2);
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+
+.breadcrumb-list-product {
+  padding: 0px 10px 5px;
 }
 
 .content-loader {
@@ -7734,6 +8545,10 @@ li {
 
 #box {
   z-index: 100;
+}
+
+#box:hover {
+  /*-webkit-animation: scaleme 1s;*/
 }
 
 @-webkit-keyframes scaleme {
@@ -7835,6 +8650,21 @@ img {
   transform: scale(1.1);
 }
 
+.owl-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.owl-nav div {
+  background: #e31528;
+  color: #fff;
+  padding: 15px;
+  border-radius: 31px;
+  width: 58px;
+  text-align: center;
+  font-size: 30px;
+}
+
 .scroll-to-top {
   position: fixed;
   bottom: 15px;
@@ -7885,6 +8715,8 @@ img {
   color: #ffffff;
 }
 
+/*Social Icon Two*/
+
 .social-icon-two {
   position: relative;
 }
@@ -7920,6 +8752,8 @@ img {
   background-color: #ffffff;
 }
 
+/*Social Icon Three*/
+
 .social-icon-three {
   position: relative;
 }
@@ -7953,6 +8787,8 @@ img {
   background-color: #e31528;
 }
 
+/*Social Icon Four*/
+
 .social-icon-four {
   position: relative;
 }
@@ -7977,6 +8813,8 @@ img {
 .social-icon-four li a:hover {
   color: #e31528;
 }
+
+/*Custom Select*/
 
 .form-group .ui-selectmenu-button.ui-button {
   width: 100%;
