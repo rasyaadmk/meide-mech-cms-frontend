@@ -964,7 +964,7 @@
             <div class="row clearfix">
               <div class="column col-md-6 col-sm-12 col-xs-12">
                 <div class="copyright">
-                  Copyright © 2022 <a href="#">Medeimech</a>, All Right Reserved
+                  Copyright © 2022 <a href="#">Meidemech</a>, All Right Reserved
                 </div>
               </div>
               <!--Social Column-->
